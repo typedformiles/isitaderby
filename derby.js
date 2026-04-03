@@ -148,7 +148,7 @@ function calculateDerbyScore(clubA, clubB) {
 }
 
 function getVerdict(score) {
-  if (score >= 75) return 'Fierce Local Derby';
+  if (score >= 75) return 'Proper Local Derby';
   if (score >= 55) return 'Local Derby';
   if (score >= 35) return 'Regional Rivalry';
   if (score >= 15) return 'Stretch — Barely a Derby';
@@ -156,7 +156,7 @@ function getVerdict(score) {
 }
 
 function getVerdictClass(verdict) {
-  if (verdict === 'Fierce Local Derby') return 'fierce';
+  if (verdict === 'Proper Local Derby') return 'fierce';
   if (verdict === 'Local Derby') return 'local';
   if (verdict === 'Regional Rivalry') return 'rivalry';
   if (verdict === 'Stretch — Barely a Derby') return 'stretch';
@@ -177,7 +177,7 @@ function getFlavourText(verdict, clubA, clubB, distance, tierGap) {
 
   let base;
   switch (verdict) {
-    case 'Fierce Local Derby':
+    case 'Proper Local Derby':
       base = tierGap <= 1
         ? `Only ${distStr} apart. This is about as local as it gets. Bragging rights are everything.`
         : `Only ${distStr} apart — geographically, this is a proper derby.`;

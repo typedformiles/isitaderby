@@ -19,7 +19,7 @@ The score (0-100) is based on:
 
 | Score | Verdict |
 |-------|---------|
-| 75-100 | Fierce Local Derby |
+| 75-100 | Proper Local Derby |
 | 55-74 | Local Derby |
 | 35-54 | Regional Rivalry |
 | 15-34 | Stretch — Barely a Derby |
