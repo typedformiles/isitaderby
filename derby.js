@@ -121,7 +121,8 @@ function calculateDerbyScore(clubA, clubB) {
   const score = Math.min(100, Math.round(rawScore));
 
   const verdict = getVerdict(score);
-  const flavour = getFlavourText(verdict, clubA, clubB, distance);
+  const tierGap = Math.abs(clubA.tier - clubB.tier);
+  const flavour = getFlavourText(verdict, clubA, clubB, distance, tierGap);
 
   return {
     score,
@@ -162,18 +163,40 @@ function getVerdictClass(verdict) {
   return 'not-derby';
 }
 
-function getFlavourText(verdict, clubA, clubB, distance) {
+function getFlavourText(verdict, clubA, clubB, distance, tierGap) {
   const distStr = distance < 1 ? 'less than a mile' : `${Math.round(distance * 10) / 10} miles`;
+  const gapStr = tierGap === 1 ? 'one division' : `${tierGap} divisions`;
+
+  // Tier gap qualifier — appended when clubs are close but in different footballing worlds
+  let gapNote = '';
+  if (tierGap >= 4) {
+    gapNote = ` Though with ${gapStr} between them, they share a postcode but not a planet.`;
+  } else if (tierGap >= 2) {
+    gapNote = ` ${gapStr} apart in the pyramid though, so don't expect this on a fixture list any time soon.`;
+  }
+
+  let base;
   switch (verdict) {
     case 'Fierce Local Derby':
-      return `Only ${distStr} apart. This is about as local as it gets. Bragging rights are everything.`;
+      base = tierGap <= 1
+        ? `Only ${distStr} apart. This is about as local as it gets. Bragging rights are everything.`
+        : `Only ${distStr} apart — geographically, this is a proper derby.`;
+      break;
     case 'Local Derby':
-      return `At ${distStr} apart, these two are proper neighbours. This one matters.`;
+      base = tierGap <= 1
+        ? `At ${distStr} apart, these two are proper neighbours. This one matters.`
+        : `At ${distStr} apart, the geography says derby.`;
+      break;
     case 'Regional Rivalry':
-      return `${distStr} apart — they're in the same neck of the woods, but you'd need to set off early.`;
+      base = `${distStr} apart — they're in the same neck of the woods, but you'd need to set off early.`;
+      break;
     case 'Stretch — Barely a Derby':
-      return `${distStr} is pushing the definition. Your mate is clutching at straws calling this a derby.`;
+      base = `${distStr} is pushing the definition. Your mate is clutching at straws calling this a derby.`;
+      break;
     default:
-      return `${distStr} apart. Come on. This is not a derby by any stretch of the imagination.`;
+      base = `${distStr} apart. Come on. This is not a derby by any stretch of the imagination.`;
+      break;
   }
+
+  return base + gapNote;
 }
