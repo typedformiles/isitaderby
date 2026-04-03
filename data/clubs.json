@@ -1659,5 +1659,38 @@
     "county": "Somerset",
     "col1": "#6D2243",
     "col2": "#7EC8E3"
+  },
+  {
+    "name": "Southend United",
+    "ground": "Roots Hall",
+    "lat": 51.5491,
+    "lng": 0.7017,
+    "tier": 5,
+    "city": "Southend-on-Sea",
+    "county": "Essex",
+    "col1": "#003399",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Peterborough Sports",
+    "ground": "Lincoln Road",
+    "lat": 52.5836,
+    "lng": -0.2291,
+    "tier": 6,
+    "city": "Peterborough",
+    "county": "Cambridgeshire",
+    "col1": "#004B87",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "King's Lynn Town",
+    "ground": "The Walks",
+    "lat": 52.7543,
+    "lng": 0.3981,
+    "tier": 6,
+    "city": "King's Lynn",
+    "county": "Norfolk",
+    "col1": "#004B87",
+    "col2": "#F5D312"
   }
 ]
