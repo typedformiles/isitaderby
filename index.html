@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Is It A Derby?</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Is It A <span>Derby</span>?</h1>
+      <p>Settle the debate once and for all. Pick two English football clubs and we'll score it.</p>
+    </header>
+
+    <div class="selector">
+      <div class="selector-row">
+        <div class="club-input-wrapper">
+          <label for="club-a">First Club</label>
+          <input type="text" id="club-a" class="club-input" placeholder="Search for a club..." autocomplete="off" />
+          <div id="list-a" class="autocomplete-list"></div>
+        </div>
+        <span class="vs-label">vs</span>
+        <div class="club-input-wrapper">
+          <label for="club-b">Second Club</label>
+          <input type="text" id="club-b" class="club-input" placeholder="Search for a club..." autocomplete="off" />
+          <div id="list-b" class="autocomplete-list"></div>
+        </div>
+      </div>
+      <button class="settle-btn" id="settle-btn" disabled>Settle It</button>
+    </div>
+
+    <div class="results" id="results">
+      <div class="verdict-card">
+        <div class="verdict-matchup" id="matchup"></div>
+        <div class="verdict-text" id="verdict"></div>
+        <div class="score-bar-container">
+          <div class="score-bar-bg">
+            <div class="score-bar-fill" id="score-bar"></div>
+          </div>
+          <div class="score-number" id="score-number"></div>
+        </div>
+        <div class="flavour-text" id="flavour"></div>
+      </div>
+
+      <div id="map"></div>
+
+      <div class="breakdown-card">
+        <h3>Score Breakdown</h3>
+        <div id="breakdown"></div>
+      </div>
+
+      <div class="share-link">
+        <button class="share-btn" id="share-btn">Copy shareable link</button>
+      </div>
+    </div>
+
+    <div class="methodology">
+      <button class="methodology-toggle" id="methodology-toggle">
+        How does the scoring work?
+        <span class="arrow">&#9660;</span>
+      </button>
+      <div class="methodology-content" id="methodology-content">
+        <p>The "Is It A Derby?" score is based on a simple principle: <strong>what counts as "local" depends on the level you play at.</strong></p>
+
+        <h4>Why tier matters</h4>
+        <p>In the Premier League, clubs cluster in major cities — "local" means a few miles. But in the National League North, clubs are spread across vast regions. A 30-mile trip to your nearest rival genuinely <em>is</em> your local derby. Penalising lower-league clubs for geography would be unfair.</p>
+
+        <h4>The formula</h4>
+        <p>We calculate the straight-line distance between the two grounds, then compare it against a <strong>tier-adjusted derby radius</strong>. When two clubs are from different tiers, we average their radii — this stops a lower-league club getting an unfair advantage over a closer rival from a higher tier:</p>
+
+        <table>
+          <tr><th>Tier</th><th>Leagues</th><th>Derby Radius</th></tr>
+          <tr><td>1–2</td><td>Premier League, Championship</td><td>25 miles</td></tr>
+          <tr><td>3–4</td><td>League One, League Two</td><td>35 miles</td></tr>
+          <tr><td>5–6</td><td>National League, NL North/South</td><td>50 miles</td></tr>
+        </table>
+
+        <p>Distance score decays linearly: clubs at the radius score ~33, clubs at 1.5× the radius score 0. We then add bonuses:</p>
+
+        <table>
+          <tr><th>Bonus</th><th>Points</th></tr>
+          <tr><td>Same city/town</td><td>+15</td></tr>
+          <tr><td>Same county (if different city)</td><td>+10</td></tr>
+          <tr><td>Same league tier</td><td>+5</td></tr>
+        </table>
+
+        <h4>Verdict thresholds</h4>
+        <table>
+          <tr><th>Score</th><th>Verdict</th></tr>
+          <tr><td>75–100</td><td>Fierce Local Derby</td></tr>
+          <tr><td>55–74</td><td>Local Derby</td></tr>
+          <tr><td>35–54</td><td>Regional Rivalry</td></tr>
+          <tr><td>15–34</td><td>Stretch — Barely a Derby</td></tr>
+          <tr><td>0–14</td><td>Not a Derby</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      Built to settle arguments. Data from 2024/25 season. 151 clubs from the Premier League to National League North &amp; South.
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="derby.js"></script>
+  <script src="map.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
