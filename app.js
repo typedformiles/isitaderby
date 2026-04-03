@@ -135,13 +135,25 @@ settleBtn.addEventListener('click', () => {
   showResult(selectedA, selectedB);
 });
 
-// Random button
+// Random button — picks a random pair scoring 50+
 document.getElementById('random-btn').addEventListener('click', () => {
-  const i = Math.floor(Math.random() * clubs.length);
-  let j = Math.floor(Math.random() * (clubs.length - 1));
-  if (j >= i) j++;
-  selectedA = clubs[i];
-  selectedB = clubs[j];
+  // Build list of viable pairs on first click, then cache
+  if (!window._derbyPairs) {
+    window._derbyPairs = [];
+    for (let i = 0; i < clubs.length; i++) {
+      for (let j = i + 1; j < clubs.length; j++) {
+        const r = calculateDerbyScore(clubs[i], clubs[j]);
+        if (r.score >= 50) {
+          window._derbyPairs.push([clubs[i], clubs[j]]);
+        }
+      }
+    }
+  }
+  const pair = window._derbyPairs[Math.floor(Math.random() * window._derbyPairs.length)];
+  // Randomise which is A and B
+  const flip = Math.random() < 0.5;
+  selectedA = flip ? pair[0] : pair[1];
+  selectedB = flip ? pair[1] : pair[0];
   inputA.value = selectedA.name;
   inputB.value = selectedB.name;
   updateSettleBtn();
