@@ -350,6 +350,82 @@ header p {
   border-top-color: rgba(15, 17, 23, 0.9) !important;
 }
 
+/* Leaderboard */
+.leaderboard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.leaderboard-row:hover {
+  background: var(--surface-2);
+}
+
+.leaderboard-row:last-child {
+  border-bottom: none;
+}
+
+.lb-rank {
+  width: 28px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.lb-badges {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.lb-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+
+.lb-names {
+  flex: 1;
+  font-size: 0.9rem;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lb-score {
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  padding-right: 0.3rem;
+}
+
+.lb-score.fierce { color: var(--fierce); }
+.lb-score.local { color: var(--local); }
+
+.lb-distance {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  width: 50px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
 /* Methodology */
 .methodology {
   background: var(--surface);

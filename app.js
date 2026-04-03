@@ -266,3 +266,61 @@ document.getElementById('methodology-toggle').addEventListener('click', function
   this.classList.toggle('open');
   document.getElementById('methodology-content').classList.toggle('open');
 });
+
+// Leaderboard toggle
+document.getElementById('leaderboard-toggle').addEventListener('click', function () {
+  this.classList.toggle('open');
+  const content = document.getElementById('leaderboard-content');
+  content.classList.toggle('open');
+  // Build leaderboard on first open
+  if (content.classList.contains('open') && !content.dataset.built) {
+    buildLeaderboard();
+    content.dataset.built = '1';
+  }
+});
+
+function buildLeaderboard() {
+  const pairs = [];
+  for (let i = 0; i < clubs.length; i++) {
+    for (let j = i + 1; j < clubs.length; j++) {
+      const result = calculateDerbyScore(clubs[i], clubs[j]);
+      if (result.score >= 55) { // Local Derby or higher
+        pairs.push({ a: clubs[i], b: clubs[j], result });
+      }
+    }
+  }
+  pairs.sort((x, y) => y.result.score - x.result.score || x.result.distance - y.result.distance);
+
+  const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
+  const top = pairs.slice(0, 50);
+
+  document.getElementById('leaderboard-list').innerHTML = top.map((p, i) => {
+    const verdictClass = p.result.score >= 75 ? 'fierce' : 'local';
+    return `<div class="leaderboard-row" data-a="${slug(p.a.name)}" data-b="${slug(p.b.name)}">
+      <span class="lb-rank">${i + 1}</span>
+      <span class="lb-badges">
+        <span class="lb-badge" style="background:linear-gradient(135deg,${p.a.col1},${p.a.col2})"></span>
+        <span class="lb-badge" style="background:linear-gradient(135deg,${p.b.col1},${p.b.col2})"></span>
+      </span>
+      <span class="lb-names">${p.a.name} vs ${p.b.name}</span>
+      <span class="lb-score ${verdictClass}">${p.result.score}</span>
+      <span class="lb-distance">${p.result.distance}mi</span>
+    </div>`;
+  }).join('');
+
+  // Click to view matchup
+  document.querySelectorAll('.leaderboard-row').forEach(row => {
+    row.addEventListener('click', () => {
+      const a = clubs.find(c => slug(c.name) === row.dataset.a);
+      const b = clubs.find(c => slug(c.name) === row.dataset.b);
+      if (a && b) {
+        selectedA = a;
+        selectedB = b;
+        inputA.value = a.name;
+        inputB.value = b.name;
+        updateSettleBtn();
+        showResult(a, b);
+      }
+    });
+  });
+}
