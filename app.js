@@ -401,7 +401,7 @@ function showClubRivals(club) {
 
   document.getElementById('rivals-badge').style.background =
     `linear-gradient(135deg, ${club.col1}, ${club.col2})`;
-  document.getElementById('rivals-title').textContent = `${club.name} — Nearest Rivals`;
+  document.getElementById('rivals-title').textContent = `${club.name} — Top Rivals`;
 
   document.getElementById('rivals-list').innerHTML = rivals.map((r, i) => {
     const scoreClass = r.result.score >= 75 ? 'fierce' : r.result.score >= 55 ? 'local' : '';
