@@ -140,6 +140,12 @@ function showResult(clubA, clubB) {
   // Matchup
   document.getElementById('matchup').textContent = `${clubA.name} vs ${clubB.name}`;
 
+  // Club colour badges
+  document.getElementById('badge-a').style.background =
+    `linear-gradient(135deg, ${clubA.col1} 0%, ${clubA.col2} 100%)`;
+  document.getElementById('badge-b').style.background =
+    `linear-gradient(135deg, ${clubB.col1} 0%, ${clubB.col2} 100%)`;
+
   // Verdict
   const verdictEl = document.getElementById('verdict');
   verdictEl.textContent = result.verdict;

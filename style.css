@@ -195,10 +195,26 @@ header p {
   margin-bottom: 1.5rem;
 }
 
+.matchup-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.club-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .verdict-matchup {
   font-size: 1.1rem;
   color: var(--text-muted);
-  margin-bottom: 1rem;
 }
 
 .verdict-text {
