@@ -77,7 +77,7 @@ const STRAPLINES = {
     '"The East Lancashire Derby" — though calling it that is generous given the 10-mile gap and a large hill in the way. These cotton mill towns have been suspicious of each other since the Industrial Revolution. Blackburn spent Jack Walker\'s millions on a Premier League title in 1995; Burnley spent theirs on... well, Burnley things. The hatred is real, even if the geography is a stretch.',
 
   'Portsmouth|Southampton':
-    'The South Coast Derby. Separated by 19 miles of the M27. Portsmouth fans call Southampton "Scummers," Saints fans call Pompey "Skates." The rivalry intensified when Southampton were founding members of the Premier League in 1992 while Portsmouth languished in the lower divisions. Pompey\'s 2008 FA Cup win remains a sore point for Saints fans.',
+    'The South Coast Derby. Separated by ~16 miles of the M27. Portsmouth fans call Southampton "Scummers," Saints fans call Pompey "Skates." The rivalry intensified when Southampton were founding members of the Premier League in 1992 while Portsmouth languished in the lower divisions. Pompey\'s 2008 FA Cup win remains a sore point for Saints fans.',
 
   'Port Vale|Stoke City':
     'The Potteries Derby. Both from different parts of Stoke-on-Trent, a federation of six towns. When Port Vale were expelled from the Football League in 1907 for financial irregularities, it took them until 1919 to get back. Stoke, meanwhile, were founding members of the Football League itself.',
@@ -87,7 +87,7 @@ const STRAPLINES = {
   // =============================================
 
   'Brighton & Hove Albion|Crystal Palace':
-    '"The M23 Derby" \uD83D\uDE44. This one is 43 miles of questionable hatred. It kicked off in the 1976/77 FA Cup when Palace knocked Brighton out, and fans clashed on the terraces. The violence escalated through the late 70s and 80s. Both clubs will tell you the other started it. The geographical distance is largely irrelevant, they care so much because they\'re both historically so irrelevant.',
+    '"The M23 Derby" \uD83D\uDE44. This one is ~37 miles of questionable hatred. It kicked off in the 1976/77 FA Cup when Palace knocked Brighton out, and fans clashed on the terraces. The violence escalated through the late 70s and 80s. Both clubs will tell you the other started it. The geographical distance is largely irrelevant, they care so much because they\'re both historically so irrelevant.',
 
   'Derby County|Nottingham Forest':
     'The East Midlands Derby. Brian Clough managed Derby to the First Division title in 1972, then resigned in a dispute with the chairman. He joined Brighton briefly, then took over at arch-rivals Forest — and won the European Cup twice. Derby fans worshipped him, then watched him become a god at the club down the A52.',
@@ -99,7 +99,7 @@ const STRAPLINES = {
     'The biggest club rivalry in English football — but it\'s built on the cities\' economic competition during the Industrial Revolution, not proximity. Manchester had the canals and railways; Liverpool had the port. In football terms, the two clubs have won a combined 39 league titles. But at 30 miles apart, this is a rivalry, not a derby.',
 
   'Leeds United|Manchester United':
-    '"The Roses Derby" — except it isn\'t one, is it? It traces back to the Wars of the Roses in the 15th century, which is a great pub argument but doesn\'t change the fact that they\'re 40 miles apart. The football hatred peaked under Don Revie\'s Leeds in the late 60s/70s. Fierce? Absolutely. A derby? Have a word.',
+    '"The Roses Derby" — except it isn\'t one, is it? It traces back to the Wars of the Roses in the 15th century, which is a great pub argument but doesn\'t change the fact that they\'re nearly 40 miles apart. The football hatred peaked under Don Revie\'s Leeds in the late 60s/70s. Fierce? Absolutely. A derby? Have a word.',
 
   'Arsenal|Manchester United':
     'Wenger vs Ferguson was box office, yes. The pizza in the tunnel, the "Invincibles" — great telly. But calling this a derby is like calling a phone call a conversation over the garden fence. Two hundred miles apart. Come on.',
@@ -171,7 +171,7 @@ const STRAPLINES = {
     'West Midlands neighbours. Coventry\'s greatest moment — winning the 1987 FA Cup final against Tottenham with Keith Houchen\'s diving header — remains one of the most iconic goals in Cup history. It\'s replayed so often that even Birmingham fans know every frame.',
 
   'Luton Town|Watford':
-    '"The Bedfordshire-Hertfordshire derby" — a name only a county council could love. They\'re 20 miles apart up the M1, which sounds close until you remember neither town is exactly a footballing metropolis. Luton banned away fans in the 1980s and installed a plastic pitch; Watford had Elton John. Both were weird in their own way.',
+    '"The Bedfordshire-Hertfordshire derby" — a name only a county council could love. They\'re ~16 miles apart up the M1, which sounds close until you remember neither town is exactly a footballing metropolis. Luton banned away fans in the 1980s and installed a plastic pitch; Watford had Elton John. Both were weird in their own way.',
 
   'Oxford United|Reading':
     '"The Thames Valley Derby" — a name that screams geography homework rather than footballing hatred. Twenty-five miles of commuter belt separate them. Oxford won the League Cup in 1986; Reading got 106 Championship points in 2005/06. Both memorable, neither enough to make this a proper derby.',
@@ -180,10 +180,10 @@ const STRAPLINES = {
     'Twenty-nine miles of the A420 — barely a rivalry, more of a long commute. Swindon reached the Premier League in 1993 and got immediately relegated. Their 1969 League Cup win over Arsenal remains sacred locally, which tells you everything about the size of the club. Both insist this is a derby. The map disagrees.',
 
   'Cambridge United|Peterborough United':
-    'The Cambridgeshire derby, 38 miles apart. Peterborough are famous for their "Posh" nickname and for scoring goals in absurd quantities — they hit 134 in 1960/61, a Football League record for a single season.',
+    'The Cambridgeshire derby, ~30 miles apart. Peterborough are famous for their "Posh" nickname and for scoring goals in absurd quantities — they hit 134 in 1960/61, a Football League record for a single season.',
 
   'Grimsby Town|Scunthorpe United':
-    'North Lincolnshire rivals, 30 miles apart across the Humber flatlands. Grimsby\'s Blundell Park is actually in Cleethorpes, not Grimsby. Scunthorpe are famous for their unintentional run-in with email spam filters — their name contains an unfortunate substring.',
+    'North Lincolnshire rivals, ~27 miles apart across the Humber flatlands. Grimsby\'s Blundell Park is actually in Cleethorpes, not Grimsby. Scunthorpe are famous for their unintentional run-in with email spam filters — their name contains an unfortunate substring.',
 
   'Doncaster Rovers|Rotherham United':
     'South Yorkshire neighbours. Doncaster\'s Belle Vue was one of the great old English grounds before they moved to the Keepmoat. Rotherham\'s New York Stadium sits on the site of a former steelworks — the name comes from the old Guest and Chrimes factory.',
@@ -207,7 +207,7 @@ const STRAPLINES = {
     'Twelve miles apart in the Peak District foothills. Chesterfield\'s famous crooked spire church overshadows the ground. In the 1997 FA Cup semi-final, Chesterfield were denied a blatantly good goal against Middlesbrough when 2-1 up — they would have reached the final. The "ghost goal" still haunts Spireites fans.',
 
   'Crewe Alexandra|Stoke City':
-    'Cheshire vs Staffordshire, 18 miles apart. Crewe\'s Dario Gradi era (1983-2007) produced an extraordinary production line of talent: Dean Ashton, Danny Murphy, Seth Johnson, Rob Jones, David Platt, and more all came through their youth system.',
+    'Cheshire vs Staffordshire, ~13 miles apart. Crewe\'s Dario Gradi era (1983-2007) produced an extraordinary production line of talent: Dean Ashton, Danny Murphy, Seth Johnson, Rob Jones, David Platt, and more all came through their youth system.',
 
   'AFC Wimbledon|MK Dons':
     'Not a derby. Not even close geographically. But this is English football\'s most emotionally charged non-derby. When Wimbledon FC were controversially relocated to Milton Keynes in 2003, the original fans formed AFC Wimbledon and started from scratch. The hatred is real, but it\'s about identity theft, not postcodes.',
@@ -285,7 +285,7 @@ const STRAPLINES = {
     'South coast neighbours across the Dorset-Devon border — pleasant scenery, questionable football. Torquay\'s Plainmoor ground offers views of the English Riviera, which is fortunate because the football hasn\'t always been worth watching. Both clubs have bounced around the non-league system like a ball on a shingle beach.',
 
   'Plymouth Argyle|Truro City':
-    'Cornwall\'s only senior club vs Devon\'s biggest — 45 miles of the A38 and a county border. Truro are the most south-westerly club in the English football system, which sounds romantic until you realise it mainly means nobody visits.',
+    'Cornwall\'s only senior club vs Devon\'s biggest — ~41 miles of the A38 and a county border. Truro are the most south-westerly club in the English football system, which sounds romantic until you realise it mainly means nobody visits.',
 };
 
 function getStrapline(clubA, clubB) {
