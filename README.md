@@ -45,7 +45,7 @@ The score (0-100) is based on:
 
 ## Data
 
-Club data is from the 2024/25 season. Ground coordinates sourced from Wikipedia/Google Maps. 154 clubs across 6 tiers of the English football pyramid.
+Club data is from the 2024/25 season. Ground coordinates sourced from Wikipedia/Google Maps. 170 clubs across 6 tiers of the English football pyramid.
 
 ## Running locally
 

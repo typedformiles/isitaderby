@@ -1692,5 +1692,181 @@
     "county": "Norfolk",
     "col1": "#004B87",
     "col2": "#F5D312"
+  },
+  {
+    "name": "Alfreton Town",
+    "ground": "Impact Arena",
+    "lat": 53.0978,
+    "lng": -1.3839,
+    "tier": 6,
+    "city": "Alfreton",
+    "county": "Derbyshire",
+    "col1": "#E21937",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Brackley Town",
+    "ground": "St James Park",
+    "lat": 52.035,
+    "lng": -1.1461,
+    "tier": 6,
+    "city": "Brackley",
+    "county": "Northamptonshire",
+    "col1": "#E21937",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Buxton",
+    "ground": "Tarmac Silverlands Stadium",
+    "lat": 53.2567,
+    "lng": -1.9133,
+    "tier": 6,
+    "city": "Buxton",
+    "county": "Derbyshire",
+    "col1": "#004B87",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Farsley Celtic",
+    "ground": "The Citadel",
+    "lat": 53.812,
+    "lng": -1.672,
+    "tier": 6,
+    "city": "Farsley",
+    "county": "West Yorkshire",
+    "col1": "#004B87",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Leamington",
+    "ground": "Phillips 66 Community Stadium",
+    "lat": 52.2713,
+    "lng": -1.5219,
+    "tier": 6,
+    "city": "Leamington Spa",
+    "county": "Warwickshire",
+    "col1": "#F5A623",
+    "col2": "#000000"
+  },
+  {
+    "name": "Marine",
+    "ground": "Marine Travel Arena",
+    "lat": 53.4885,
+    "lng": -3.0397,
+    "tier": 6,
+    "city": "Crosby",
+    "county": "Merseyside",
+    "col1": "#FFFFFF",
+    "col2": "#004B87"
+  },
+  {
+    "name": "Needham Market",
+    "ground": "Bloomfields",
+    "lat": 52.157,
+    "lng": 1.0494,
+    "tier": 6,
+    "city": "Needham Market",
+    "county": "Suffolk",
+    "col1": "#E21937",
+    "col2": "#000000"
+  },
+  {
+    "name": "Oxford City",
+    "ground": "Court Place Farm",
+    "lat": 51.7828,
+    "lng": -1.2648,
+    "tier": 6,
+    "city": "Oxford",
+    "county": "Oxfordshire",
+    "col1": "#004B87",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Radcliffe",
+    "ground": "Neuven Stadium",
+    "lat": 53.5613,
+    "lng": -2.3254,
+    "tier": 6,
+    "city": "Radcliffe",
+    "county": "Greater Manchester",
+    "col1": "#004B87",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Aveley",
+    "ground": "Parkside",
+    "lat": 51.4964,
+    "lng": 0.2516,
+    "tier": 6,
+    "city": "Aveley",
+    "county": "Essex",
+    "col1": "#004B87",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Chesham United",
+    "ground": "Meadow Park",
+    "lat": 51.7101,
+    "lng": -0.6131,
+    "tier": 6,
+    "city": "Chesham",
+    "county": "Buckinghamshire",
+    "col1": "#6D2243",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Eastbourne Borough",
+    "ground": "Priory Lane",
+    "lat": 50.784,
+    "lng": 0.2742,
+    "tier": 6,
+    "city": "Eastbourne",
+    "county": "East Sussex",
+    "col1": "#004B87",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Enfield Town",
+    "ground": "Queen Elizabeth II Stadium",
+    "lat": 51.6513,
+    "lng": -0.0787,
+    "tier": 6,
+    "city": "Enfield",
+    "county": "Greater London",
+    "col1": "#004B87",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Hornchurch",
+    "ground": "Bridge Avenue",
+    "lat": 51.5652,
+    "lng": 0.2165,
+    "tier": 6,
+    "city": "Hornchurch",
+    "county": "Greater London",
+    "col1": "#E21937",
+    "col2": "#FFFFFF"
+  },
+  {
+    "name": "Salisbury",
+    "ground": "Ray McEnhill Stadium",
+    "lat": 51.0555,
+    "lng": -1.7919,
+    "tier": 6,
+    "city": "Salisbury",
+    "county": "Wiltshire",
+    "col1": "#FFFFFF",
+    "col2": "#000000"
+  },
+  {
+    "name": "Weston-super-Mare",
+    "ground": "The Optima Stadium",
+    "lat": 51.3398,
+    "lng": -2.9751,
+    "tier": 6,
+    "city": "Weston-super-Mare",
+    "county": "Somerset",
+    "col1": "#FFFFFF",
+    "col2": "#004B87"
   }
 ]
