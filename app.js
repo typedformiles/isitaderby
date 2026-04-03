@@ -214,13 +214,19 @@ function showResult(clubA, clubB) {
 
   // Breakdown
   const breakdownEl = document.getElementById('breakdown');
-  const densityChanged = result.breakdown.densityFactor < 1;
+  const densityChanged = result.breakdown.densityFactor !== 1;
   const rows = [
     ['Distance between grounds', `${result.distance} miles`],
     ['Base tier radius', `${result.breakdown.baseRadius} miles (Tier ${result.effectiveTier})`],
   ];
   if (densityChanged) {
-    rows.push(['Density adjustment', `${Math.round(result.breakdown.densityFactor * 100)}% (${Math.max(result.breakdown.nearbyA, result.breakdown.nearbyB)} nearby clubs)`]);
+    const fewerNearby = Math.min(result.breakdown.nearbyA, result.breakdown.nearbyB);
+    const moreNearby = Math.max(result.breakdown.nearbyA, result.breakdown.nearbyB);
+    const label = result.breakdown.densityFactor > 1 ? 'Loneliness bonus' : 'Density adjustment';
+    const clubCount = result.breakdown.densityFactor > 1
+      ? `${fewerNearby} nearby clubs`
+      : `${moreNearby} nearby clubs`;
+    rows.push([label, `${Math.round(result.breakdown.densityFactor * 100)}% (${clubCount})`]);
   }
   rows.push(
     ['Effective derby radius', `${result.radius} miles`],
