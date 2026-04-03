@@ -59,12 +59,19 @@ function precomputeDensity(allClubs) {
 }
 
 /**
- * Density factor: in dense areas (many nearby clubs), tighten the radius.
- * 6 nearby clubs = no change (factor 1.0)
- * 12+ nearby clubs = halved radius (factor 0.4)
- * 3 or fewer = full radius (factor 1.0)
+ * Density factor: adjusts radius based on how many nearby clubs exist.
+ *
+ * Dense areas (many nearby clubs) → tighten the radius:
+ *   6 nearby = no change (1.0), 12+ nearby = halved (0.4)
+ *
+ * Sparse areas (few nearby clubs) → widen the radius:
+ *   3 or fewer nearby = 1.3×, 1 or fewer = 1.5×
+ *   This "loneliness bonus" means isolated clubs like Norwich/Ipswich
+ *   or Carlisle/Barrow get a fairer shake — they don't have other options.
  */
 function getDensityFactor(nearbyCount) {
+  if (nearbyCount <= 1) return 1.5;
+  if (nearbyCount <= 3) return 1.3;
   if (nearbyCount <= 6) return 1.0;
   return Math.max(0.4, 6 / nearbyCount);
 }
@@ -85,12 +92,16 @@ function calculateDerbyScore(clubA, clubB) {
   const baseRadius = (radiusA + radiusB) / 2;
   const effectiveTier = Math.round((clubA.tier + clubB.tier) / 2);
 
-  // Density adjustment: use the denser club's factor (tighter radius wins).
-  // In London, clubs have 15+ neighbours so the radius shrinks.
-  // In Carlisle, clubs have 1-2 neighbours so it stays wide.
+  // Density adjustment:
+  // - Dense areas (factor < 1): use the denser club (tighter radius wins)
+  //   so a London NL club vs a PL club still gets a tight radius.
+  // - Sparse areas (factor > 1): use the LESS isolated club (smaller bonus wins)
+  //   so the loneliness bonus only applies when BOTH clubs are isolated.
   const densityA = getDensityFactor(clubA._nearbyCount || 0);
   const densityB = getDensityFactor(clubB._nearbyCount || 0);
-  const densityFactor = Math.min(densityA, densityB);
+  const densityFactor = (densityA < 1 || densityB < 1)
+    ? Math.min(densityA, densityB)  // Either is dense → tighten
+    : Math.min(densityA, densityB); // Both sparse → use the less isolated one
   const radius = Math.round(baseRadius * densityFactor * 10) / 10;
 
   // Distance score: linear decay over 1.5× radius

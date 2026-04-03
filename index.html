@@ -93,7 +93,7 @@
         </table>
 
         <h4>Club density adjustment</h4>
-        <p>The radius is then adjusted for <strong>club density</strong>. A club in London might have 15+ other clubs within 25 miles — so "local" means much closer there. A club in Cumbria might have only 1 or 2 neighbours, so the radius stays wide. If a club has more than 6 neighbours within 25 miles, the radius shrinks proportionally (down to 40% of base). This means London derbies are held to a tighter standard than, say, a Cumbrian derby — which is exactly how it should be.</p>
+        <p>The radius is then adjusted for <strong>club density</strong>. A club in London might have 15+ other clubs within 25 miles — so "local" means much closer there (radius shrinks to 40% of base). But a club in Norfolk might have only 1 or 2 neighbours, so they get a <strong>loneliness bonus</strong> — the radius widens up to 1.5× because they simply don't have other options. Norwich vs Ipswich at 40 miles isn't the same as Chelsea vs Brighton at 40 miles, because Norwich and Ipswich genuinely are each other's only meaningful rival. The loneliness bonus only applies when both clubs are isolated.</p>
 
         <p>Distance score decays linearly: clubs at the radius score ~33, clubs at 1.5× the radius score 0. We then add bonuses:</p>
 
