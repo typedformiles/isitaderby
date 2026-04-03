@@ -101,7 +101,7 @@ function calculateDerbyScore(clubA, clubB) {
   const densityB = getDensityFactor(clubB._nearbyCount || 0);
   const densityFactor = (densityA < 1 || densityB < 1)
     ? Math.min(densityA, densityB)  // Either is dense → tighten
-    : Math.min(densityA, densityB); // Both sparse → use the less isolated one
+    : Math.max(densityA, densityB); // Both non-dense → the more isolated club's bonus applies
   const radius = Math.round(baseRadius * densityFactor * 10) / 10;
 
   // Distance score: linear decay over 1.5× radius
