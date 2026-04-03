@@ -135,6 +135,19 @@ settleBtn.addEventListener('click', () => {
   showResult(selectedA, selectedB);
 });
 
+// Random button
+document.getElementById('random-btn').addEventListener('click', () => {
+  const i = Math.floor(Math.random() * clubs.length);
+  let j = Math.floor(Math.random() * (clubs.length - 1));
+  if (j >= i) j++;
+  selectedA = clubs[i];
+  selectedB = clubs[j];
+  inputA.value = selectedA.name;
+  inputB.value = selectedB.name;
+  updateSettleBtn();
+  showResult(selectedA, selectedB);
+});
+
 function showResult(clubA, clubB) {
   const result = calculateDerbyScore(clubA, clubB);
   const verdictClass = getVerdictClass(result.verdict);

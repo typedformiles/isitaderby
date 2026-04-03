@@ -155,8 +155,13 @@ header p {
   border-radius: 4px;
 }
 
+.btn-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .settle-btn {
-  width: 100%;
+  flex: 1;
   padding: 0.8rem;
   background: var(--accent);
   color: #fff;
@@ -175,6 +180,23 @@ header p {
 .settle-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.random-btn {
+  width: 48px;
+  padding: 0.8rem;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  flex-shrink: 0;
+}
+
+.random-btn:hover {
+  background: var(--border);
+  transform: rotate(15deg);
 }
 
 /* Results */
