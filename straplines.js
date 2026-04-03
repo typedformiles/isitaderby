@@ -87,7 +87,7 @@ const STRAPLINES = {
   // =============================================
 
   'Brighton & Hove Albion|Crystal Palace':
-    'The M23 Derby. This one is 43 miles of pure hatred. It kicked off in the 1976/77 FA Cup when Palace knocked Brighton out, and fans clashed on the terraces. The violence escalated through the late 70s and 80s. Both clubs will tell you the other started it. The geographical distance is irrelevant — this is one of the most venomous rivalries in English football.',
+    '"The M23 Derby" \uD83D\uDE44. This one is 43 miles of questionable hatred. It kicked off in the 1976/77 FA Cup when Palace knocked Brighton out, and fans clashed on the terraces. The violence escalated through the late 70s and 80s. Both clubs will tell you the other started it. The geographical distance is largely irrelevant, they care so much because they\'re both historically so irrelevant.',
 
   'Derby County|Nottingham Forest':
     'The East Midlands Derby. Brian Clough managed Derby to the First Division title in 1972, then resigned in a dispute with the chairman. He joined Brighton briefly, then took over at arch-rivals Forest — and won the European Cup twice. Derby fans worshipped him, then watched him become a god at the club down the A52.',
