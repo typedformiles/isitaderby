@@ -161,6 +161,16 @@ function showResult(clubA, clubB) {
   // Flavour
   document.getElementById('flavour').textContent = result.flavour;
 
+  // Strapline (custom context for notable matchups)
+  const straplineEl = document.getElementById('strapline');
+  const strapline = getStrapline(clubA, clubB);
+  if (strapline) {
+    straplineEl.textContent = strapline;
+    straplineEl.style.display = 'block';
+  } else {
+    straplineEl.style.display = 'none';
+  }
+
   // Breakdown
   const breakdownEl = document.getElementById('breakdown');
   const rows = [
