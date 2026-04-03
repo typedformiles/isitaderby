@@ -217,6 +217,19 @@ header p {
   color: var(--text-muted);
 }
 
+.club-name-link {
+  cursor: pointer;
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
+}
+
+.club-name-link:hover {
+  text-decoration-color: var(--accent);
+}
+
 .verdict-text {
   font-size: 2rem;
   font-weight: 800;
@@ -348,6 +361,47 @@ header p {
 
 .map-tooltip::before {
   border-top-color: rgba(15, 17, 23, 0.9) !important;
+}
+
+/* Rivals panel */
+.rivals-panel {
+  display: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rivals-panel.active {
+  display: block;
+}
+
+.rivals-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.rivals-header h2 {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.rivals-close {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 0.3rem;
+  line-height: 1;
+}
+
+.rivals-close:hover {
+  color: var(--text);
 }
 
 /* Leaderboard */

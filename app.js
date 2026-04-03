@@ -139,8 +139,16 @@ function showResult(clubA, clubB) {
   const result = calculateDerbyScore(clubA, clubB);
   const verdictClass = getVerdictClass(result.verdict);
 
-  // Matchup
-  document.getElementById('matchup').textContent = `${clubA.name} vs ${clubB.name}`;
+  // Matchup — club names are clickable to show rivals
+  const matchupEl = document.getElementById('matchup');
+  matchupEl.innerHTML = `<span class="club-name-link" data-club="${clubA.name}">${clubA.name}</span> vs <span class="club-name-link" data-club="${clubB.name}">${clubB.name}</span>`;
+  matchupEl.querySelectorAll('.club-name-link').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const club = clubs.find(c => c.name === el.dataset.club);
+      if (club) showClubRivals(club);
+    });
+  });
 
   // Club colour badges
   document.getElementById('badge-a').style.background =
@@ -380,3 +388,56 @@ function buildLeaderboard() {
     });
   });
 }
+
+// Rivals panel
+function showClubRivals(club) {
+  const rivals = clubs
+    .filter(c => c.name !== club.name)
+    .map(c => ({ club: c, result: calculateDerbyScore(club, c) }))
+    .sort((a, b) => b.result.score - a.result.score || a.result.distance - b.result.distance)
+    .slice(0, 10);
+
+  const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
+
+  document.getElementById('rivals-badge').style.background =
+    `linear-gradient(135deg, ${club.col1}, ${club.col2})`;
+  document.getElementById('rivals-title').textContent = `${club.name} — Nearest Rivals`;
+
+  document.getElementById('rivals-list').innerHTML = rivals.map((r, i) => {
+    const scoreClass = r.result.score >= 75 ? 'fierce' : r.result.score >= 55 ? 'local' : '';
+    return `<div class="leaderboard-row" data-a="${slug(club.name)}" data-b="${slug(r.club.name)}">
+      <span class="lb-rank">${i + 1}</span>
+      <span class="lb-badges">
+        <span class="lb-badge" style="background:linear-gradient(135deg,${r.club.col1},${r.club.col2})"></span>
+      </span>
+      <span class="lb-names">${r.club.name}</span>
+      <span class="lb-score ${scoreClass}">${r.result.score}</span>
+      <span class="lb-distance">${r.result.distance}mi</span>
+    </div>`;
+  }).join('');
+
+  // Click rival row to load matchup
+  document.querySelectorAll('#rivals-list .leaderboard-row').forEach(row => {
+    row.addEventListener('click', () => {
+      const a = clubs.find(c => slug(c.name) === row.dataset.a);
+      const b = clubs.find(c => slug(c.name) === row.dataset.b);
+      if (a && b) {
+        selectedA = a;
+        selectedB = b;
+        inputA.value = a.name;
+        inputB.value = b.name;
+        updateSettleBtn();
+        showResult(a, b);
+        document.getElementById('rivals-panel').classList.remove('active');
+      }
+    });
+  });
+
+  const rivalsPanel = document.getElementById('rivals-panel');
+  rivalsPanel.classList.add('active');
+  rivalsPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.getElementById('rivals-close').addEventListener('click', () => {
+  document.getElementById('rivals-panel').classList.remove('active');
+});
