@@ -74,7 +74,7 @@ const STRAPLINES = {
     'The Black Country Derby. Just three miles separate Molineux and The Hawthorns. Both were founding members of the Football League in 1888. The A41 between them is one of the most tension-filled stretches of road in English football on derby day.',
 
   'Blackburn Rovers|Burnley':
-    'The East Lancashire Derby — the cotton mill rivalry. These two industrial towns are separated by Pendle Hill and a mutual suspicion that stretches back to the cotton trade. Blackburn\'s Jack Walker poured millions into the club in the 1990s, winning the Premier League in 1995. Burnley fans have never stopped reminding Rovers what happened after the money ran out.',
+    '"The East Lancashire Derby" — though calling it that is generous given the 10-mile gap and a large hill in the way. These cotton mill towns have been suspicious of each other since the Industrial Revolution. Blackburn spent Jack Walker\'s millions on a Premier League title in 1995; Burnley spent theirs on... well, Burnley things. The hatred is real, even if the geography is a stretch.',
 
   'Portsmouth|Southampton':
     'The South Coast Derby. Separated by 19 miles of the M27. Portsmouth fans call Southampton "Scummers," Saints fans call Pompey "Skates." The rivalry intensified when Southampton were founding members of the Premier League in 1992 while Portsmouth languished in the lower divisions. Pompey\'s 2008 FA Cup win remains a sore point for Saints fans.',
@@ -99,16 +99,16 @@ const STRAPLINES = {
     'The biggest club rivalry in English football — but it\'s built on the cities\' economic competition during the Industrial Revolution, not proximity. Manchester had the canals and railways; Liverpool had the port. In football terms, the two clubs have won a combined 39 league titles. But at 30 miles apart, this is a rivalry, not a derby.',
 
   'Leeds United|Manchester United':
-    'The Roses Rivalry runs deeper than football. It traces back to the Wars of the Roses in the 15th century — Lancashire vs Yorkshire. The football hatred peaked under Don Revie\'s Leeds in the late 60s/70s. When Leeds fans sing "We all hate Leeds scum," United fans reply in kind. The M62 is English football\'s most hostile motorway.',
+    '"The Roses Derby" — except it isn\'t one, is it? It traces back to the Wars of the Roses in the 15th century, which is a great pub argument but doesn\'t change the fact that they\'re 40 miles apart. The football hatred peaked under Don Revie\'s Leeds in the late 60s/70s. Fierce? Absolutely. A derby? Have a word.',
 
   'Arsenal|Manchester United':
-    'This rivalry peaked with Wenger vs Ferguson — two decades of mutual loathing that produced the "Invincibles" season, the Battle of Old Trafford (the pizza incident in the tunnel, 2004), and some of the most dramatic matches in Premier League history. But it was always about trophies, never territory.',
+    'Wenger vs Ferguson was box office, yes. The pizza in the tunnel, the "Invincibles" — great telly. But calling this a derby is like calling a phone call a conversation over the garden fence. Two hundred miles apart. Come on.',
 
   'Arsenal|Chelsea':
     'Both London clubs, but at opposite ends of the city. This rivalry was mostly dormant until Roman Abramovich\'s 2003 takeover turned Chelsea into a superpower, directly threatening Arsenal\'s position. The 2004 Champions League quarter-final (Wayne Bridge\'s winner) and multiple Cup finals fuelled the fire.',
 
   'Chelsea|Tottenham Hotspur':
-    'The Battle of the Bridge in May 2016 is the defining moment. Spurs needed to beat Chelsea to keep their title hopes alive; Chelsea kicked them all over the pitch and Leicester won the league instead. Nine yellow cards and a mass brawl. Danny Rose was booked for a tackle that could be heard in the stands.',
+    'Both London, but eight miles and a cultural gulf apart. The Battle of the Bridge in 2016 (nine yellows, Leicester won the league instead) was great theatre, but this is less a derby and more a recurring scheduling headache. Spurs fans despise Chelsea; Chelsea fans aren\'t sure they think about Spurs at all.',
 
   'Tottenham Hotspur|West Ham United':
     'This rivalry has cultural undertones — historically, Spurs drew support from the Jewish community in north London while West Ham\'s East End base had its own distinct identity. On the pitch, the fixture has produced some extraordinary moments, including West Ham\'s famous 1-0 win at White Hart Lane when Carlos Tevez kept them up on the final day of 2006/07.',
@@ -135,7 +135,7 @@ const STRAPLINES = {
     'The cross-border derby. Wrexham play in Wales, Chester in England, twelve miles apart. The rivalry took on new life after Ryan Reynolds and Rob McElhenney bought Wrexham in 2020, turning a modest Welsh club into a global brand. Chester fans remain distinctly unimpressed.',
 
   'Barrow|Carlisle United':
-    'Cumbrian rivals in England\'s most remote footballing outpost. Getting to either ground from anywhere else in the Football League requires genuine commitment. When Barrow returned to League Two in 2020 after 48 years, the Cumbrian derby was back on the calendar for the first time since the 1970s.',
+    'Cumbria\'s best attempt at a derby — 55 miles apart across some of England\'s emptiest countryside. Getting to either ground requires genuine commitment and a full tank. When Barrow returned to League Two in 2020 after 48 years, Cumbria had two professional clubs again for the first time since the 70s. That\'s still not a derby though.',
 
   'Accrington Stanley|Burnley':
     'Most people know Accrington Stanley from the 1980s milk advert ("Accrington Stanley? Who are they? Exactly!"). But the original Accrington FC were founding members of the Football League in 1888 — they resigned from the league in 1893. The current club are a completely separate entity, founded in 1968.',
@@ -153,10 +153,10 @@ const STRAPLINES = {
     'The West Midlands Derby. Wolves and Villa are the two most successful clubs in the region. Villa won the European Cup in 1982; Wolves won the league three times in the 1950s. The rivalry is intensified by both clubs\' belief that they, not the other, are the true big club of the West Midlands.',
 
   'Burton Albion|Nottingham Forest':
-    'Twenty-two miles apart, but Burton are relatively new to the professional game — they were a non-league club until 2009. Their rise to the Championship in 2016/17 (where they faced Forest) was one of non-league football\'s great stories.',
+    'Twenty-two miles apart, and Burton would love this to be considered a derby. They were a non-league club until 2009, so their brief Championship coexistence with Forest in 2016/17 was less a rivalry and more a once-in-a-lifetime holiday. Forest have the East Midlands Derby; Burton have wishful thinking.',
 
   'Exeter City|Plymouth Argyle':
-    'The Devon Derby. Thirty-six miles of the A38 separate them. Argyle are the more westerly League club in England, while Exeter\'s St James Park is the closest ground in England to the sea at just 800 metres from the coast. In such a remote footballing region, this IS the local derby.',
+    '"The Devon Derby" — 36 miles of the A38 behind a caravan. Devon fans insist this is their local derby, and when your nearest alternative is in Cornwall, they\'ve got a point. But 36 miles is 36 miles, and no amount of cream teas changes that.',
 
   'Plymouth Argyle|Torquay United':
     'South Devon rivals. Torquay were a Football League club from 1927 to 2014, when they were relegated to the Conference. Their Plainmoor ground is famous for its views of Torbay — arguably the most scenic ground in English football.',
@@ -165,19 +165,19 @@ const STRAPLINES = {
     'The other Devon rivalry. Only 18 miles apart along the coast. Exeter once toured South America in 1914 and played against Brazil — making them the first non-South American team to play the Brazilian national side.',
 
   'Ipswich Town|Norwich City':
-    'The Old Farm Derby — a tongue-in-cheek name referencing the Old Firm but with tractors instead of tenements. Twenty-odd miles of Suffolk and Norfolk countryside separate them. The rivalry is one of mutual rural solidarity mixed with genuine needle.',
+    '"The Old Farm Derby" — at least the name is self-aware. Tractors instead of tenements, and a solid 40+ miles of Suffolk and Norfolk countryside between them. They genuinely despise each other, but geographically? Two counties and a lot of sugar beet fields say otherwise.',
 
   'Birmingham City|Coventry City':
     'West Midlands neighbours. Coventry\'s greatest moment — winning the 1987 FA Cup final against Tottenham with Keith Houchen\'s diving header — remains one of the most iconic goals in Cup history. It\'s replayed so often that even Birmingham fans know every frame.',
 
   'Luton Town|Watford':
-    'The Bedfordshire-Hertfordshire derby, only 20 miles apart up the M1. Luton famously banned away fans in the 1980s and installed an artificial pitch — both hugely controversial decisions under chairman David Evans. Watford\'s Elton John era brought glamour; Luton\'s equivalent brought headlines for all the wrong reasons.',
+    '"The Bedfordshire-Hertfordshire derby" — a name only a county council could love. They\'re 20 miles apart up the M1, which sounds close until you remember neither town is exactly a footballing metropolis. Luton banned away fans in the 1980s and installed a plastic pitch; Watford had Elton John. Both were weird in their own way.',
 
   'Oxford United|Reading':
-    'The Thames Valley derby. Only 25 miles apart. Oxford\'s finest hour was winning the League Cup in 1986, beating QPR 3-0 at Wembley. Reading\'s was their 106-point Championship season in 2005/06 — a record that still stands.',
+    '"The Thames Valley Derby" — a name that screams geography homework rather than footballing hatred. Twenty-five miles of commuter belt separate them. Oxford won the League Cup in 1986; Reading got 106 Championship points in 2005/06. Both memorable, neither enough to make this a proper derby.',
 
   'Oxford United|Swindon Town':
-    'Twenty-nine miles of the A420 connect them. Swindon won the play-off final at Wembley in 1993 to reach the Premier League — only to be relegated after one season. Their 1969 League Cup win over Arsenal (3-1, with Don Rogers scoring twice) remains sacred in Swindon folklore.',
+    'Twenty-nine miles of the A420 — barely a rivalry, more of a long commute. Swindon reached the Premier League in 1993 and got immediately relegated. Their 1969 League Cup win over Arsenal remains sacred locally, which tells you everything about the size of the club. Both insist this is a derby. The map disagrees.',
 
   'Cambridge United|Peterborough United':
     'The Cambridgeshire derby, 38 miles apart. Peterborough are famous for their "Posh" nickname and for scoring goals in absurd quantities — they hit 134 in 1960/61, a Football League record for a single season.',
@@ -195,7 +195,7 @@ const STRAPLINES = {
     'Another South Yorkshire pairing. Barnsley\'s Oakwell ground has hosted rugby league, cricket, and even baseball over the years. Wednesday\'s Hillsborough is forever associated with the 1989 disaster — the most solemn ground in English football.',
 
   'Huddersfield Town|Leeds United':
-    'West Yorkshire neighbours. Huddersfield won the league three times in a row (1924-26) — a feat only matched by Arsenal, Liverpool, and Manchester United. They were dominant when Leeds were nothing. Times change.',
+    'West Yorkshire neighbours who\'d love to call this a derby. Huddersfield won the league three times in a row (1924-26) — back when Leeds were nothing. A century later the roles have thoroughly reversed, and Huddersfield\'s claim to rivalry is mostly nostalgic.',
 
   'Bradford City|Huddersfield Town':
     'West Yorkshire rivals. Bradford\'s Valley Parade fire in 1985 killed 56 people — the worst disaster at an English football ground until Hillsborough four years later. The tragedy changed stadium safety regulations across the country.',
@@ -210,10 +210,10 @@ const STRAPLINES = {
     'Cheshire vs Staffordshire, 18 miles apart. Crewe\'s Dario Gradi era (1983-2007) produced an extraordinary production line of talent: Dean Ashton, Danny Murphy, Seth Johnson, Rob Jones, David Platt, and more all came through their youth system.',
 
   'AFC Wimbledon|MK Dons':
-    'The most contentious non-geographic rivalry in English football. When Wimbledon FC were controversially relocated to Milton Keynes in 2003 and rebranded as MK Dons, the original fans formed AFC Wimbledon and started again from the bottom of the pyramid. AFC fans refuse to acknowledge MK Dons as a legitimate continuation of their club.',
+    'Not a derby. Not even close geographically. But this is English football\'s most emotionally charged non-derby. When Wimbledon FC were controversially relocated to Milton Keynes in 2003, the original fans formed AFC Wimbledon and started from scratch. The hatred is real, but it\'s about identity theft, not postcodes.',
 
   'MK Dons|Wycombe Wanderers':
-    'Buckinghamshire rivals. Wycombe\'s Adams Park sits in the Chiltern Hills. When MK Dons arrived in Milton Keynes, Wycombe suddenly had a local rival where before there was nothing but countryside.',
+    'Buckinghamshire\'s attempt at a rivalry. When MK Dons parachuted into Milton Keynes, Wycombe suddenly had a neighbour — like someone building a Tesco Express next to your village shop. Adams Park sits in the Chiltern Hills looking down, both literally and metaphorically.',
 
   'Cheltenham Town|Forest Green Rovers':
     'Gloucestershire neighbours, ten miles apart. Forest Green, under chairman Dale Vince, became the world\'s first vegan football club — no meat sold at the ground, organic pitch, solar-powered lawnmower. Cheltenham, more traditionally run, look across the county with bemusement.',
@@ -225,10 +225,10 @@ const STRAPLINES = {
     'Lancashire coast rivals, just seven miles apart. Blackpool\'s Bloomfield Road has seen FA Cup finals (1953, the "Matthews Final") and Premier League football (2010/11). Fleetwood, owned by fishing industry magnate Andy Pilley, rose from the Northern Premier League to League One in just eight years.',
 
   'Blackpool|Preston North End':
-    'Lancashire rivals. Preston were the first-ever Football League champions and the first "Invincibles" — unbeaten in that 1888/89 season. Blackpool\'s greatest moment was the 1953 FA Cup Final, when Stanley Matthews finally won a winners\' medal aged 38.',
+    'Lancashire\'s "other" rivalry — 16 miles of the M55 and a lot of mutual side-eye. Preston were the first-ever league champions and the original "Invincibles." Blackpool had Stanley Matthews and the 1953 FA Cup Final. Both cling to their history because the present hasn\'t been as kind.',
 
   'Blackpool|Morecambe':
-    'Lancashire coast neighbours, 20 miles apart. Morecambe spent decades in non-league before reaching League Two in 2007. Their Christie Park ground was replaced by the Globe Arena (now Mazuma Mobile Stadium) — one of the smallest in the Football League.',
+    'Twenty miles of the Lancashire coast between them. Morecambe spent decades in non-league before reaching League Two in 2007 with a ground smaller than most Premier League car parks. Blackpool, meanwhile, had a whole Premier League season to their name. Neither is really in a position to brag.',
 
   'Barrow|Morecambe':
     'Morecambe Bay rivals. You can see across the bay from one town to the other, but driving round takes over an hour. It\'s a properly remote corner of English football.',
@@ -243,10 +243,10 @@ const STRAPLINES = {
     'Lincolnshire rivals. Lincoln\'s 2016/17 FA Cup run — reaching the quarter-finals as a non-league club, the first to do so since 1914 — captivated the nation. Danny Cowley took them from the National League to League One.',
 
   'Brighton & Hove Albion|Crawley Town':
-    'Sussex neighbours, 25 miles apart. Crawley\'s greatest day was beating Leeds United 2-1 in the FA Cup fifth round in 2011 — as a non-league club. They were promoted to League Two the same year.',
+    'Sussex\'s attempt at a local rivalry. Twenty-five miles apart and about a hundred divisions of quality between them. Crawley\'s greatest day was beating Leeds 2-1 in the 2011 FA Cup as a non-league club. Brighton are now in the Premier League spending nine figures on transfers. Not exactly a meeting of equals.',
 
   'Chelmsford City|Colchester United':
-    'Essex rivals. Colchester\'s greatest result was beating Leeds United 3-2 in the FA Cup fifth round in 1971 — one of the great giant-killings. Don Revie\'s all-conquering Leeds were humbled by a team from the fourth tier.',
+    'Essex\'s version of a rivalry. Colchester once beat Don Revie\'s Leeds 3-2 in the 1971 FA Cup — one of the great giant-killings. Chelmsford are still waiting for their equivalent moment. At 20-odd miles apart, this is a regional grumble at best.',
 
   'Gillingham|Maidstone United':
     'Kent rivals. The original Maidstone United reached the Football League in 1989 but went bust just three years later. The current club, reformed in 1992, have worked their way back up to the National League South. Gillingham, meanwhile, have survived in the Football League since 1920.',
@@ -282,10 +282,10 @@ const STRAPLINES = {
     'Somerset rivals. Yeovil were the great giant-killers of non-league football in the post-war years — their sloping pitch at Huish Park became legendary. They finally reached the Football League in 2003 after decades of trying.',
 
   'Torquay United|Weymouth':
-    'South coast neighbours across the Dorset-Devon border. Torquay\'s Plainmoor ground offers views of the English Riviera. Both clubs have bounced around the non-league system in recent years.',
+    'South coast neighbours across the Dorset-Devon border — pleasant scenery, questionable football. Torquay\'s Plainmoor ground offers views of the English Riviera, which is fortunate because the football hasn\'t always been worth watching. Both clubs have bounced around the non-league system like a ball on a shingle beach.',
 
   'Plymouth Argyle|Truro City':
-    'Cornwall\'s only senior club vs Devon\'s biggest. The 45-mile gap between them highlights how remote Cornish football truly is — Truro are the most south-westerly club in the English football system.',
+    'Cornwall\'s only senior club vs Devon\'s biggest — 45 miles of the A38 and a county border. Truro are the most south-westerly club in the English football system, which sounds romantic until you realise it mainly means nobody visits.',
 };
 
 function getStrapline(clubA, clubB) {
