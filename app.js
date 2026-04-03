@@ -5,6 +5,7 @@
 let clubs = [];
 let selectedA = null;
 let selectedB = null;
+let lastResult = null;
 
 // Load club data
 fetch('data/clubs.json')
@@ -213,6 +214,9 @@ function showResult(clubA, clubB) {
     if (derbyMap) derbyMap.invalidateSize();
   }, 150);
 
+  // Store for share button
+  lastResult = { clubA, clubB, result };
+
   // Update URL
   updateUrl(clubA, clubB);
 
@@ -249,17 +253,69 @@ function checkUrlParams() {
   }
 }
 
-// Share button
+// Share buttons
 document.getElementById('share-btn').addEventListener('click', function () {
   navigator.clipboard.writeText(window.location.href).then(() => {
     this.textContent = 'Copied!';
     this.classList.add('copied');
     setTimeout(() => {
-      this.textContent = 'Copy shareable link';
+      this.textContent = 'Copy link';
       this.classList.remove('copied');
     }, 2000);
   });
 });
+
+document.getElementById('share-social-btn').addEventListener('click', function () {
+  if (!lastResult) return;
+  const snippet = buildShareSnippet(lastResult.clubA, lastResult.clubB, lastResult.result);
+  navigator.clipboard.writeText(snippet).then(() => {
+    this.textContent = 'Copied!';
+    this.classList.add('copied');
+    setTimeout(() => {
+      this.textContent = 'Share result';
+      this.classList.remove('copied');
+    }, 2000);
+  });
+});
+
+function buildShareSnippet(clubA, clubB, result) {
+  const filledCount = Math.round(result.score / 10);
+  const verdictClass = getVerdictClass(result.verdict);
+
+  const blockMap = {
+    fierce: '\u{1F7E9}',   // green
+    local: '\u{1F7E9}',    // green
+    rivalry: '\u{1F7E8}',   // yellow
+    stretch: '\u{1F7E7}',   // orange
+    'not-derby': '\u{1F7E5}' // red
+  };
+  const emojiMap = {
+    fierce: '\u{1F525}',    // fire
+    local: '\u2705',         // check
+    rivalry: '\u{1F937}',    // shrug
+    stretch: '\u{1F928}',   // raised eyebrow
+    'not-derby': '\u{1F6AB}' // no entry
+  };
+
+  const filled = blockMap[verdictClass] || '\u2B1C';
+  const empty = '\u2B1C';
+  const bar = filled.repeat(filledCount) + empty.repeat(10 - filledCount);
+  const emoji = emojiMap[verdictClass] || '';
+
+  const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
+  const url = `typedformiles.github.io/isitaderby/?a=${slug(clubA.name)}&b=${slug(clubB.name)}`;
+
+  return [
+    '\u26BD Is It A Derby?',
+    '',
+    `${clubA.name} vs ${clubB.name}`,
+    `${bar} ${result.score}/100`,
+    `${result.verdict.toUpperCase()} ${emoji}`,
+    `\u{1F4CD} ${result.distance} miles apart`,
+    '',
+    url
+  ].join('\n');
+}
 
 // Methodology toggle
 document.getElementById('methodology-toggle').addEventListener('click', function () {

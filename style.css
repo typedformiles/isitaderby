@@ -503,6 +503,9 @@ header p {
 .share-link {
   text-align: center;
   margin-bottom: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 .share-btn {
