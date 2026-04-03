@@ -42,6 +42,34 @@ function toRad(deg) {
 }
 
 /**
+ * Pre-compute club density: how many other clubs are within 25 miles.
+ * Called once after clubs load. Stored as club._nearbyCount.
+ */
+function precomputeDensity(allClubs) {
+  const DENSITY_RADIUS = 25; // miles
+  for (const club of allClubs) {
+    let count = 0;
+    for (const other of allClubs) {
+      if (other === club) continue;
+      const d = haversineDistance(club.lat, club.lng, other.lat, other.lng);
+      if (d <= DENSITY_RADIUS) count++;
+    }
+    club._nearbyCount = count;
+  }
+}
+
+/**
+ * Density factor: in dense areas (many nearby clubs), tighten the radius.
+ * 6 nearby clubs = no change (factor 1.0)
+ * 12+ nearby clubs = halved radius (factor 0.4)
+ * 3 or fewer = full radius (factor 1.0)
+ */
+function getDensityFactor(nearbyCount) {
+  if (nearbyCount <= 6) return 1.0;
+  return Math.max(0.4, 6 / nearbyCount);
+}
+
+/**
  * Calculate the derby score and verdict between two clubs.
  *
  * @param {Object} clubA - { name, ground, lat, lng, tier, city, county }
@@ -52,12 +80,18 @@ function calculateDerbyScore(clubA, clubB) {
   const distance = haversineDistance(clubA.lat, clubA.lng, clubB.lat, clubB.lng);
 
   // Average both clubs' radii so cross-tier matchups are fair.
-  // Without this, a League One club would get a huge radius advantage
-  // against a PL club, scoring higher than a closer Championship rival.
   const radiusA = getDerbyRadius(clubA.tier);
   const radiusB = getDerbyRadius(clubB.tier);
-  const radius = (radiusA + radiusB) / 2;
+  const baseRadius = (radiusA + radiusB) / 2;
   const effectiveTier = Math.round((clubA.tier + clubB.tier) / 2);
+
+  // Density adjustment: use the denser club's factor (tighter radius wins).
+  // In London, clubs have 15+ neighbours so the radius shrinks.
+  // In Carlisle, clubs have 1-2 neighbours so it stays wide.
+  const densityA = getDensityFactor(clubA._nearbyCount || 0);
+  const densityB = getDensityFactor(clubB._nearbyCount || 0);
+  const densityFactor = Math.min(densityA, densityB);
+  const radius = Math.round(baseRadius * densityFactor * 10) / 10;
 
   // Distance score: linear decay over 1.5× radius
   const maxRange = radius * 1.5;
@@ -91,7 +125,11 @@ function calculateDerbyScore(clubA, clubB) {
       tierBonus,
       sameCity,
       sameCounty,
-      sameTier
+      sameTier,
+      densityFactor,
+      nearbyA: clubA._nearbyCount || 0,
+      nearbyB: clubB._nearbyCount || 0,
+      baseRadius
     },
     flavour
   };

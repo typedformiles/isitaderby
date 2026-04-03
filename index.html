@@ -82,6 +82,9 @@
           <tr><td>5–6</td><td>National League, NL North/South</td><td>50 miles</td></tr>
         </table>
 
+        <h4>Club density adjustment</h4>
+        <p>The radius is then adjusted for <strong>club density</strong>. A club in London might have 15+ other clubs within 25 miles — so "local" means much closer there. A club in Cumbria might have only 1 or 2 neighbours, so the radius stays wide. If a club has more than 6 neighbours within 25 miles, the radius shrinks proportionally (down to 40% of base). This means London derbies are held to a tighter standard than, say, a Cumbrian derby — which is exactly how it should be.</p>
+
         <p>Distance score decays linearly: clubs at the radius score ~33, clubs at 1.5× the radius score 0. We then add bonuses:</p>
 
         <table>

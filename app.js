@@ -11,6 +11,7 @@ fetch('data/clubs.json')
   .then(r => r.json())
   .then(data => {
     clubs = data.sort((a, b) => a.name.localeCompare(b.name));
+    precomputeDensity(clubs);
     checkUrlParams();
   });
 
@@ -179,15 +180,22 @@ function showResult(clubA, clubB) {
 
   // Breakdown
   const breakdownEl = document.getElementById('breakdown');
+  const densityChanged = result.breakdown.densityFactor < 1;
   const rows = [
     ['Distance between grounds', `${result.distance} miles`],
-    ['Tier-adjusted derby radius', `${result.radius} miles (Tier ${result.effectiveTier})`],
+    ['Base tier radius', `${result.breakdown.baseRadius} miles (Tier ${result.effectiveTier})`],
+  ];
+  if (densityChanged) {
+    rows.push(['Density adjustment', `${Math.round(result.breakdown.densityFactor * 100)}% (${Math.max(result.breakdown.nearbyA, result.breakdown.nearbyB)} nearby clubs)`]);
+  }
+  rows.push(
+    ['Effective derby radius', `${result.radius} miles`],
     ['Distance score', `${result.breakdown.distanceScore}`],
     ['Same city bonus', result.breakdown.cityBonus ? `+${result.breakdown.cityBonus}` : '—'],
     ['Same county bonus', result.breakdown.countyBonus ? `+${result.breakdown.countyBonus}` : '—'],
     ['Same tier bonus', result.breakdown.tierBonus ? `+${result.breakdown.tierBonus}` : '—'],
     ['Final score', `${result.score} / 100`]
-  ];
+  );
   breakdownEl.innerHTML = rows.map(([label, value]) => {
     const isBonus = typeof value === 'string' && value.startsWith('+');
     return `<div class="breakdown-row">
