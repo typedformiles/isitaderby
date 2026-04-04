@@ -368,6 +368,60 @@ header p {
   display: none;
 }
 
+/* YouTube embed */
+.youtube-embed {
+  display: none;
+  margin-top: 1.2rem;
+}
+
+.youtube-embed iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 3px solid var(--line);
+  border-radius: 0;
+}
+
+/* Key moments */
+.key-moments {
+  display: none;
+  margin-top: 1.2rem;
+  text-align: left;
+}
+
+.key-moments h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.moment-row {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.moment-row:last-child {
+  border-bottom: none;
+}
+
+.moment-year {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  color: var(--accent);
+  flex-shrink: 0;
+  width: 45px;
+}
+
+.moment-text {
+  color: var(--text-muted);
+}
+
 /* Breakdown */
 .breakdown-card {
   background: var(--surface);

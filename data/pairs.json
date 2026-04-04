@@ -1273,10 +1273,35 @@
       "nearbyA": 31,
       "nearbyB": 32
     },
-    "rivalryName": null,
+    "rivalryName": "The North London Derby",
     "strapline": "The North London Derby. Arsenal were originally from Woolwich in south-east London and only moved to Highbury in 1913 — directly into Tottenham's patch. Spurs have never forgiven them. In 1919, Arsenal were controversially promoted to the First Division ahead of Spurs despite finishing only fifth in the Second Division. The grudge is over a century old.",
-    "youtube": null,
-    "keyMoments": [],
+    "youtube": "https://www.youtube.com/embed/35EVvjFZVzM?si=R0SDxLlnX-V7k4kw",
+    "keyMoments": [
+      {
+        "year": 1886,
+        "text": "Royal Arsenal founded in Woolwich, south-east London"
+      },
+      {
+        "year": 1913,
+        "text": "Arsenal relocate to Highbury — directly into Tottenham's territory"
+      },
+      {
+        "year": 1919,
+        "text": "Arsenal controversially promoted to First Division ahead of Spurs"
+      },
+      {
+        "year": 1971,
+        "text": "Arsenal clinch the Double at White Hart Lane, beating Spurs 1-0"
+      },
+      {
+        "year": 2004,
+        "text": "Arsenal go unbeaten for the entire season — the Invincibles"
+      },
+      {
+        "year": 2023,
+        "text": "Arsenal beat Spurs 3-2 at the Tottenham Hotspur Stadium in a dramatic comeback"
+      }
+    ],
     "tags": [
       "same-city",
       "same-tier",

@@ -244,6 +244,29 @@ function showResult(clubA, clubB) {
     straplineEl.style.display = 'none';
   }
 
+  // YouTube embed
+  const youtubeEl = document.getElementById('youtube-embed');
+  if (pair.youtube) {
+    youtubeEl.innerHTML = `<iframe src="${pair.youtube}" title="Derby highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    youtubeEl.style.display = 'block';
+  } else {
+    youtubeEl.innerHTML = '';
+    youtubeEl.style.display = 'none';
+  }
+
+  // Key moments timeline
+  const momentsEl = document.getElementById('key-moments');
+  if (pair.keyMoments && pair.keyMoments.length > 0) {
+    momentsEl.innerHTML = '<h3>Key Moments</h3>' +
+      pair.keyMoments.map(m =>
+        `<div class="moment-row"><span class="moment-year">${m.year}</span><span class="moment-text">${m.text}</span></div>`
+      ).join('');
+    momentsEl.style.display = 'block';
+  } else {
+    momentsEl.innerHTML = '';
+    momentsEl.style.display = 'none';
+  }
+
   // Breakdown
   const breakdownEl = document.getElementById('breakdown');
   const effectiveTier = Math.round((clubA.tier + clubB.tier) / 2);
