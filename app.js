@@ -254,19 +254,6 @@ function showResult(clubA, clubB) {
     youtubeEl.style.display = 'none';
   }
 
-  // Key moments timeline
-  const momentsEl = document.getElementById('key-moments');
-  if (pair.keyMoments && pair.keyMoments.length > 0) {
-    momentsEl.innerHTML = '<h3>Key Moments</h3>' +
-      pair.keyMoments.map(m =>
-        `<div class="moment-row"><span class="moment-year">${m.year}</span><span class="moment-text">${m.text}</span></div>`
-      ).join('');
-    momentsEl.style.display = 'block';
-  } else {
-    momentsEl.innerHTML = '';
-    momentsEl.style.display = 'none';
-  }
-
   // Breakdown
   const breakdownEl = document.getElementById('breakdown');
   const effectiveTier = Math.round((clubA.tier + clubB.tier) / 2);
