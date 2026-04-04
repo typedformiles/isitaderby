@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +7,15 @@
 }
 
 :root {
-  --bg: #0f1117;
-  --surface: #1a1d27;
-  --surface-2: #242836;
-  --border: #2e3346;
-  --text: #e8eaf0;
-  --text-muted: #8b8fa3;
-  --accent: #5b8def;
+  --bg: #2d5a27;
+  --bg-dark: #1a3a15;
+  --surface: rgba(15, 25, 12, 0.85);
+  --surface-2: rgba(20, 35, 18, 0.9);
+  --border: rgba(255, 255, 255, 0.2);
+  --line: rgba(255, 255, 255, 0.35);
+  --text: #f0f0e8;
+  --text-muted: #b0bca8;
+  --accent: #d4a843;
   --fierce: #22c55e;
   --local: #84cc16;
   --regional: #eab308;
@@ -24,12 +28,47 @@ body {
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
+  position: relative;
+}
+
+/* Pitch background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background:
+    /* Centre circle */
+    radial-gradient(circle at 50% 35%, transparent 119px, var(--line) 119px, var(--line) 122px, transparent 122px),
+    /* Centre spot */
+    radial-gradient(circle at 50% 35%, var(--line) 4px, transparent 4px),
+    /* Halfway line */
+    linear-gradient(to bottom, transparent calc(35% - 1.5px), var(--line) calc(35% - 1.5px), var(--line) calc(35% + 1.5px), transparent calc(35% + 1.5px)),
+    /* Pitch border */
+    linear-gradient(to right, transparent 3%, var(--line) 3%, var(--line) calc(3% + 3px), transparent calc(3% + 3px),
+      transparent calc(97% - 3px), var(--line) calc(97% - 3px), var(--line) 97%, transparent 97%),
+    linear-gradient(to bottom, transparent 3%, var(--line) 3%, var(--line) calc(3% + 3px), transparent calc(3% + 3px),
+      transparent calc(97% - 3px), var(--line) calc(97% - 3px), var(--line) 97%, transparent 97%),
+    /* Grass texture */
+    repeating-linear-gradient(
+      to bottom,
+      var(--bg) 0px,
+      var(--bg) 40px,
+      #2a5524 40px,
+      #2a5524 80px
+    );
+  pointer-events: none;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 /* Header */
@@ -39,10 +78,12 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
 }
 
 header h1 span {
@@ -59,8 +100,8 @@ header p {
 /* Selector */
 .selector {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  border: 3px solid var(--line);
+  border-radius: 0;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -79,10 +120,11 @@ header p {
 
 .club-input-wrapper label {
   display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   color: var(--text-muted);
   margin-bottom: 0.4rem;
 }
@@ -91,8 +133,8 @@ header p {
   width: 100%;
   padding: 0.7rem 1rem;
   background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 2px solid var(--border);
+  border-radius: 0;
   color: var(--text);
   font-size: 1rem;
   outline: none;
@@ -108,9 +150,10 @@ header p {
 }
 
 .vs-label {
-  font-weight: 700;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
   color: var(--text-muted);
-  font-size: 0.9rem;
   padding-top: 1.2rem;
 }
 
@@ -120,8 +163,8 @@ header p {
   left: 0;
   right: 0;
   background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 2px solid var(--border);
+  border-radius: 0;
   margin-top: 4px;
   max-height: 220px;
   overflow-y: auto;
@@ -144,15 +187,15 @@ header p {
 
 .autocomplete-item:hover,
 .autocomplete-item.highlighted {
-  background: var(--border);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .autocomplete-item .tier-badge {
   font-size: 0.7rem;
   color: var(--text-muted);
-  background: var(--bg);
+  background: rgba(0, 0, 0, 0.3);
   padding: 0.15rem 0.5rem;
-  border-radius: 4px;
+  border-radius: 0;
 }
 
 .btn-row {
@@ -164,13 +207,16 @@ header p {
   flex: 1;
   padding: 0.8rem;
   background: var(--accent);
-  color: #fff;
+  color: #1a1a1a;
   border: none;
-  border-radius: 8px;
-  font-size: 1.05rem;
-  font-weight: 700;
+  border-radius: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
   cursor: pointer;
   transition: opacity 0.2s;
+  text-transform: uppercase;
 }
 
 .settle-btn:hover {
@@ -186,8 +232,8 @@ header p {
   width: 48px;
   padding: 0.8rem;
   background: var(--surface-2);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 2px solid var(--border);
+  border-radius: 0;
   font-size: 1.2rem;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s;
@@ -195,7 +241,7 @@ header p {
 }
 
 .random-btn:hover {
-  background: var(--border);
+  background: rgba(255, 255, 255, 0.1);
   transform: rotate(15deg);
 }
 
@@ -210,8 +256,8 @@ header p {
 
 .verdict-card {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  border: 3px solid var(--line);
+  border-radius: 0;
   padding: 2rem;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -226,12 +272,12 @@ header p {
 }
 
 .club-badge {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   flex-shrink: 0;
-  border: 2px solid var(--border);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 .verdict-matchup {
@@ -253,10 +299,11 @@ header p {
 }
 
 .verdict-text {
-  font-size: 2rem;
-  font-weight: 800;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.06em;
   margin-bottom: 0.5rem;
 }
 
@@ -272,15 +319,16 @@ header p {
 }
 
 .score-bar-bg {
-  height: 12px;
-  background: var(--surface-2);
-  border-radius: 6px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0;
   overflow: hidden;
+  border: 1px solid var(--border);
 }
 
 .score-bar-fill {
   height: 100%;
-  border-radius: 6px;
+  border-radius: 0;
   transition: width 0.6s ease-out;
 }
 
@@ -291,10 +339,12 @@ header p {
 .score-bar-fill.not-derby { background: var(--not-derby); }
 
 .score-number {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
   margin-top: 0.4rem;
   color: var(--text-muted);
+  letter-spacing: 0.05em;
 }
 
 .flavour-text {
@@ -308,9 +358,9 @@ header p {
 .strapline {
   margin-top: 1.2rem;
   padding: 1rem 1.2rem;
-  background: var(--surface-2);
+  background: rgba(0, 0, 0, 0.25);
   border-left: 3px solid var(--accent);
-  border-radius: 0 6px 6px 0;
+  border-radius: 0;
   color: var(--text);
   font-size: 0.95rem;
   line-height: 1.6;
@@ -321,17 +371,18 @@ header p {
 /* Breakdown */
 .breakdown-card {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  border: 3px solid var(--line);
+  border-radius: 0;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .breakdown-card h3 {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   color: var(--text-muted);
   margin-bottom: 1rem;
 }
@@ -364,17 +415,17 @@ header p {
 /* Map */
 #map {
   height: 300px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
+  border-radius: 0;
+  border: 3px solid var(--line);
   margin-bottom: 1.5rem;
 }
 
 /* Map tooltips */
 .map-tooltip {
-  background: rgba(15, 17, 23, 0.9) !important;
+  background: rgba(15, 25, 12, 0.92) !important;
   color: var(--text) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: 4px !important;
+  border: 2px solid var(--line) !important;
+  border-radius: 0 !important;
   padding: 4px 8px !important;
   font-size: 13px !important;
   font-weight: 600 !important;
@@ -382,15 +433,15 @@ header p {
 }
 
 .map-tooltip::before {
-  border-top-color: rgba(15, 17, 23, 0.9) !important;
+  border-top-color: rgba(15, 25, 12, 0.92) !important;
 }
 
 /* Rivals panel */
 .rivals-panel {
   display: none;
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  border: 3px solid var(--line);
+  border-radius: 0;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -408,8 +459,11 @@ header p {
 
 .rivals-header h2 {
   flex: 1;
-  font-size: 1rem;
-  font-weight: 700;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .rivals-close {
@@ -429,8 +483,8 @@ header p {
 /* Leaderboard */
 .leaderboard {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  border: 3px solid var(--line);
+  border-radius: 0;
   overflow: hidden;
   margin-bottom: 1rem;
 }
@@ -446,7 +500,7 @@ header p {
 }
 
 .leaderboard-row:hover {
-  background: var(--surface-2);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .leaderboard-row:last-child {
@@ -505,8 +559,8 @@ header p {
 /* Methodology */
 .methodology {
   background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  border: 3px solid var(--line);
+  border-radius: 0;
   overflow: hidden;
   margin-bottom: 2rem;
 }
@@ -517,8 +571,11 @@ header p {
   background: none;
   border: none;
   color: var(--text-muted);
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -586,10 +643,10 @@ header p {
 
 .share-btn {
   background: var(--surface-2);
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
   color: var(--text-muted);
   padding: 0.5rem 1.2rem;
-  border-radius: 6px;
+  border-radius: 0;
   font-size: 0.85rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -615,8 +672,8 @@ footer {
 /* Responsive */
 @media (max-width: 600px) {
   .container { padding: 1.2rem 1rem; }
-  header h1 { font-size: 1.8rem; }
+  header h1 { font-size: 2.5rem; }
   .selector-row { flex-direction: column; }
   .vs-label { padding-top: 0; }
-  .verdict-text { font-size: 1.5rem; }
+  .verdict-text { font-size: 2rem; }
 }

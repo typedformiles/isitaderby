@@ -13,7 +13,7 @@ function initMap() {
     attributionControl: true
   }).setView([52.5, -1.5], 6);
 
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
     maxZoom: 19
   }).addTo(derbyMap);
@@ -76,7 +76,7 @@ function showMatchupOnMap(clubA, clubB, result) {
   const distLabel = L.marker([midLat, midLng], {
     icon: L.divIcon({
       className: 'map-dist-label',
-      html: `<div style="background:rgba(15,17,23,0.85);color:#e8eaf0;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:600;white-space:nowrap;">${result.distance} mi</div>`,
+      html: `<div style="background:rgba(15,25,12,0.85);color:#f0f0e8;padding:2px 8px;border-radius:0;font-size:12px;font-weight:600;white-space:nowrap;border:1px solid rgba(255,255,255,0.3);">${result.distance} mi</div>`,
       iconAnchor: [25, 10]
     })
   }).addTo(derbyMap);
