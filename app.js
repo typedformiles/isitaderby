@@ -1,20 +1,62 @@
 /**
  * Main application — UI logic, autocomplete, results display, URL sharing.
+ * Loads pre-computed pairs from data/pairs.json for instant lookups.
  */
 
 let clubs = [];
+let allPairs = [];       // Full pre-computed pairs array
+let pairsMap = new Map(); // O(1) lookup by "ClubA|ClubB" key
+let clubMap = new Map();  // O(1) club lookup by name
 let selectedA = null;
 let selectedB = null;
 let lastResult = null;
 
-// Load club data
-fetch('data/clubs.json')
-  .then(r => r.json())
-  .then(data => {
-    clubs = data.sort((a, b) => a.name.localeCompare(b.name));
-    precomputeDensity(clubs);
-    checkUrlParams();
-  });
+const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
+const pairKey = (a, b) => [a, b].sort().join('|');
+
+// Load both datasets in parallel
+Promise.all([
+  fetch('data/clubs.json').then(r => r.json()),
+  fetch('data/pairs.json').then(r => r.json())
+]).then(([clubData, pairData]) => {
+  clubs = clubData.sort((a, b) => a.name.localeCompare(b.name));
+  clubs.forEach(c => clubMap.set(c.name, c));
+
+  allPairs = pairData;
+  pairData.forEach(p => pairsMap.set(pairKey(p.a, p.b), p));
+
+  console.log(`Loaded ${clubs.length} clubs, ${allPairs.length} pairs`);
+  checkUrlParams();
+});
+
+/**
+ * Look up a pre-computed pair. Falls back to on-the-fly calculation for
+ * pairs not in pairs.json (score 0, no strapline).
+ */
+function lookupPair(clubA, clubB) {
+  const key = pairKey(clubA.name, clubB.name);
+  const cached = pairsMap.get(key);
+  if (cached) return cached;
+
+  // Fallback: compute on the fly (for 0-score pairs not in the JSON)
+  const result = calculateDerbyScore(clubA, clubB);
+  return {
+    a: clubA.name,
+    b: clubB.name,
+    score: result.score,
+    verdict: result.verdict,
+    distance: result.distance,
+    radius: result.radius,
+    tierGap: Math.abs(clubA.tier - clubB.tier),
+    densityFactor: result.breakdown.densityFactor,
+    breakdown: result.breakdown,
+    rivalryName: null,
+    strapline: null,
+    youtube: null,
+    keyMoments: [],
+    tags: []
+  };
+}
 
 // DOM refs
 const inputA = document.getElementById('club-a');
@@ -135,25 +177,15 @@ settleBtn.addEventListener('click', () => {
   showResult(selectedA, selectedB);
 });
 
-// Random button — picks a random pair scoring 50+
+// Random button — picks a random pair scoring 50+ from pre-computed data
 document.getElementById('random-btn').addEventListener('click', () => {
-  // Build list of viable pairs on first click, then cache
   if (!window._derbyPairs) {
-    window._derbyPairs = [];
-    for (let i = 0; i < clubs.length; i++) {
-      for (let j = i + 1; j < clubs.length; j++) {
-        const r = calculateDerbyScore(clubs[i], clubs[j]);
-        if (r.score >= 50) {
-          window._derbyPairs.push([clubs[i], clubs[j]]);
-        }
-      }
-    }
+    window._derbyPairs = allPairs.filter(p => p.score >= 50);
   }
   const pair = window._derbyPairs[Math.floor(Math.random() * window._derbyPairs.length)];
-  // Randomise which is A and B
   const flip = Math.random() < 0.5;
-  selectedA = flip ? pair[0] : pair[1];
-  selectedB = flip ? pair[1] : pair[0];
+  selectedA = clubMap.get(flip ? pair.a : pair.b);
+  selectedB = clubMap.get(flip ? pair.b : pair.a);
   inputA.value = selectedA.name;
   inputB.value = selectedB.name;
   updateSettleBtn();
@@ -161,8 +193,8 @@ document.getElementById('random-btn').addEventListener('click', () => {
 });
 
 function showResult(clubA, clubB) {
-  const result = calculateDerbyScore(clubA, clubB);
-  const verdictClass = getVerdictClass(result.verdict);
+  const pair = lookupPair(clubA, clubB);
+  const verdictClass = getVerdictClass(pair.verdict);
 
   // Matchup — club names are clickable to show rivals
   const matchupEl = document.getElementById('matchup');
@@ -170,7 +202,7 @@ function showResult(clubA, clubB) {
   matchupEl.querySelectorAll('.club-name-link').forEach(el => {
     el.addEventListener('click', (e) => {
       e.stopPropagation();
-      const club = clubs.find(c => c.name === el.dataset.club);
+      const club = clubMap.get(el.dataset.club);
       if (club) showClubRivals(club);
     });
   });
@@ -183,7 +215,7 @@ function showResult(clubA, clubB) {
 
   // Verdict
   const verdictEl = document.getElementById('verdict');
-  verdictEl.textContent = result.verdict;
+  verdictEl.textContent = pair.verdict;
   verdictEl.className = 'verdict-text ' + verdictClass;
 
   // Score bar
@@ -192,21 +224,21 @@ function showResult(clubA, clubB) {
   scoreBar.className = 'score-bar-fill ' + verdictClass;
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
-      scoreBar.style.width = result.score + '%';
+      scoreBar.style.width = pair.score + '%';
     });
   });
 
   // Score number
-  document.getElementById('score-number').textContent = `${result.score} / 100`;
+  document.getElementById('score-number').textContent = `${pair.score} / 100`;
 
-  // Flavour
-  document.getElementById('flavour').textContent = result.flavour;
+  // Flavour text — generate from verdict + distance + tier gap
+  const flavour = getFlavourText(pair.verdict, clubA, clubB, pair.distance, pair.tierGap);
+  document.getElementById('flavour').textContent = flavour;
 
-  // Strapline (custom context for notable matchups)
+  // Strapline (from pairs data)
   const straplineEl = document.getElementById('strapline');
-  const strapline = getStrapline(clubA, clubB);
-  if (strapline) {
-    straplineEl.textContent = strapline;
+  if (pair.strapline) {
+    straplineEl.textContent = pair.strapline;
     straplineEl.style.display = 'block';
   } else {
     straplineEl.style.display = 'none';
@@ -214,27 +246,28 @@ function showResult(clubA, clubB) {
 
   // Breakdown
   const breakdownEl = document.getElementById('breakdown');
-  const densityChanged = result.breakdown.densityFactor !== 1;
+  const effectiveTier = Math.round((clubA.tier + clubB.tier) / 2);
+  const densityChanged = pair.densityFactor !== 1;
   const rows = [
-    ['Distance between grounds', `${result.distance} miles`],
-    ['Base tier radius', `${result.breakdown.baseRadius} miles (Tier ${result.effectiveTier})`],
+    ['Distance between grounds', `${pair.distance} miles`],
+    ['Base tier radius', `${pair.breakdown.baseRadius} miles (Tier ${effectiveTier})`],
   ];
   if (densityChanged) {
-    const fewerNearby = Math.min(result.breakdown.nearbyA, result.breakdown.nearbyB);
-    const moreNearby = Math.max(result.breakdown.nearbyA, result.breakdown.nearbyB);
-    const label = result.breakdown.densityFactor > 1 ? 'Loneliness bonus' : 'Density adjustment';
-    const clubCount = result.breakdown.densityFactor > 1
+    const fewerNearby = Math.min(pair.breakdown.nearbyA, pair.breakdown.nearbyB);
+    const moreNearby = Math.max(pair.breakdown.nearbyA, pair.breakdown.nearbyB);
+    const label = pair.densityFactor > 1 ? 'Loneliness bonus' : 'Density adjustment';
+    const clubCount = pair.densityFactor > 1
       ? `${fewerNearby} nearby clubs`
       : `${moreNearby} nearby clubs`;
-    rows.push([label, `${Math.round(result.breakdown.densityFactor * 100)}% (${clubCount})`]);
+    rows.push([label, `${Math.round(pair.densityFactor * 100)}% (${clubCount})`]);
   }
   rows.push(
-    ['Effective derby radius', `${result.radius} miles`],
-    ['Distance score', `${result.breakdown.distanceScore}`],
-    ['Same city bonus', result.breakdown.cityBonus ? `+${result.breakdown.cityBonus}` : '—'],
-    ['Same county bonus', result.breakdown.countyBonus ? `+${result.breakdown.countyBonus}` : '—'],
-    ['Same tier bonus', result.breakdown.tierBonus ? `+${result.breakdown.tierBonus}` : '—'],
-    ['Final score', `${result.score} / 100`]
+    ['Effective derby radius', `${pair.radius} miles`],
+    ['Distance score', `${pair.breakdown.distanceScore}`],
+    ['Same city bonus', pair.breakdown.cityBonus ? `+${pair.breakdown.cityBonus}` : '\u2014'],
+    ['Same county bonus', pair.breakdown.countyBonus ? `+${pair.breakdown.countyBonus}` : '\u2014'],
+    ['Same tier bonus', pair.breakdown.tierBonus ? `+${pair.breakdown.tierBonus}` : '\u2014'],
+    ['Final score', `${pair.score} / 100`]
   );
   breakdownEl.innerHTML = rows.map(([label, value]) => {
     const isBonus = typeof value === 'string' && value.startsWith('+');
@@ -249,12 +282,12 @@ function showResult(clubA, clubB) {
 
   // Map — delay to let container become visible, then invalidate size
   setTimeout(() => {
-    showMatchupOnMap(clubA, clubB, result);
+    showMatchupOnMap(clubA, clubB, pair);
     if (derbyMap) derbyMap.invalidateSize();
   }, 150);
 
   // Store for share button
-  lastResult = { clubA, clubB, result };
+  lastResult = { clubA, clubB, result: pair };
 
   // Update URL
   updateUrl(clubA, clubB);
@@ -265,7 +298,6 @@ function showResult(clubA, clubB) {
 
 // URL sharing
 function updateUrl(clubA, clubB) {
-  const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
   const params = new URLSearchParams();
   params.set('a', slug(clubA.name));
   params.set('b', slug(clubB.name));
@@ -278,7 +310,6 @@ function checkUrlParams() {
   const b = params.get('b');
   if (!a || !b) return;
 
-  const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
   const clubA = clubs.find(c => slug(c.name) === a);
   const clubB = clubs.find(c => slug(c.name) === b);
 
@@ -322,18 +353,18 @@ function buildShareSnippet(clubA, clubB, result) {
   const verdictClass = getVerdictClass(result.verdict);
 
   const blockMap = {
-    fierce: '\u{1F7E9}',   // green
-    local: '\u{1F7E9}',    // green
-    rivalry: '\u{1F7E8}',   // yellow
-    stretch: '\u{1F7E7}',   // orange
-    'not-derby': '\u{1F7E5}' // red
+    fierce: '\u{1F7E9}',
+    local: '\u{1F7E9}',
+    rivalry: '\u{1F7E8}',
+    stretch: '\u{1F7E7}',
+    'not-derby': '\u{1F7E5}'
   };
   const emojiMap = {
-    fierce: '\u{1F525}',    // fire
-    local: '\u2705',         // check
-    rivalry: '\u{1F937}',    // shrug
-    stretch: '\u{1F928}',   // raised eyebrow
-    'not-derby': '\u{1F6AB}' // no entry
+    fierce: '\u{1F525}',
+    local: '\u2705',
+    rivalry: '\u{1F937}',
+    stretch: '\u{1F928}',
+    'not-derby': '\u{1F6AB}'
   };
 
   const filled = blockMap[verdictClass] || '\u2B1C';
@@ -341,7 +372,6 @@ function buildShareSnippet(clubA, clubB, result) {
   const bar = filled.repeat(filledCount) + empty.repeat(10 - filledCount);
   const emoji = emojiMap[verdictClass] || '';
 
-  const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
   const url = `typedformiles.github.io/isitaderby/?a=${slug(clubA.name)}&b=${slug(clubB.name)}`;
 
   return [
@@ -362,12 +392,11 @@ document.getElementById('methodology-toggle').addEventListener('click', function
   document.getElementById('methodology-content').classList.toggle('open');
 });
 
-// Leaderboard toggle
+// Leaderboard toggle — now reads from pre-computed pairs
 document.getElementById('leaderboard-toggle').addEventListener('click', function () {
   this.classList.toggle('open');
   const content = document.getElementById('leaderboard-content');
   content.classList.toggle('open');
-  // Build leaderboard on first open
   if (content.classList.contains('open') && !content.dataset.built) {
     buildLeaderboard();
     content.dataset.built = '1';
@@ -375,80 +404,72 @@ document.getElementById('leaderboard-toggle').addEventListener('click', function
 });
 
 function buildLeaderboard() {
-  const pairs = [];
-  for (let i = 0; i < clubs.length; i++) {
-    for (let j = i + 1; j < clubs.length; j++) {
-      const result = calculateDerbyScore(clubs[i], clubs[j]);
-      if (result.score >= 55) { // Local Derby or higher
-        pairs.push({ a: clubs[i], b: clubs[j], result });
-      }
-    }
-  }
-  pairs.sort((x, y) => y.result.score - x.result.score || x.result.distance - y.result.distance);
-
-  const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
-  const top = pairs.slice(0, 50);
+  const top = allPairs.filter(p => p.score >= 55).slice(0, 50);
 
   document.getElementById('leaderboard-list').innerHTML = top.map((p, i) => {
-    const verdictClass = p.result.score >= 75 ? 'fierce' : 'local';
-    return `<div class="leaderboard-row" data-a="${slug(p.a.name)}" data-b="${slug(p.b.name)}">
+    const ca = clubMap.get(p.a);
+    const cb = clubMap.get(p.b);
+    if (!ca || !cb) return '';
+    const scoreClass = p.score >= 75 ? 'fierce' : 'local';
+    return `<div class="leaderboard-row" data-a="${slug(p.a)}" data-b="${slug(p.b)}">
       <span class="lb-rank">${i + 1}</span>
       <span class="lb-badges">
-        <span class="lb-badge" style="background:linear-gradient(135deg,${p.a.col1},${p.a.col2})"></span>
-        <span class="lb-badge" style="background:linear-gradient(135deg,${p.b.col1},${p.b.col2})"></span>
+        <span class="lb-badge" style="background:linear-gradient(135deg,${ca.col1},${ca.col2})"></span>
+        <span class="lb-badge" style="background:linear-gradient(135deg,${cb.col1},${cb.col2})"></span>
       </span>
-      <span class="lb-names">${p.a.name} vs ${p.b.name}</span>
-      <span class="lb-score ${verdictClass}">${p.result.score}</span>
-      <span class="lb-distance">${p.result.distance}mi</span>
+      <span class="lb-names">${p.a} vs ${p.b}</span>
+      <span class="lb-score ${scoreClass}">${p.score}</span>
+      <span class="lb-distance">${p.distance}mi</span>
     </div>`;
   }).join('');
 
-  // Click to view matchup
-  document.querySelectorAll('.leaderboard-row').forEach(row => {
-    row.addEventListener('click', () => {
-      const a = clubs.find(c => slug(c.name) === row.dataset.a);
-      const b = clubs.find(c => slug(c.name) === row.dataset.b);
-      if (a && b) {
-        selectedA = a;
-        selectedB = b;
-        inputA.value = a.name;
-        inputB.value = b.name;
-        updateSettleBtn();
-        showResult(a, b);
-      }
-    });
-  });
+  addLeaderboardClickHandlers('#leaderboard-list');
 }
 
-// Rivals panel
+// Rivals panel — now reads from pre-computed pairs
 function showClubRivals(club) {
-  const rivals = clubs
-    .filter(c => c.name !== club.name)
-    .map(c => ({ club: c, result: calculateDerbyScore(club, c) }))
-    .sort((a, b) => b.result.score - a.result.score || a.result.distance - b.result.distance)
+  const rivals = allPairs
+    .filter(p => p.a === club.name || p.b === club.name)
+    .map(p => ({
+      otherName: p.a === club.name ? p.b : p.a,
+      pair: p
+    }))
+    .sort((a, b) => b.pair.score - a.pair.score || a.pair.distance - b.pair.distance)
     .slice(0, 10);
-
-  const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
 
   document.getElementById('rivals-badge').style.background =
     `linear-gradient(135deg, ${club.col1}, ${club.col2})`;
-  document.getElementById('rivals-title').textContent = `${club.name} — Top Rivals`;
+  document.getElementById('rivals-title').textContent = `${club.name} \u2014 Top Rivals`;
 
   document.getElementById('rivals-list').innerHTML = rivals.map((r, i) => {
-    const scoreClass = r.result.score >= 75 ? 'fierce' : r.result.score >= 55 ? 'local' : '';
-    return `<div class="leaderboard-row" data-a="${slug(club.name)}" data-b="${slug(r.club.name)}">
+    const other = clubMap.get(r.otherName);
+    if (!other) return '';
+    const scoreClass = r.pair.score >= 75 ? 'fierce' : r.pair.score >= 55 ? 'local' : '';
+    return `<div class="leaderboard-row" data-a="${slug(club.name)}" data-b="${slug(r.otherName)}">
       <span class="lb-rank">${i + 1}</span>
       <span class="lb-badges">
-        <span class="lb-badge" style="background:linear-gradient(135deg,${r.club.col1},${r.club.col2})"></span>
+        <span class="lb-badge" style="background:linear-gradient(135deg,${other.col1},${other.col2})"></span>
       </span>
-      <span class="lb-names">${r.club.name}</span>
-      <span class="lb-score ${scoreClass}">${r.result.score}</span>
-      <span class="lb-distance">${r.result.distance}mi</span>
+      <span class="lb-names">${r.otherName}</span>
+      <span class="lb-score ${scoreClass}">${r.pair.score}</span>
+      <span class="lb-distance">${r.pair.distance}mi</span>
     </div>`;
   }).join('');
 
-  // Click rival row to load matchup
-  document.querySelectorAll('#rivals-list .leaderboard-row').forEach(row => {
+  addLeaderboardClickHandlers('#rivals-list');
+
+  const rivalsPanel = document.getElementById('rivals-panel');
+  rivalsPanel.classList.add('active');
+  rivalsPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+document.getElementById('rivals-close').addEventListener('click', () => {
+  document.getElementById('rivals-panel').classList.remove('active');
+});
+
+// Shared click handler for leaderboard-style rows
+function addLeaderboardClickHandlers(containerSelector) {
+  document.querySelectorAll(`${containerSelector} .leaderboard-row`).forEach(row => {
     row.addEventListener('click', () => {
       const a = clubs.find(c => slug(c.name) === row.dataset.a);
       const b = clubs.find(c => slug(c.name) === row.dataset.b);
@@ -463,12 +484,60 @@ function showClubRivals(club) {
       }
     });
   });
-
-  const rivalsPanel = document.getElementById('rivals-panel');
-  rivalsPanel.classList.add('active');
-  rivalsPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-document.getElementById('rivals-close').addEventListener('click', () => {
-  document.getElementById('rivals-panel').classList.remove('active');
-});
+// Browse/filter derbies
+const filterToggle = document.getElementById('filter-toggle');
+if (filterToggle) {
+  filterToggle.addEventListener('click', function () {
+    this.classList.toggle('open');
+    const content = document.getElementById('filter-content');
+    content.classList.toggle('open');
+    if (content.classList.contains('open') && !content.dataset.built) {
+      applyFilters();
+      content.dataset.built = '1';
+    }
+  });
+
+  const filterScore = document.getElementById('filter-score');
+  const filterScoreVal = document.getElementById('filter-score-val');
+  const filterVerdict = document.getElementById('filter-verdict');
+  const filterResults = document.getElementById('filter-results');
+  const filterCount = document.getElementById('filter-count');
+
+  function applyFilters() {
+    const minScore = parseInt(filterScore.value) || 0;
+    const verdict = filterVerdict.value;
+
+    let filtered = allPairs.filter(p => p.score >= minScore);
+    if (verdict) filtered = filtered.filter(p => p.verdict === verdict);
+
+    filterCount.textContent = `${filtered.length} matchups`;
+    const top = filtered.slice(0, 100);
+
+    filterResults.innerHTML = top.map((p, i) => {
+      const ca = clubMap.get(p.a);
+      const cb = clubMap.get(p.b);
+      if (!ca || !cb) return '';
+      const scoreClass = p.score >= 75 ? 'fierce' : p.score >= 55 ? 'local' : '';
+      return `<div class="leaderboard-row" data-a="${slug(p.a)}" data-b="${slug(p.b)}">
+        <span class="lb-rank">${i + 1}</span>
+        <span class="lb-badges">
+          <span class="lb-badge" style="background:linear-gradient(135deg,${ca.col1},${ca.col2})"></span>
+          <span class="lb-badge" style="background:linear-gradient(135deg,${cb.col1},${cb.col2})"></span>
+        </span>
+        <span class="lb-names">${p.a} vs ${p.b}</span>
+        <span class="lb-score ${scoreClass}">${p.score}</span>
+        <span class="lb-distance">${p.distance}mi</span>
+      </div>`;
+    }).join('');
+
+    addLeaderboardClickHandlers('#filter-results');
+  }
+
+  filterScore.addEventListener('input', () => {
+    filterScoreVal.textContent = filterScore.value;
+    applyFilters();
+  });
+  filterVerdict.addEventListener('change', applyFilters);
+}

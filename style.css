@@ -556,6 +556,42 @@ header p {
   flex-shrink: 0;
 }
 
+/* Filter controls */
+.filter-controls {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.filter-slider {
+  width: 150px;
+  accent-color: var(--accent);
+}
+
+.filter-select {
+  background: var(--surface-2);
+  border: 2px solid var(--border);
+  border-radius: 0;
+  color: var(--text);
+  padding: 0.3rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+.filter-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
 /* Methodology */
 .methodology {
   background: var(--surface);
