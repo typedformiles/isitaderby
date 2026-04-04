@@ -53838,11 +53838,12 @@
       "nearbyB": 10
     },
     "rivalryName": null,
-    "strapline": null,
-    "youtube": null,
+    "strapline": "Not a derby, but the site of one of the most infamous matches in English football history. \"The Battle of Bramall Lane\" in 2002 saw 3 red cards, multiple injuries, and an unprecedented abandonment when Sheffield United were reduced to 6 players. Not a rivalry — just a very bad day at the office.",
+    "youtube": "https://www.youtube.com/embed/9J9iITMjAAY",
     "keyMoments": [],
     "tags": [
-      "same-tier"
+      "same-tier",
+      "has-history"
     ]
   },
   {
