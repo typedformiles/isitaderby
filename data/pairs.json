@@ -25,7 +25,11 @@
       "same-city",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 95,
+    "firstMeeting": 1866,
+    "lastMeeting": 2020,
+    "rivalryScore": 85
   },
   {
     "a": "Chelsea",
@@ -54,7 +58,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 85,
+    "firstMeeting": 1910,
+    "lastMeeting": 2024,
+    "rivalryScore": 70
   },
   {
     "a": "Peterborough Sports",
@@ -138,7 +146,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 245,
+    "firstMeeting": 1894,
+    "lastMeeting": 2024,
+    "rivalryScore": 98
   },
   {
     "a": "Port Vale",
@@ -166,7 +178,11 @@
       "same-city",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 50,
+    "firstMeeting": 1883,
+    "lastMeeting": 2002,
+    "rivalryScore": 78
   },
   {
     "a": "Gateshead",
@@ -251,7 +267,11 @@
       "same-city",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 135,
+    "firstMeeting": 1879,
+    "lastMeeting": 2024,
+    "rivalryScore": 92
   },
   {
     "a": "Dartford",
@@ -393,7 +413,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 135,
+    "firstMeeting": 1890,
+    "lastMeeting": 2024,
+    "rivalryScore": 88
   },
   {
     "a": "Bradford City",
@@ -448,7 +472,11 @@
       "same-city",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 110,
+    "firstMeeting": 1883,
+    "lastMeeting": 2023,
+    "rivalryScore": 78
   },
   {
     "a": "AFC Totton",
@@ -1307,7 +1335,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 200,
+    "firstMeeting": 1887,
+    "lastMeeting": 2024,
+    "rivalryScore": 95
   },
   {
     "a": "Walsall",
@@ -1392,7 +1424,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 190,
+    "firstMeeting": 1881,
+    "lastMeeting": 2024,
+    "rivalryScore": 95
   },
   {
     "a": "Arsenal",
@@ -2167,7 +2203,11 @@
       "same-city",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 100,
+    "firstMeeting": 1899,
+    "lastMeeting": 2012,
+    "rivalryScore": 95
   },
   {
     "a": "Rushall Olympic",
@@ -2360,7 +2400,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 158,
+    "firstMeeting": 1883,
+    "lastMeeting": 2024,
+    "rivalryScore": 95
   },
   {
     "a": "Fleetwood Town",
@@ -7083,7 +7127,11 @@
       "same-county",
       "same-tier",
       "has-history"
-    ]
+    ],
+    "meetings": 75,
+    "firstMeeting": 1899,
+    "lastMeeting": 2019,
+    "rivalryScore": 85
   },
   {
     "a": "Gateshead",
@@ -7641,7 +7689,11 @@
     "tags": [
       "same-county",
       "has-history"
-    ]
+    ],
+    "meetings": 165,
+    "firstMeeting": 1886,
+    "lastMeeting": 2021,
+    "rivalryScore": 88
   },
   {
     "a": "Altrincham",
@@ -15016,7 +15068,11 @@
     "keyMoments": [],
     "tags": [
       "has-history"
-    ]
+    ],
+    "meetings": 110,
+    "firstMeeting": 1892,
+    "lastMeeting": 2022,
+    "rivalryScore": 88
   },
   {
     "a": "Chelmsford City",
@@ -23866,7 +23922,11 @@
     "tags": [
       "same-county",
       "has-history"
-    ]
+    ],
+    "meetings": 110,
+    "firstMeeting": 1883,
+    "lastMeeting": 2023,
+    "rivalryScore": 85
   },
   {
     "a": "Blackburn Rovers",
@@ -42275,7 +42335,11 @@
     "tags": [
       "same-tier",
       "has-history"
-    ]
+    ],
+    "meetings": 215,
+    "firstMeeting": 1894,
+    "lastMeeting": 2024,
+    "rivalryScore": 100
   },
   {
     "a": "Boreham Wood",
@@ -44482,7 +44546,11 @@
     "tags": [
       "same-tier",
       "has-history"
-    ]
+    ],
+    "meetings": 110,
+    "firstMeeting": 1922,
+    "lastMeeting": 2023,
+    "rivalryScore": 92
   },
   {
     "a": "Bedford Town",
@@ -44639,7 +44707,11 @@
     "tags": [
       "same-tier",
       "has-history"
-    ]
+    ],
+    "meetings": 115,
+    "firstMeeting": 1920,
+    "lastMeeting": 2024,
+    "rivalryScore": 85
   },
   {
     "a": "Enfield Town",

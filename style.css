@@ -318,6 +318,44 @@ header p {
   max-width: 400px;
 }
 
+.score-bar-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.score-bar-subtext {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 0.7rem;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.6;
+}
+
+.rivalry-bar {
+  display: none;
+  margin-top: 0.8rem;
+}
+
+.rivalry-bar.active {
+  display: block;
+}
+
+.score-bar-fill.rivalry-fill {
+  background: var(--accent);
+}
+
+.rivalry-meta {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
 .score-bar-bg {
   height: 10px;
   background: rgba(0, 0, 0, 0.3);

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Is It A Derby?</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=6">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
@@ -52,10 +52,19 @@
         </div>
         <div class="verdict-text" id="verdict"></div>
         <div class="score-bar-container">
+          <div class="score-bar-label">Derby Score <span class="score-bar-subtext">(geography)</span></div>
           <div class="score-bar-bg">
             <div class="score-bar-fill" id="score-bar"></div>
           </div>
           <div class="score-number" id="score-number"></div>
+        </div>
+        <div class="score-bar-container rivalry-bar" id="rivalry-bar-container">
+          <div class="score-bar-label">Rivalry Score <span class="score-bar-subtext">(history)</span></div>
+          <div class="score-bar-bg">
+            <div class="score-bar-fill rivalry-fill" id="rivalry-bar"></div>
+          </div>
+          <div class="score-number" id="rivalry-number"></div>
+          <div class="rivalry-meta" id="rivalry-meta"></div>
         </div>
         <div class="flavour-text" id="flavour"></div>
         <div class="strapline" id="strapline"></div>
@@ -136,8 +145,8 @@
   </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="derby.js"></script>
-  <script src="map.js"></script>
-  <script src="app.js"></script>
+  <script src="derby.js?v=6"></script>
+  <script src="map.js?v=6"></script>
+  <script src="app.js?v=6"></script>
 </body>
 </html>

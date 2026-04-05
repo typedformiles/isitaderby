@@ -16,8 +16,8 @@ const pairKey = (a, b) => [a, b].sort().join('|');
 
 // Load both datasets in parallel
 Promise.all([
-  fetch('data/clubs.json').then(r => r.json()),
-  fetch('data/pairs.json').then(r => r.json())
+  fetch('data/clubs.json?v=6').then(r => r.json()),
+  fetch('data/pairs.json?v=6').then(r => r.json())
 ]).then(([clubData, pairData]) => {
   clubs = clubData.sort((a, b) => a.name.localeCompare(b.name));
   clubs.forEach(c => clubMap.set(c.name, c));
@@ -230,6 +230,28 @@ function showResult(clubA, clubB) {
 
   // Score number
   document.getElementById('score-number').textContent = `${pair.score} / 100`;
+
+  // Rivalry score (if available)
+  const rivalryContainer = document.getElementById('rivalry-bar-container');
+  const rivalryBar = document.getElementById('rivalry-bar');
+  const rivalryNumber = document.getElementById('rivalry-number');
+  const rivalryMeta = document.getElementById('rivalry-meta');
+  if (pair.rivalryScore != null) {
+    rivalryContainer.classList.add('active');
+    rivalryBar.style.width = '0%';
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        rivalryBar.style.width = pair.rivalryScore + '%';
+      });
+    });
+    rivalryNumber.textContent = `${pair.rivalryScore} / 100`;
+    const metaParts = [];
+    if (pair.meetings) metaParts.push(`${pair.meetings} meetings`);
+    if (pair.firstMeeting) metaParts.push(`since ${pair.firstMeeting}`);
+    rivalryMeta.textContent = metaParts.join(' \u2022 ');
+  } else {
+    rivalryContainer.classList.remove('active');
+  }
 
   // Flavour text — generate from verdict + distance + tier gap
   const flavour = getFlavourText(pair.verdict, clubA, clubB, pair.distance, pair.tierGap);
