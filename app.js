@@ -253,6 +253,29 @@ function showResult(clubA, clubB) {
     rivalryContainer.classList.remove('active');
   }
 
+  // Badges
+  const BADGE_LABELS = {
+    'same-city': '🏟️ Same City',
+    'same-county': '🏔️ Same County',
+    'cross-river': '🌊 Cross-River',
+    '200-club': '🔄 200 Club',
+    'dormant': '💀 Dormant',
+    'ghost-derby': '👻 Ghost Derby',
+    'worlds-apart': '🌍 Worlds Apart',
+  };
+  const badgesEl = document.getElementById('badges');
+  const badges = pair.badges || [];
+  if (badges.length > 0) {
+    badgesEl.innerHTML = badges
+      .filter(b => BADGE_LABELS[b])
+      .map(b => `<span class="badge-pill">${BADGE_LABELS[b]}</span>`)
+      .join('');
+    badgesEl.style.display = 'flex';
+  } else {
+    badgesEl.innerHTML = '';
+    badgesEl.style.display = 'none';
+  }
+
   // Flavour text — generate from verdict + distance + tier gap
   const flavour = getFlavourText(pair.verdict, clubA, clubB, pair.distance, pair.tierGap);
   document.getElementById('flavour').textContent = flavour;
