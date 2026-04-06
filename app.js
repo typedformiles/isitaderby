@@ -406,16 +406,31 @@ function buildShareSnippet(clubA, clubB, result) {
 
   const url = `typedformiles.github.io/isitaderby/?a=${slug(clubA.name)}&b=${slug(clubB.name)}`;
 
-  return [
+  const lines = [
     '\u26BD Is It A Derby?',
     '',
     `${clubA.name} vs ${clubB.name}`,
-    `${bar} ${result.score}/100`,
+    `${bar} Derby: ${result.score}/100`,
+  ];
+
+  if (result.rivalryScore != null) {
+    const rivalryFilled = Math.round(result.rivalryScore / 10);
+    const rivalryBar = '\u{1F7E8}'.repeat(rivalryFilled) + '\u2B1C'.repeat(10 - rivalryFilled);
+    lines.push(`${rivalryBar} Rivalry: ${result.rivalryScore}/100`);
+  }
+
+  lines.push(
     `${result.verdict.toUpperCase()} ${emoji}`,
     `\u{1F4CD} ${result.distance} miles apart`,
-    '',
-    url
-  ].join('\n');
+  );
+
+  if (result.meetings) {
+    lines.push(`\u{1F4CA} ${result.meetings} meetings since ${result.firstMeeting}`);
+  }
+
+  lines.push('', url);
+
+  return lines.join('\n');
 }
 
 // Methodology toggle
