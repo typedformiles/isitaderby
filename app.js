@@ -262,6 +262,7 @@ function showResult(clubA, clubB) {
     'dormant': '💀 Dormant',
     'ghost-derby': '👻 Ghost Derby',
     'worlds-apart': '🌍 Worlds Apart',
+    'most-played': '👑 Most-Played Fixture',
   };
   const badgesEl = document.getElementById('badges');
   const badges = pair.badges || [];
