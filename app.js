@@ -289,11 +289,24 @@ function showResult(clubA, clubB) {
     straplineEl.style.display = 'none';
   }
 
-  // YouTube embed
+  // Video embed (YouTube or TikTok)
   const youtubeEl = document.getElementById('youtube-embed');
   if (pair.youtube) {
     youtubeEl.innerHTML = `<iframe src="${pair.youtube}" title="Derby highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
     youtubeEl.style.display = 'block';
+  } else if (pair.tiktok) {
+    const videoId = pair.tiktok.split('/').pop();
+    youtubeEl.innerHTML = `<blockquote class="tiktok-embed" cite="${pair.tiktok}" data-video-id="${videoId}" style="max-width:605px;min-width:325px;margin:0 auto;"><section></section></blockquote>`;
+    youtubeEl.style.display = 'block';
+    // Load/reload TikTok embed script
+    if (!document.querySelector('script[src*="tiktok.com/embed.js"]')) {
+      const s = document.createElement('script');
+      s.src = 'https://www.tiktok.com/embed.js';
+      s.async = true;
+      document.body.appendChild(s);
+    } else if (window.tiktokEmbed) {
+      window.tiktokEmbed.lib.render();
+    }
   } else {
     youtubeEl.innerHTML = '';
     youtubeEl.style.display = 'none';
