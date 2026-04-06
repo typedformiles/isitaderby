@@ -849,8 +849,13 @@
     "keyMoments": [],
     "tags": [
       "same-city",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 53,
+    "firstMeeting": 1968,
+    "lastMeeting": 2015,
+    "rivalryScore": 49
   },
   {
     "a": "Brentford",
@@ -876,8 +881,13 @@
     "keyMoments": [],
     "tags": [
       "same-city",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 82,
+    "firstMeeting": 1920,
+    "lastMeeting": 2021,
+    "rivalryScore": 62
   },
   {
     "a": "AFC Wimbledon",
@@ -903,8 +913,13 @@
     "keyMoments": [],
     "tags": [
       "same-city",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 0,
+    "firstMeeting": null,
+    "lastMeeting": null,
+    "rivalryScore": 2
   },
   {
     "a": "Everton",
@@ -1014,8 +1029,13 @@
     "keyMoments": [],
     "tags": [
       "same-city",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 1,
+    "firstMeeting": 2023,
+    "lastMeeting": 2023,
+    "rivalryScore": 30
   },
   {
     "a": "Blackpool",
@@ -1301,8 +1321,13 @@
     "keyMoments": [],
     "tags": [
       "same-city",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 32,
+    "firstMeeting": 1907,
+    "lastMeeting": 2020,
+    "rivalryScore": 50
   },
   {
     "a": "Arsenal",
@@ -1388,7 +1413,11 @@
       "same-county",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 15,
+    "firstMeeting": 1900,
+    "lastMeeting": 2004,
+    "rivalryScore": 29
   },
   {
     "a": "Birmingham City",
@@ -1415,8 +1444,13 @@
     "tags": [
       "same-county",
       "same-tier",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 140,
+    "firstMeeting": 1894,
+    "lastMeeting": 2026,
+    "rivalryScore": 86
   },
   {
     "a": "Manchester City",
@@ -1476,8 +1510,13 @@
     "tags": [
       "same-city",
       "same-tier",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 154,
+    "firstMeeting": 1906,
+    "lastMeeting": 2026,
+    "rivalryScore": 81
   },
   {
     "a": "Birmingham City",
@@ -1641,8 +1680,13 @@
     "keyMoments": [],
     "tags": [
       "same-city",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 2,
+    "firstMeeting": 2011,
+    "lastMeeting": 2011,
+    "rivalryScore": 20
   },
   {
     "a": "Brentford",
@@ -1669,8 +1713,13 @@
     "tags": [
       "same-city",
       "same-tier",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 25,
+    "firstMeeting": 1935,
+    "lastMeeting": 2026,
+    "rivalryScore": 54
   },
   {
     "a": "Curzon Ashton",
@@ -1726,7 +1775,11 @@
       "same-county",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 14,
+    "firstMeeting": 1934,
+    "lastMeeting": 2020,
+    "rivalryScore": 43
   },
   {
     "a": "Liverpool",
@@ -1891,7 +1944,11 @@
       "same-county",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 6,
+    "firstMeeting": 1960,
+    "lastMeeting": 2001,
+    "rivalryScore": 22
   },
   {
     "a": "Chippenham Town",
@@ -2030,7 +2087,11 @@
       "same-county",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 0,
+    "firstMeeting": null,
+    "lastMeeting": null,
+    "rivalryScore": 2
   },
   {
     "a": "Aveley",
@@ -2199,8 +2260,13 @@
     "keyMoments": [],
     "tags": [
       "same-county",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 1,
+    "firstMeeting": 2025,
+    "lastMeeting": 2025,
+    "rivalryScore": 35
   },
   {
     "a": "Millwall",
@@ -2514,8 +2580,13 @@
     "keyMoments": [],
     "tags": [
       "same-city",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 41,
+    "firstMeeting": 1932,
+    "lastMeeting": 2020,
+    "rivalryScore": 50
   },
   {
     "a": "AFC Wimbledon",
@@ -2541,8 +2612,13 @@
     "keyMoments": [],
     "tags": [
       "same-city",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 2,
+    "firstMeeting": 2019,
+    "lastMeeting": 2019,
+    "rivalryScore": 25
   },
   {
     "a": "Tottenham Hotspur",
@@ -2571,7 +2647,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 227,
+    "firstMeeting": 1900,
+    "lastMeeting": 2026,
+    "rivalryScore": 95
   },
   {
     "a": "Boreham Wood",
@@ -2795,7 +2875,11 @@
       "same-county",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 0,
+    "firstMeeting": null,
+    "lastMeeting": null,
+    "rivalryScore": 2
   },
   {
     "a": "Aston Villa",
@@ -2821,8 +2905,13 @@
     "keyMoments": [],
     "tags": [
       "same-county",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 30,
+    "firstMeeting": 1883,
+    "lastMeeting": 2025,
+    "rivalryScore": 61
   },
   {
     "a": "Bromley",
@@ -3035,8 +3124,13 @@
     "keyMoments": [],
     "tags": [
       "same-city",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 101,
+    "firstMeeting": 1906,
+    "lastMeeting": 2024,
+    "rivalryScore": 74
   },
   {
     "a": "Walsall",
@@ -3062,8 +3156,13 @@
     "keyMoments": [],
     "tags": [
       "same-county",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 16,
+    "firstMeeting": 1889,
+    "lastMeeting": 2014,
+    "rivalryScore": 40
   },
   {
     "a": "Curzon Ashton",
@@ -3174,7 +3273,11 @@
       "same-county",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 15,
+    "firstMeeting": 1980,
+    "lastMeeting": 2024,
+    "rivalryScore": 37
   },
   {
     "a": "Marine",
@@ -3614,8 +3717,13 @@
     "tags": [
       "same-county",
       "same-tier",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 7,
+    "firstMeeting": 2019,
+    "lastMeeting": 2026,
+    "rivalryScore": 35
   },
   {
     "a": "Enfield Town",
@@ -4310,8 +4418,13 @@
     "keyMoments": [],
     "tags": [
       "same-county",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 6,
+    "firstMeeting": 2012,
+    "lastMeeting": 2023,
+    "rivalryScore": 30
   },
   {
     "a": "Arsenal",
@@ -4940,8 +5053,13 @@
     "keyMoments": [],
     "tags": [
       "same-county",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 11,
+    "firstMeeting": 1902,
+    "lastMeeting": 2005,
+    "rivalryScore": 29
   },
   {
     "a": "Hemel Hempstead Town",
@@ -5161,7 +5279,11 @@
       "same-county",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 7,
+    "firstMeeting": 2005,
+    "lastMeeting": 2022,
+    "rivalryScore": 31
   },
   {
     "a": "Manchester City",
@@ -5189,7 +5311,11 @@
       "same-county",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 11,
+    "firstMeeting": 1902,
+    "lastMeeting": 2002,
+    "rivalryScore": 29
   },
   {
     "a": "Barnet",
@@ -5297,8 +5423,13 @@
     "keyMoments": [],
     "tags": [
       "same-county",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 32,
+    "firstMeeting": 1892,
+    "lastMeeting": 2026,
+    "rivalryScore": 61
   },
   {
     "a": "Rochdale",
@@ -5806,8 +5937,13 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 22,
+    "firstMeeting": 1937,
+    "lastMeeting": 2015,
+    "rivalryScore": 44
   },
   {
     "a": "Hull City",
