@@ -269,7 +269,7 @@ function showResult(clubA, clubB) {
   if (badges.length > 0) {
     badgesEl.innerHTML = badges
       .filter(b => BADGE_LABELS[b])
-      .map(b => `<span class="badge-pill">${BADGE_LABELS[b]}</span>`)
+      .map(b => `<a href="/badges/${b}.html" class="badge-pill">${BADGE_LABELS[b]}</a>`)
       .join('');
     badgesEl.style.display = 'flex';
   } else {
