@@ -864,7 +864,7 @@ header p {
   border-radius: 0;
   font-size: 0.85rem;
   cursor: pointer;
-  transition: color 0.2s;
+  transition: all 0.2s;
 }
 
 .share-btn:hover {
@@ -874,6 +874,27 @@ header p {
 .share-btn.copied {
   color: var(--fierce);
   border-color: var(--fierce);
+}
+
+.share-btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1a1a;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  padding: 0.6rem 1.5rem;
+}
+
+.share-btn-primary:hover {
+  opacity: 0.9;
+  color: #1a1a1a;
+}
+
+.share-btn-primary.copied {
+  background: var(--fierce);
+  border-color: var(--fierce);
+  color: #1a1a1a;
 }
 
 /* Footer */
