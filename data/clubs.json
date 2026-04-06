@@ -259,7 +259,7 @@
     "lng": -3.2031,
     "tier": 3,
     "city": "Cardiff",
-    "county": "South Glamorgan",
+    "county": "Glamorgan",
     "col1": "#0070B5",
     "col2": "#FFFFFF"
   },
@@ -457,7 +457,7 @@
     "lng": -3.9351,
     "tier": 2,
     "city": "Swansea",
-    "county": "West Glamorgan",
+    "county": "Glamorgan",
     "col1": "#FFFFFF",
     "col2": "#000000"
   },
@@ -1909,7 +1909,7 @@
     "lng": -3.378,
     "tier": 6,
     "city": "Merthyr Tydfil",
-    "county": "Mid Glamorgan",
+    "county": "Glamorgan",
     "col1": "#FFFFFF",
     "col2": "#000000"
   },

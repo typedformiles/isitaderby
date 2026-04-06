@@ -6914,7 +6914,7 @@
   {
     "a": "Cardiff City",
     "b": "Merthyr Town",
-    "score": 75,
+    "score": 85,
     "verdict": "Proper Local Derby",
     "distance": 20.5,
     "radius": 55.2,
@@ -6923,7 +6923,7 @@
     "breakdown": {
       "distanceScore": 75,
       "cityBonus": 0,
-      "countyBonus": 0,
+      "countyBonus": 10,
       "tierBonus": 0,
       "baseRadius": 42.5,
       "nearbyA": 3,
@@ -6936,7 +6936,9 @@
     "tags": [
       "proper-derby"
     ],
-    "badges": []
+    "badges": [
+      "same-county"
+    ]
   },
   {
     "a": "Boston United",
@@ -8925,8 +8927,8 @@
   {
     "a": "Merthyr Town",
     "b": "Swansea City",
-    "score": 70,
-    "verdict": "Local Derby",
+    "score": 80,
+    "verdict": "Proper Local Derby",
     "distance": 25.0,
     "radius": 56.2,
     "tierGap": 4,
@@ -8934,7 +8936,7 @@
     "breakdown": {
       "distanceScore": 70,
       "cityBonus": 0,
-      "countyBonus": 0,
+      "countyBonus": 10,
       "tierBonus": 0,
       "baseRadius": 37.5,
       "nearbyA": 3,
@@ -8948,7 +8950,8 @@
       "cross-tier"
     ],
     "badges": [
-      "worlds-apart"
+      "worlds-apart",
+      "same-county"
     ]
   },
   {
@@ -18782,8 +18785,8 @@
   {
     "a": "Cardiff City",
     "b": "Swansea City",
-    "score": 50,
-    "verdict": "Regional Rivalry",
+    "score": 60,
+    "verdict": "Local Derby",
     "distance": 33.6,
     "radius": 45.0,
     "tierGap": 1,
@@ -18791,7 +18794,7 @@
     "breakdown": {
       "distanceScore": 50,
       "cityBonus": 0,
-      "countyBonus": 0,
+      "countyBonus": 10,
       "tierBonus": 0,
       "baseRadius": 30.0,
       "nearbyA": 3,
@@ -18808,7 +18811,9 @@
     "firstMeeting": 1912,
     "lastMeeting": 2025,
     "rivalryScore": 95,
-    "badges": []
+    "badges": [
+      "same-county"
+    ]
   },
   {
     "a": "Exeter City",
