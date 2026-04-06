@@ -6283,13 +6283,18 @@
       "nearbyB": 32
     },
     "rivalryName": null,
-    "strapline": null,
+    "strapline": "Technically neighbours. Spiritually, different planets. Fulham are a Premier League club on the Thames; Sutton are a non-league side from the suburbs. They have never met in a competitive fixture. The only thing connecting them is a shared county boundary drawn by a bureaucrat.",
     "youtube": null,
     "keyMoments": [],
     "tags": [
       "same-county",
-      "cross-tier"
-    ]
+      "cross-tier",
+      "has-history"
+    ],
+    "rivalryScore": 2,
+    "meetings": 0,
+    "firstMeeting": null,
+    "lastMeeting": null
   },
   {
     "a": "Queens Park Rangers",
