@@ -9430,7 +9430,7 @@
     },
     "rivalryName": null,
     "strapline": "\"The Devon Derby\" — 36 miles of the A38 behind a caravan. Devon fans insist this is their local derby, and when your nearest alternative is in Cornwall, they've got a point. But 36 miles is 36 miles, and no amount of cream teas changes that.",
-    "youtube": null,
+    "youtube": "https://www.youtube.com/embed/0PN7Ul0rXDY",
     "keyMoments": [],
     "tags": [
       "same-county",
@@ -9443,7 +9443,8 @@
     "rivalryScore": 78,
     "badges": [
       "same-county"
-    ]
+    ],
+    "youtubeShort": true
   },
   {
     "a": "Maidenhead United",

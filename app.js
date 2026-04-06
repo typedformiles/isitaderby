@@ -292,7 +292,8 @@ function showResult(clubA, clubB) {
   // Video embed (YouTube or TikTok)
   const youtubeEl = document.getElementById('youtube-embed');
   if (pair.youtube) {
-    youtubeEl.innerHTML = `<iframe src="${pair.youtube}" title="Derby highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+    const isShort = pair.youtubeShort || false;
+    youtubeEl.innerHTML = `<iframe class="${isShort ? 'yt-short' : ''}" src="${pair.youtube}" title="Derby highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
     youtubeEl.style.display = 'block';
   } else if (pair.tiktok) {
     const videoId = pair.tiktok.split('/').pop();

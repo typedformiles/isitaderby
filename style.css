@@ -479,6 +479,14 @@ header p {
   border-radius: 0;
 }
 
+.youtube-embed iframe.yt-short {
+  aspect-ratio: 9 / 16;
+  width: 60%;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+}
+
 .youtube-embed .tiktok-embed {
   margin: 0 auto !important;
 }
