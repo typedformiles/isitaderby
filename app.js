@@ -439,13 +439,35 @@ document.getElementById('methodology-toggle').addEventListener('click', function
   document.getElementById('methodology-content').classList.toggle('open');
 });
 
-// Leaderboard toggle — now reads from pre-computed pairs
+// Ultimate Derbies toggle
+document.getElementById('ultimate-toggle').addEventListener('click', function () {
+  this.classList.toggle('open');
+  const content = document.getElementById('ultimate-content');
+  content.classList.toggle('open');
+  if (content.classList.contains('open') && !content.dataset.built) {
+    buildUltimateBoard();
+    content.dataset.built = '1';
+  }
+});
+
+// Closest Derbies toggle
 document.getElementById('leaderboard-toggle').addEventListener('click', function () {
   this.classList.toggle('open');
   const content = document.getElementById('leaderboard-content');
   content.classList.toggle('open');
   if (content.classList.contains('open') && !content.dataset.built) {
     buildLeaderboard();
+    content.dataset.built = '1';
+  }
+});
+
+// Biggest Rivalries toggle
+document.getElementById('rivalry-board-toggle').addEventListener('click', function () {
+  this.classList.toggle('open');
+  const content = document.getElementById('rivalry-board-content');
+  content.classList.toggle('open');
+  if (content.classList.contains('open') && !content.dataset.built) {
+    buildRivalryBoard();
     content.dataset.built = '1';
   }
 });
@@ -471,6 +493,61 @@ function buildLeaderboard() {
   }).join('');
 
   addLeaderboardClickHandlers('#leaderboard-list');
+}
+
+function buildUltimateBoard() {
+  // Hybrid score = average of derby + rivalry (only pairs with both)
+  const withRivalry = allPairs
+    .filter(p => p.rivalryScore != null)
+    .map(p => ({ ...p, hybrid: Math.round((p.score + p.rivalryScore) / 2) }))
+    .sort((a, b) => b.hybrid - a.hybrid || a.distance - b.distance)
+    .slice(0, 50);
+
+  document.getElementById('ultimate-list').innerHTML = withRivalry.map((p, i) => {
+    const ca = clubMap.get(p.a);
+    const cb = clubMap.get(p.b);
+    if (!ca || !cb) return '';
+    const scoreClass = p.hybrid >= 90 ? 'fierce' : p.hybrid >= 70 ? 'local' : '';
+    return `<div class="leaderboard-row" data-a="${slug(p.a)}" data-b="${slug(p.b)}">
+      <span class="lb-rank">${i + 1}</span>
+      <span class="lb-badges">
+        <span class="lb-badge" style="background:linear-gradient(135deg,${ca.col1},${ca.col2})"></span>
+        <span class="lb-badge" style="background:linear-gradient(135deg,${cb.col1},${cb.col2})"></span>
+      </span>
+      <span class="lb-names">${p.a} vs ${p.b}</span>
+      <span class="lb-score ${scoreClass}">${p.hybrid}</span>
+      <span class="lb-distance">${p.score}+${p.rivalryScore}</span>
+    </div>`;
+  }).join('');
+
+  addLeaderboardClickHandlers('#ultimate-list');
+}
+
+function buildRivalryBoard() {
+  const withRivalry = allPairs
+    .filter(p => p.rivalryScore != null && p.rivalryScore > 0)
+    .sort((a, b) => b.rivalryScore - a.rivalryScore || b.meetings - a.meetings)
+    .slice(0, 50);
+
+  document.getElementById('rivalry-board-list').innerHTML = withRivalry.map((p, i) => {
+    const ca = clubMap.get(p.a);
+    const cb = clubMap.get(p.b);
+    if (!ca || !cb) return '';
+    const scoreClass = p.rivalryScore >= 80 ? 'fierce' : p.rivalryScore >= 60 ? 'local' : '';
+    const metaText = p.meetings ? `${p.meetings} mtgs` : '';
+    return `<div class="leaderboard-row" data-a="${slug(p.a)}" data-b="${slug(p.b)}">
+      <span class="lb-rank">${i + 1}</span>
+      <span class="lb-badges">
+        <span class="lb-badge" style="background:linear-gradient(135deg,${ca.col1},${ca.col2})"></span>
+        <span class="lb-badge" style="background:linear-gradient(135deg,${cb.col1},${cb.col2})"></span>
+      </span>
+      <span class="lb-names">${p.a} vs ${p.b}</span>
+      <span class="lb-score ${scoreClass}">${p.rivalryScore}</span>
+      <span class="lb-distance">${metaText}</span>
+    </div>`;
+  }).join('');
+
+  addLeaderboardClickHandlers('#rivalry-board-list');
 }
 
 // Rivals panel — now reads from pre-computed pairs
