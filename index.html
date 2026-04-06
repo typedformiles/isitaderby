@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Is It A Derby?</title>
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
@@ -13,6 +13,14 @@
       <h1>Is It A <span>Derby</span>?</h1>
       <p>Settle the debate once and for all. Pick two English football clubs and we'll score it.</p>
     </header>
+
+    <nav class="top-nav">
+      <a href="/" class="nav-link active">Settle It</a>
+      <a href="/ultimate-football-derbies.html" class="nav-link">Ultimate</a>
+      <a href="/closest-football-derbies.html" class="nav-link">Closest</a>
+      <a href="/footballs-biggest-rivalries.html" class="nav-link">Rivalries</a>
+      <a href="/scoring-methodology.html" class="nav-link">How It Works</a>
+    </nav>
 
     <div class="selector">
       <div class="selector-row">
@@ -81,81 +89,6 @@
       <div class="share-link">
         <button class="share-btn" id="share-social-btn">Share result</button>
         <button class="share-btn" id="share-btn">Copy link</button>
-      </div>
-    </div>
-
-    <div class="leaderboard">
-      <button class="methodology-toggle" id="ultimate-toggle">
-        The Ultimate Derbies
-        <span class="arrow">&#9660;</span>
-      </button>
-      <div class="methodology-content" id="ultimate-content">
-        <div id="ultimate-list"></div>
-      </div>
-    </div>
-
-    <div class="leaderboard">
-      <button class="methodology-toggle" id="leaderboard-toggle">
-        Closest Derbies
-        <span class="arrow">&#9660;</span>
-      </button>
-      <div class="methodology-content" id="leaderboard-content">
-        <div id="leaderboard-list"></div>
-      </div>
-    </div>
-
-    <div class="leaderboard">
-      <button class="methodology-toggle" id="rivalry-board-toggle">
-        Biggest Rivalries
-        <span class="arrow">&#9660;</span>
-      </button>
-      <div class="methodology-content" id="rivalry-board-content">
-        <div id="rivalry-board-list"></div>
-      </div>
-    </div>
-
-    <div class="methodology">
-      <button class="methodology-toggle" id="methodology-toggle">
-        How does the scoring work?
-        <span class="arrow">&#9660;</span>
-      </button>
-      <div class="methodology-content" id="methodology-content">
-        <p>The "Is It A Derby?" score is based on a simple principle: <strong>what counts as "local" depends on the level you play at.</strong></p>
-
-        <h4>Why tier matters</h4>
-        <p>In the Premier League, clubs cluster in major cities — "local" means a few miles. But in the National League North, clubs are spread across vast regions. A 30-mile trip to your nearest rival genuinely <em>is</em> your local derby. Penalising lower-league clubs for geography would be unfair.</p>
-
-        <h4>The formula</h4>
-        <p>We calculate the straight-line distance between the two grounds, then compare it against a <strong>tier-adjusted derby radius</strong>. When two clubs are from different tiers, we average their radii — this stops a lower-league club getting an unfair advantage over a closer rival from a higher tier:</p>
-
-        <table>
-          <tr><th>Tier</th><th>Leagues</th><th>Derby Radius</th></tr>
-          <tr><td>1–2</td><td>Premier League, Championship</td><td>25 miles</td></tr>
-          <tr><td>3–4</td><td>League One, League Two</td><td>35 miles</td></tr>
-          <tr><td>5–6</td><td>National League, NL North/South</td><td>50 miles</td></tr>
-        </table>
-
-        <h4>Club density adjustment</h4>
-        <p>The radius is then adjusted for <strong>club density</strong>. A club in London might have 15+ other clubs within 25 miles — so "local" means much closer there (radius shrinks to 40% of base). But a club in Norfolk might have only 1 or 2 neighbours, so they get a <strong>loneliness bonus</strong> — the radius widens up to 1.5× because they simply don't have other options. Norwich vs Ipswich at 40 miles isn't the same as Chelsea vs Brighton at 40 miles, because Norwich and Ipswich genuinely are each other's only meaningful rival. The loneliness bonus only applies when both clubs are isolated.</p>
-
-        <p>Distance score decays linearly: clubs at the radius score ~33, clubs at 1.5× the radius score 0. We then add bonuses:</p>
-
-        <table>
-          <tr><th>Bonus</th><th>Points</th></tr>
-          <tr><td>Same city/town</td><td>+15</td></tr>
-          <tr><td>Same county (if different city)</td><td>+10</td></tr>
-          <tr><td>Same league tier</td><td>+5</td></tr>
-        </table>
-
-        <h4>Verdict thresholds</h4>
-        <table>
-          <tr><th>Score</th><th>Verdict</th></tr>
-          <tr><td>75–100</td><td>Proper Local Derby</td></tr>
-          <tr><td>55–74</td><td>Local Derby</td></tr>
-          <tr><td>35–54</td><td>Regional Rivalry</td></tr>
-          <tr><td>15–34</td><td>Stretch — Barely a Derby</td></tr>
-          <tr><td>0–14</td><td>Not a Derby</td></tr>
-        </table>
       </div>
     </div>
 

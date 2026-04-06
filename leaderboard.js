@@ -1,0 +1,65 @@
+/**
+ * Shared JS for leaderboard subpages.
+ * Loads clubs + pairs data, renders a table based on the page's data-mode attribute.
+ */
+
+const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
+
+Promise.all([
+  fetch('data/clubs.json?v=6').then(r => r.json()),
+  fetch('data/pairs.json?v=6').then(r => r.json())
+]).then(([clubData, pairData]) => {
+  const clubMap = new Map();
+  clubData.forEach(c => clubMap.set(c.name, c));
+
+  const mode = document.getElementById('leaderboard-table').dataset.mode;
+  let rows = [];
+
+  if (mode === 'ultimate') {
+    rows = pairData
+      .filter(p => p.rivalryScore != null)
+      .map(p => ({ ...p, hybrid: Math.round((p.score + p.rivalryScore) / 2) }))
+      .sort((a, b) => b.hybrid - a.hybrid || a.distance - b.distance);
+  } else if (mode === 'closest') {
+    rows = pairData
+      .filter(p => p.score >= 55)
+      .sort((a, b) => b.score - a.score || a.distance - b.distance);
+  } else if (mode === 'rivalries') {
+    rows = pairData
+      .filter(p => p.rivalryScore != null && p.rivalryScore > 0)
+      .sort((a, b) => b.rivalryScore - a.rivalryScore || b.meetings - a.meetings);
+  }
+
+  const container = document.getElementById('leaderboard-table');
+  container.innerHTML = rows.map((p, i) => {
+    const ca = clubMap.get(p.a);
+    const cb = clubMap.get(p.b);
+    if (!ca || !cb) return '';
+
+    let mainScore, metaText, scoreClass;
+    if (mode === 'ultimate') {
+      mainScore = p.hybrid;
+      metaText = `${p.score}+${p.rivalryScore}`;
+      scoreClass = p.hybrid >= 90 ? 'fierce' : p.hybrid >= 70 ? 'local' : '';
+    } else if (mode === 'closest') {
+      mainScore = p.score;
+      metaText = `${p.distance}mi`;
+      scoreClass = p.score >= 75 ? 'fierce' : 'local';
+    } else {
+      mainScore = p.rivalryScore;
+      metaText = p.meetings ? `${p.meetings} mtgs` : '';
+      scoreClass = p.rivalryScore >= 80 ? 'fierce' : p.rivalryScore >= 60 ? 'local' : '';
+    }
+
+    return `<a class="leaderboard-row" href="/?a=${slug(p.a)}&b=${slug(p.b)}">
+      <span class="lb-rank">${i + 1}</span>
+      <span class="lb-badges">
+        <span class="lb-badge" style="background:linear-gradient(135deg,${ca.col1},${ca.col2})"></span>
+        <span class="lb-badge" style="background:linear-gradient(135deg,${cb.col1},${cb.col2})"></span>
+      </span>
+      <span class="lb-names">${p.a} vs ${p.b}</span>
+      <span class="lb-score ${scoreClass}">${mainScore}</span>
+      <span class="lb-distance">${metaText}</span>
+    </a>`;
+  }).join('');
+});

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How The Scoring Works | Is It A Derby?</title>
+  <link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="/" style="text-decoration:none;color:inherit;">Is It A <span>Derby</span>?</a></h1>
+    </header>
+
+    <nav class="top-nav">
+      <a href="/" class="nav-link">Settle It</a>
+      <a href="/ultimate-football-derbies.html" class="nav-link">Ultimate</a>
+      <a href="/closest-football-derbies.html" class="nav-link">Closest</a>
+      <a href="/footballs-biggest-rivalries.html" class="nav-link">Rivalries</a>
+      <a href="/scoring-methodology.html" class="nav-link active">How It Works</a>
+    </nav>
+
+    <div class="methodology" style="border:none;background:var(--surface);">
+      <div class="methodology-content open" style="padding:1.5rem;">
+        <h2 class="page-title" style="text-align:left;margin-bottom:1rem;">How The Scoring Works</h2>
+
+        <p>The "Is It A Derby?" score is based on a simple principle: <strong>what counts as "local" depends on the level you play at.</strong></p>
+
+        <h4>Why tier matters</h4>
+        <p>In the Premier League, clubs cluster in major cities — "local" means a few miles. But in the National League North, clubs are spread across vast regions. A 30-mile trip to your nearest rival genuinely <em>is</em> your local derby. Penalising lower-league clubs for geography would be unfair.</p>
+
+        <h4>The formula</h4>
+        <p>We calculate the straight-line distance between the two grounds, then compare it against a <strong>tier-adjusted derby radius</strong>. When two clubs are from different tiers, we average their radii — this stops a lower-league club getting an unfair advantage over a closer rival from a higher tier:</p>
+
+        <table>
+          <tr><th>Tier</th><th>Leagues</th><th>Derby Radius</th></tr>
+          <tr><td>1–2</td><td>Premier League, Championship</td><td>25 miles</td></tr>
+          <tr><td>3–4</td><td>League One, League Two</td><td>35 miles</td></tr>
+          <tr><td>5–6</td><td>National League, NL North/South</td><td>50 miles</td></tr>
+        </table>
+
+        <h4>Club density adjustment</h4>
+        <p>The radius is then adjusted for <strong>club density</strong>. A club in London might have 15+ other clubs within 25 miles — so "local" means much closer there (radius shrinks to 40% of base). But a club in Norfolk might have only 1 or 2 neighbours, so they get a <strong>loneliness bonus</strong> — the radius widens up to 1.5× because they simply don't have other options. Norwich vs Ipswich at 40 miles isn't the same as Chelsea vs Brighton at 40 miles, because Norwich and Ipswich genuinely are each other's only meaningful rival. The loneliness bonus only applies when both clubs are isolated.</p>
+
+        <p>Distance score decays linearly: clubs at the radius score ~33, clubs at 1.5× the radius score 0. We then add bonuses:</p>
+
+        <table>
+          <tr><th>Bonus</th><th>Points</th></tr>
+          <tr><td>Same city/town</td><td>+15</td></tr>
+          <tr><td>Same county (if different city)</td><td>+10</td></tr>
+          <tr><td>Same league tier</td><td>+5</td></tr>
+        </table>
+
+        <h4>Verdict thresholds</h4>
+        <table>
+          <tr><th>Score</th><th>Verdict</th></tr>
+          <tr><td>75–100</td><td>Proper Local Derby</td></tr>
+          <tr><td>55–74</td><td>Local Derby</td></tr>
+          <tr><td>35–54</td><td>Regional Rivalry</td></tr>
+          <tr><td>15–34</td><td>Stretch — Barely a Derby</td></tr>
+          <tr><td>0–14</td><td>Not a Derby</td></tr>
+        </table>
+
+        <h4>Rivalry Score</h4>
+        <p>Separate from the Derby Score, the <strong>Rivalry Score</strong> measures historical depth based on:</p>
+        <table>
+          <tr><th>Factor</th><th>Weight</th></tr>
+          <tr><td>Meeting frequency (total head-to-head matches)</td><td>40%</td></tr>
+          <tr><td>Recent activity (have they played recently?)</td><td>25%</td></tr>
+          <tr><td>Historical antiquity (when did they first meet?)</td><td>20%</td></tr>
+          <tr><td>Notable moments (editorial assessment)</td><td>15%</td></tr>
+        </table>
+        <p>This means a pair like Liverpool vs Manchester United can score 5/100 on Derby (geography) but 100/100 on Rivalry (history) — close on the fixture list, far on the map.</p>
+
+        <h4>The Ultimate Score</h4>
+        <p>The <strong>Ultimate Score</strong> is simply the average of Derby and Rivalry scores. Only pairs with both scores qualify. Everton vs Liverpool sits alone at the top with a perfect 100 — the only pair to max out both geography and history.</p>
+      </div>
+    </div>
+
+    <footer>
+      Built to settle arguments. Data from 2025/26 season. 177 clubs from the Premier League to National League North &amp; South.
+    </footer>
+  </div>
+
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="narwhalz" data-description="Support me on Buy me a coffee!" data-message="Help support this app!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+</html>
