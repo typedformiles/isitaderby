@@ -117,7 +117,11 @@
       "same-city",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 28,
+    "firstMeeting": 1900,
+    "lastMeeting": 1987,
+    "rivalryScore": 35
   },
   {
     "a": "Everton",
@@ -643,7 +647,11 @@
       "same-city",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 42,
+    "firstMeeting": 1906,
+    "lastMeeting": 2022,
+    "rivalryScore": 51
   },
   {
     "a": "Brentford",
@@ -1120,7 +1128,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 104,
+    "firstMeeting": 1921,
+    "lastMeeting": 2026,
+    "rivalryScore": 78
   },
   {
     "a": "Radcliffe",
@@ -1229,8 +1241,13 @@
     "keyMoments": [],
     "tags": [
       "same-county",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 173,
+    "firstMeeting": 1882,
+    "lastMeeting": 2021,
+    "rivalryScore": 83
   },
   {
     "a": "Charlton Athletic",
@@ -2124,7 +2141,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 56,
+    "firstMeeting": 1983,
+    "lastMeeting": 2026,
+    "rivalryScore": 59
   },
   {
     "a": "Brighton & Hove Albion",
@@ -2374,8 +2395,13 @@
     "keyMoments": [],
     "tags": [
       "same-county",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 33,
+    "firstMeeting": 1933,
+    "lastMeeting": 2024,
+    "rivalryScore": 49
   },
   {
     "a": "Newcastle United",
@@ -2680,8 +2706,13 @@
     "keyMoments": [],
     "tags": [
       "same-county",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 40,
+    "firstMeeting": 1925,
+    "lastMeeting": 2024,
+    "rivalryScore": 50
   },
   {
     "a": "Aston Villa",
@@ -3447,7 +3478,11 @@
       "same-county",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 31,
+    "firstMeeting": 1922,
+    "lastMeeting": 2014,
+    "rivalryScore": 40
   },
   {
     "a": "Cardiff City",
@@ -3852,8 +3887,13 @@
     "tags": [
       "same-county",
       "same-tier",
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 65,
+    "firstMeeting": 1919,
+    "lastMeeting": 2025,
+    "rivalryScore": 66
   },
   {
     "a": "Doncaster Rovers",
@@ -3882,7 +3922,11 @@
       "same-tier",
       "proper-derby",
       "has-history"
-    ]
+    ],
+    "meetings": 70,
+    "firstMeeting": 1925,
+    "lastMeeting": 2026,
+    "rivalryScore": 66
   },
   {
     "a": "Mansfield Town",
@@ -3934,8 +3978,13 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "proper-derby"
-    ]
+      "proper-derby",
+      "has-history"
+    ],
+    "meetings": 23,
+    "firstMeeting": 1932,
+    "lastMeeting": 2025,
+    "rivalryScore": 54
   },
   {
     "a": "Brighton & Hove Albion",
@@ -6377,8 +6426,13 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-city"
-    ]
+      "same-city",
+      "has-history"
+    ],
+    "meetings": 130,
+    "firstMeeting": 1906,
+    "lastMeeting": 2025,
+    "rivalryScore": 80
   },
   {
     "a": "Enfield Town",
@@ -6613,7 +6667,13 @@
     "strapline": null,
     "youtube": null,
     "keyMoments": [],
-    "tags": []
+    "tags": [
+      "has-history"
+    ],
+    "meetings": 54,
+    "firstMeeting": 1905,
+    "lastMeeting": 2023,
+    "rivalryScore": 61
   },
   {
     "a": "AFC Bournemouth",
@@ -7418,7 +7478,11 @@
     "tags": [
       "same-county",
       "has-history"
-    ]
+    ],
+    "meetings": 56,
+    "firstMeeting": 1937,
+    "lastMeeting": 2024,
+    "rivalryScore": 60
   },
   {
     "a": "Cheltenham Town",
@@ -7755,7 +7819,11 @@
     "tags": [
       "same-county",
       "has-history"
-    ]
+    ],
+    "meetings": 35,
+    "firstMeeting": 1898,
+    "lastMeeting": 2023,
+    "rivalryScore": 56
   },
   {
     "a": "Altrincham",
@@ -7982,8 +8050,13 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-county"
-    ]
+      "same-county",
+      "has-history"
+    ],
+    "meetings": 103,
+    "firstMeeting": 1884,
+    "lastMeeting": 2019,
+    "rivalryScore": 74
   },
   {
     "a": "Taunton Town",
@@ -8387,7 +8460,11 @@
       "same-county",
       "same-tier",
       "has-history"
-    ]
+    ],
+    "meetings": 100,
+    "firstMeeting": 1908,
+    "lastMeeting": 2025,
+    "rivalryScore": 78
   },
   {
     "a": "Maidenhead United",
@@ -8844,7 +8921,13 @@
     "strapline": null,
     "youtube": null,
     "keyMoments": [],
-    "tags": []
+    "tags": [
+      "has-history"
+    ],
+    "meetings": 85,
+    "firstMeeting": 1892,
+    "lastMeeting": 2025,
+    "rivalryScore": 73
   },
   {
     "a": "Hampton & Richmond",
@@ -9379,7 +9462,11 @@
       "same-county",
       "same-tier",
       "has-history"
-    ]
+    ],
+    "meetings": 54,
+    "firstMeeting": 1920,
+    "lastMeeting": 2026,
+    "rivalryScore": 66
   },
   {
     "a": "Dorking Wanderers",
@@ -11630,7 +11717,13 @@
     "strapline": null,
     "youtube": null,
     "keyMoments": [],
-    "tags": []
+    "tags": [
+      "has-history"
+    ],
+    "meetings": 80,
+    "firstMeeting": 1945,
+    "lastMeeting": 2025,
+    "rivalryScore": 66
   },
   {
     "a": "Aldershot Town",
@@ -12833,8 +12926,13 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-tier"
-    ]
+      "same-tier",
+      "has-history"
+    ],
+    "meetings": 50,
+    "firstMeeting": 1970,
+    "lastMeeting": 2026,
+    "rivalryScore": 59
   },
   {
     "a": "Brackley Town",
@@ -13344,7 +13442,13 @@
     "strapline": null,
     "youtube": null,
     "keyMoments": [],
-    "tags": []
+    "tags": [
+      "has-history"
+    ],
+    "meetings": 104,
+    "firstMeeting": 1915,
+    "lastMeeting": 2025,
+    "rivalryScore": 78
   },
   {
     "a": "Darlington",
@@ -16557,8 +16661,13 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-tier"
-    ]
+      "same-tier",
+      "has-history"
+    ],
+    "meetings": 82,
+    "firstMeeting": 1936,
+    "lastMeeting": 2026,
+    "rivalryScore": 67
   },
   {
     "a": "Exeter City",
@@ -17016,7 +17125,13 @@
     "strapline": null,
     "youtube": null,
     "keyMoments": [],
-    "tags": []
+    "tags": [
+      "has-history"
+    ],
+    "meetings": 119,
+    "firstMeeting": 1912,
+    "lastMeeting": 2025,
+    "rivalryScore": 79
   },
   {
     "a": "Exeter City",
@@ -38021,7 +38136,11 @@
     "keyMoments": [],
     "tags": [
       "has-history"
-    ]
+    ],
+    "meetings": 123,
+    "firstMeeting": 1898,
+    "lastMeeting": 2025,
+    "rivalryScore": 85
   },
   {
     "a": "Burnley",
