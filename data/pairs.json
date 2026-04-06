@@ -2520,7 +2520,7 @@
   {
     "a": "AFC Wimbledon",
     "b": "Crystal Palace",
-    "score": 87,
+    "score": 77,
     "verdict": "Proper Local Derby",
     "distance": 5.0,
     "radius": 12.0,
@@ -2528,7 +2528,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 72,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -2547,7 +2547,7 @@
   {
     "a": "Tottenham Hotspur",
     "b": "West Ham United",
-    "score": 87,
+    "score": 77,
     "verdict": "Proper Local Derby",
     "distance": 5.0,
     "radius": 10.0,
@@ -2555,7 +2555,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 67,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -3014,7 +3014,7 @@
   {
     "a": "Leyton Orient",
     "b": "Millwall",
-    "score": 85,
+    "score": 75,
     "verdict": "Proper Local Derby",
     "distance": 5.4,
     "radius": 12.0,
@@ -3022,7 +3022,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 70,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -3290,15 +3290,15 @@
   {
     "a": "Charlton Athletic",
     "b": "Leyton Orient",
-    "score": 84,
-    "verdict": "Proper Local Derby",
+    "score": 74,
+    "verdict": "Local Derby",
     "distance": 5.5,
     "radius": 12.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 69,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -3310,22 +3310,21 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-city",
-      "proper-derby"
+      "same-city"
     ]
   },
   {
     "a": "AFC Wimbledon",
     "b": "Queens Park Rangers",
-    "score": 84,
-    "verdict": "Proper Local Derby",
+    "score": 74,
+    "verdict": "Local Derby",
     "distance": 5.6,
     "radius": 12.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 69,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -3337,8 +3336,7 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-city",
-      "proper-derby"
+      "same-city"
     ]
   },
   {
@@ -3784,15 +3782,15 @@
   {
     "a": "AFC Wimbledon",
     "b": "Brentford",
-    "score": 82,
-    "verdict": "Proper Local Derby",
+    "score": 72,
+    "verdict": "Local Derby",
     "distance": 5.9,
     "radius": 12.0,
     "tierGap": 2,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 67,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -3804,8 +3802,7 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-city",
-      "proper-derby"
+      "same-city"
     ]
   },
   {
@@ -4591,15 +4588,15 @@
   {
     "a": "Arsenal",
     "b": "Millwall",
-    "score": 79,
-    "verdict": "Proper Local Derby",
+    "score": 69,
+    "verdict": "Local Derby",
     "distance": 5.4,
     "radius": 10.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 64,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -4611,22 +4608,21 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-city",
-      "proper-derby"
+      "same-city"
     ]
   },
   {
     "a": "Arsenal",
     "b": "Chelsea",
-    "score": 79,
-    "verdict": "Proper Local Derby",
+    "score": 69,
+    "verdict": "Local Derby",
     "distance": 6.2,
     "radius": 10.0,
     "tierGap": 0,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 59,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -4640,7 +4636,6 @@
     "tags": [
       "same-city",
       "same-tier",
-      "proper-derby",
       "has-history"
     ],
     "meetings": 215,
@@ -5199,15 +5194,15 @@
   {
     "a": "Barnet",
     "b": "Queens Park Rangers",
-    "score": 77,
-    "verdict": "Proper Local Derby",
+    "score": 67,
+    "verdict": "Local Derby",
     "distance": 6.8,
     "radius": 12.0,
     "tierGap": 2,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 62,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -5219,8 +5214,7 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-city",
-      "proper-derby"
+      "same-city"
     ]
   },
   {
@@ -5576,15 +5570,15 @@
   {
     "a": "AFC Wimbledon",
     "b": "Millwall",
-    "score": 76,
-    "verdict": "Proper Local Derby",
+    "score": 66,
+    "verdict": "Local Derby",
     "distance": 7.0,
     "radius": 12.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 61,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -5596,8 +5590,7 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-city",
-      "proper-derby"
+      "same-city"
     ]
   },
   {
@@ -5952,15 +5945,15 @@
   {
     "a": "Chelsea",
     "b": "Millwall",
-    "score": 75,
-    "verdict": "Proper Local Derby",
+    "score": 65,
+    "verdict": "Local Derby",
     "distance": 6.0,
     "radius": 10.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 60,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -5972,8 +5965,7 @@
     "youtube": null,
     "keyMoments": [],
     "tags": [
-      "same-city",
-      "proper-derby"
+      "same-city"
     ]
   },
   {
@@ -6222,7 +6214,7 @@
   {
     "a": "Arsenal",
     "b": "Queens Park Rangers",
-    "score": 74,
+    "score": 64,
     "verdict": "Local Derby",
     "distance": 6.2,
     "radius": 10.0,
@@ -6230,7 +6222,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 59,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -6406,7 +6398,7 @@
   {
     "a": "Crystal Palace",
     "b": "Millwall",
-    "score": 73,
+    "score": 63,
     "verdict": "Local Derby",
     "distance": 6.2,
     "radius": 10.0,
@@ -6414,7 +6406,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 58,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -6937,7 +6929,7 @@
   {
     "a": "Barnet",
     "b": "Brentford",
-    "score": 72,
+    "score": 62,
     "verdict": "Local Derby",
     "distance": 7.7,
     "radius": 12.0,
@@ -6945,7 +6937,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 57,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -7326,7 +7318,7 @@
   {
     "a": "Chelsea",
     "b": "Crystal Palace",
-    "score": 71,
+    "score": 61,
     "verdict": "Local Derby",
     "distance": 7.3,
     "radius": 10.0,
@@ -7334,7 +7326,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 51,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -7353,7 +7345,7 @@
   {
     "a": "Arsenal",
     "b": "Fulham",
-    "score": 71,
+    "score": 61,
     "verdict": "Local Derby",
     "distance": 7.4,
     "radius": 10.0,
@@ -7361,7 +7353,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 51,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -7689,7 +7681,7 @@
   {
     "a": "Arsenal",
     "b": "Barnet",
-    "score": 70,
+    "score": 60,
     "verdict": "Local Derby",
     "distance": 8.1,
     "radius": 12.0,
@@ -7697,7 +7689,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 55,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -8750,7 +8742,7 @@
   {
     "a": "Crystal Palace",
     "b": "Fulham",
-    "score": 67,
+    "score": 57,
     "verdict": "Local Derby",
     "distance": 7.9,
     "radius": 10.0,
@@ -8758,7 +8750,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 47,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -8777,7 +8769,7 @@
   {
     "a": "Millwall",
     "b": "Queens Park Rangers",
-    "score": 67,
+    "score": 57,
     "verdict": "Local Derby",
     "distance": 8.0,
     "radius": 10.0,
@@ -8785,7 +8777,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 47,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -9283,7 +9275,7 @@
   {
     "a": "Fulham",
     "b": "Millwall",
-    "score": 66,
+    "score": 56,
     "verdict": "Local Derby",
     "distance": 7.4,
     "radius": 10.0,
@@ -9291,7 +9283,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 51,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -9624,7 +9616,7 @@
   {
     "a": "AFC Wimbledon",
     "b": "Leyton Orient",
-    "score": 65,
+    "score": 55,
     "verdict": "Local Derby",
     "distance": 11.6,
     "radius": 14.0,
@@ -9632,7 +9624,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 45,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 35.0,
@@ -9727,15 +9719,15 @@
   {
     "a": "Chelsea",
     "b": "West Ham United",
-    "score": 64,
-    "verdict": "Local Derby",
+    "score": 54,
+    "verdict": "Regional Rivalry",
     "distance": 8.5,
     "radius": 10.0,
     "tierGap": 0,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 44,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -9754,15 +9746,15 @@
   {
     "a": "AFC Wimbledon",
     "b": "Arsenal",
-    "score": 64,
-    "verdict": "Local Derby",
+    "score": 54,
+    "verdict": "Regional Rivalry",
     "distance": 9.1,
     "radius": 12.0,
     "tierGap": 2,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 49,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -9780,15 +9772,15 @@
   {
     "a": "Barnet",
     "b": "Chelsea",
-    "score": 64,
-    "verdict": "Local Derby",
+    "score": 54,
+    "verdict": "Regional Rivalry",
     "distance": 9.2,
     "radius": 12.0,
     "tierGap": 3,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 49,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -9806,15 +9798,15 @@
   {
     "a": "Barnet",
     "b": "Fulham",
-    "score": 64,
-    "verdict": "Local Derby",
+    "score": 54,
+    "verdict": "Regional Rivalry",
     "distance": 9.2,
     "radius": 12.0,
     "tierGap": 3,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 49,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -9832,15 +9824,15 @@
   {
     "a": "Barnet",
     "b": "Tottenham Hotspur",
-    "score": 64,
-    "verdict": "Local Derby",
+    "score": 54,
+    "verdict": "Regional Rivalry",
     "distance": 9.2,
     "radius": 12.0,
     "tierGap": 3,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 49,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -10170,15 +10162,15 @@
   {
     "a": "Arsenal",
     "b": "Charlton Athletic",
-    "score": 63,
-    "verdict": "Local Derby",
+    "score": 53,
+    "verdict": "Regional Rivalry",
     "distance": 7.8,
     "radius": 10.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 48,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -10222,15 +10214,15 @@
   {
     "a": "Chelsea",
     "b": "Leyton Orient",
-    "score": 63,
-    "verdict": "Local Derby",
+    "score": 53,
+    "verdict": "Regional Rivalry",
     "distance": 9.4,
     "radius": 12.0,
     "tierGap": 2,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 48,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -10828,15 +10820,15 @@
   {
     "a": "Charlton Athletic",
     "b": "Crystal Palace",
-    "score": 61,
-    "verdict": "Local Derby",
+    "score": 51,
+    "verdict": "Regional Rivalry",
     "distance": 8.0,
     "radius": 10.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 46,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -11362,15 +11354,15 @@
   {
     "a": "Millwall",
     "b": "Tottenham Hotspur",
-    "score": 60,
-    "verdict": "Local Derby",
+    "score": 50,
+    "verdict": "Regional Rivalry",
     "distance": 8.2,
     "radius": 10.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 45,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -11388,15 +11380,15 @@
   {
     "a": "Arsenal",
     "b": "Brentford",
-    "score": 60,
-    "verdict": "Local Derby",
+    "score": 50,
+    "verdict": "Regional Rivalry",
     "distance": 8.9,
     "radius": 10.0,
     "tierGap": 0,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 40,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -11982,15 +11974,15 @@
   {
     "a": "Leyton Orient",
     "b": "Queens Park Rangers",
-    "score": 59,
-    "verdict": "Local Derby",
+    "score": 49,
+    "verdict": "Regional Rivalry",
     "distance": 10.1,
     "radius": 12.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 44,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -12673,15 +12665,15 @@
   {
     "a": "Barnet",
     "b": "Leyton Orient",
-    "score": 58,
-    "verdict": "Local Derby",
+    "score": 48,
+    "verdict": "Regional Rivalry",
     "distance": 11.9,
     "radius": 14.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 43,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 35.0,
@@ -13090,15 +13082,15 @@
   {
     "a": "AFC Wimbledon",
     "b": "Charlton Athletic",
-    "score": 57,
-    "verdict": "Local Derby",
+    "score": 47,
+    "verdict": "Regional Rivalry",
     "distance": 10.4,
     "radius": 12.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 42,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -13116,15 +13108,15 @@
   {
     "a": "AFC Wimbledon",
     "b": "West Ham United",
-    "score": 57,
-    "verdict": "Local Derby",
+    "score": 47,
+    "verdict": "Regional Rivalry",
     "distance": 10.4,
     "radius": 12.0,
     "tierGap": 2,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 42,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -13682,15 +13674,15 @@
   {
     "a": "AFC Wimbledon",
     "b": "Barnet",
-    "score": 56,
-    "verdict": "Local Derby",
+    "score": 46,
+    "verdict": "Regional Rivalry",
     "distance": 12.4,
     "radius": 14.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 41,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 35.0,
@@ -14032,15 +14024,15 @@
   {
     "a": "Fulham",
     "b": "Leyton Orient",
-    "score": 55,
-    "verdict": "Local Derby",
+    "score": 45,
+    "verdict": "Regional Rivalry",
     "distance": 10.7,
     "radius": 12.0,
     "tierGap": 2,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 40,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -14515,7 +14507,7 @@
   {
     "a": "Fulham",
     "b": "West Ham United",
-    "score": 54,
+    "score": 44,
     "verdict": "Regional Rivalry",
     "distance": 9.9,
     "radius": 10.0,
@@ -14523,7 +14515,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 34,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -14951,7 +14943,7 @@
   {
     "a": "Charlton Athletic",
     "b": "Tottenham Hotspur",
-    "score": 53,
+    "score": 43,
     "verdict": "Regional Rivalry",
     "distance": 9.3,
     "radius": 10.0,
@@ -14959,7 +14951,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 38,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -14977,7 +14969,7 @@
   {
     "a": "Chelsea",
     "b": "Tottenham Hotspur",
-    "score": 53,
+    "score": 43,
     "verdict": "Regional Rivalry",
     "distance": 10.0,
     "radius": 10.0,
@@ -14985,7 +14977,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 33,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -15573,7 +15565,7 @@
   {
     "a": "Queens Park Rangers",
     "b": "West Ham United",
-    "score": 52,
+    "score": 42,
     "verdict": "Regional Rivalry",
     "distance": 9.5,
     "radius": 10.0,
@@ -15581,7 +15573,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 37,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -15599,7 +15591,7 @@
   {
     "a": "Crystal Palace",
     "b": "West Ham United",
-    "score": 52,
+    "score": 42,
     "verdict": "Regional Rivalry",
     "distance": 10.1,
     "radius": 10.0,
@@ -15607,7 +15599,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 32,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -16748,7 +16740,7 @@
   {
     "a": "Queens Park Rangers",
     "b": "Tottenham Hotspur",
-    "score": 50,
+    "score": 40,
     "verdict": "Regional Rivalry",
     "distance": 9.7,
     "radius": 10.0,
@@ -16756,7 +16748,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 35,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -16774,7 +16766,7 @@
   {
     "a": "Charlton Athletic",
     "b": "Chelsea",
-    "score": 50,
+    "score": 40,
     "verdict": "Regional Rivalry",
     "distance": 9.8,
     "radius": 10.0,
@@ -16782,7 +16774,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 35,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -16824,7 +16816,7 @@
   {
     "a": "Crystal Palace",
     "b": "Leyton Orient",
-    "score": 50,
+    "score": 40,
     "verdict": "Regional Rivalry",
     "distance": 11.6,
     "radius": 12.0,
@@ -16832,7 +16824,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 35,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -17184,7 +17176,7 @@
   {
     "a": "Crystal Palace",
     "b": "Queens Park Rangers",
-    "score": 49,
+    "score": 39,
     "verdict": "Regional Rivalry",
     "distance": 9.9,
     "radius": 10.0,
@@ -17192,7 +17184,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 34,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -17441,7 +17433,7 @@
   {
     "a": "Brentford",
     "b": "Crystal Palace",
-    "score": 48,
+    "score": 38,
     "verdict": "Regional Rivalry",
     "distance": 10.8,
     "radius": 10.0,
@@ -17449,7 +17441,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 28,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -17468,7 +17460,7 @@
   {
     "a": "Arsenal",
     "b": "Crystal Palace",
-    "score": 48,
+    "score": 38,
     "verdict": "Regional Rivalry",
     "distance": 10.9,
     "radius": 10.0,
@@ -17476,7 +17468,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 28,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -17751,7 +17743,7 @@
   {
     "a": "Brentford",
     "b": "Millwall",
-    "score": 47,
+    "score": 37,
     "verdict": "Regional Rivalry",
     "distance": 10.2,
     "radius": 10.0,
@@ -17759,7 +17751,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 32,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -17829,7 +17821,7 @@
   {
     "a": "Barnet",
     "b": "West Ham United",
-    "score": 47,
+    "score": 37,
     "verdict": "Regional Rivalry",
     "distance": 12.2,
     "radius": 12.0,
@@ -17837,7 +17829,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 32,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -18463,7 +18455,7 @@
   {
     "a": "Fulham",
     "b": "Tottenham Hotspur",
-    "score": 46,
+    "score": 36,
     "verdict": "Regional Rivalry",
     "distance": 11.2,
     "radius": 10.0,
@@ -18471,7 +18463,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 26,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -19438,15 +19430,15 @@
   {
     "a": "Barnet",
     "b": "Millwall",
-    "score": 44,
-    "verdict": "Regional Rivalry",
+    "score": 34,
+    "verdict": "Stretch — Barely a Derby",
     "distance": 12.8,
     "radius": 12.0,
     "tierGap": 2,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 29,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -19464,15 +19456,15 @@
   {
     "a": "Brentford",
     "b": "Leyton Orient",
-    "score": 44,
-    "verdict": "Regional Rivalry",
+    "score": 34,
+    "verdict": "Stretch — Barely a Derby",
     "distance": 12.8,
     "radius": 12.0,
     "tierGap": 2,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 29,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -20118,15 +20110,15 @@
   {
     "a": "AFC Wimbledon",
     "b": "Tottenham Hotspur",
-    "score": 43,
-    "verdict": "Regional Rivalry",
+    "score": 33,
+    "verdict": "Stretch — Barely a Derby",
     "distance": 13.0,
     "radius": 12.0,
     "tierGap": 2,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 28,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -20447,15 +20439,15 @@
   {
     "a": "Charlton Athletic",
     "b": "Queens Park Rangers",
-    "score": 42,
-    "verdict": "Regional Rivalry",
+    "score": 32,
+    "verdict": "Stretch — Barely a Derby",
     "distance": 11.7,
     "radius": 10.0,
     "tierGap": 0,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 22,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -20874,15 +20866,15 @@
   {
     "a": "Charlton Athletic",
     "b": "Fulham",
-    "score": 41,
-    "verdict": "Regional Rivalry",
+    "score": 31,
+    "verdict": "Stretch — Barely a Derby",
     "distance": 11.1,
     "radius": 10.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 26,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,
@@ -21676,15 +21668,15 @@
   {
     "a": "Brentford",
     "b": "West Ham United",
-    "score": 39,
-    "verdict": "Regional Rivalry",
+    "score": 29,
+    "verdict": "Stretch — Barely a Derby",
     "distance": 12.2,
     "radius": 10.0,
     "tierGap": 0,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 19,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -22186,15 +22178,15 @@
   {
     "a": "Brentford",
     "b": "Tottenham Hotspur",
-    "score": 38,
-    "verdict": "Regional Rivalry",
+    "score": 28,
+    "verdict": "Stretch — Barely a Derby",
     "distance": 12.4,
     "radius": 10.0,
     "tierGap": 0,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 18,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -28027,7 +28019,7 @@
   {
     "a": "Barnet",
     "b": "Charlton Athletic",
-    "score": 27,
+    "score": 17,
     "verdict": "Stretch — Barely a Derby",
     "distance": 15.9,
     "radius": 12.0,
@@ -28035,7 +28027,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 12,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -29184,7 +29176,7 @@
   {
     "a": "Crystal Palace",
     "b": "Tottenham Hotspur",
-    "score": 25,
+    "score": 15,
     "verdict": "Stretch — Barely a Derby",
     "distance": 14.3,
     "radius": 10.0,
@@ -29192,7 +29184,7 @@
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 5,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 5,
       "baseRadius": 25.0,
@@ -29895,15 +29887,15 @@
   {
     "a": "Barnet",
     "b": "Crystal Palace",
-    "score": 24,
-    "verdict": "Stretch — Barely a Derby",
+    "score": 14,
+    "verdict": "Not a Derby",
     "distance": 16.5,
     "radius": 12.0,
     "tierGap": 3,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 9,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 30.0,
@@ -30980,15 +30972,15 @@
   {
     "a": "Brentford",
     "b": "Charlton Athletic",
-    "score": 22,
-    "verdict": "Stretch — Barely a Derby",
+    "score": 12,
+    "verdict": "Not a Derby",
     "distance": 14.0,
     "radius": 10.0,
     "tierGap": 1,
     "densityFactor": 0.4,
     "breakdown": {
       "distanceScore": 7,
-      "cityBonus": 15,
+      "cityBonus": 5,
       "countyBonus": 0,
       "tierBonus": 0,
       "baseRadius": 25.0,

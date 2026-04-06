@@ -136,6 +136,10 @@ for i in range(len(clubs)):
         same_tier = ca['tier'] == cb['tier']
 
         city_bonus = 15 if same_city else 0
+        # Reduce city bonus in dense areas for distant same-city pairs
+        # (e.g. 8 miles across London shouldn't get the same bonus as 2 miles)
+        if city_bonus == 15 and ca.get('_nearbyCount', 0) >= 20 and cb.get('_nearbyCount', 0) >= 20 and distance >= 5:
+            city_bonus = 5
         county_bonus = 10 if (not same_city and same_county) else 0
         tier_bonus = 5 if same_tier else 0
 
