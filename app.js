@@ -404,7 +404,7 @@ function buildShareSnippet(clubA, clubB, result) {
   const bar = filled.repeat(filledCount) + empty.repeat(10 - filledCount);
   const emoji = emojiMap[verdictClass] || '';
 
-  const url = `typedformiles.github.io/isitaderby/?a=${slug(clubA.name)}&b=${slug(clubB.name)}`;
+  const url = `isitaderby.co.uk/?a=${slug(clubA.name)}&b=${slug(clubB.name)}`;
 
   const lines = [
     '\u26BD Is It A Derby?',
