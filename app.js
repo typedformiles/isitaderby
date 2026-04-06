@@ -397,6 +397,7 @@ document.getElementById('share-btn').addEventListener('click', function () {
   navigator.clipboard.writeText(window.location.href).then(() => {
     this.textContent = 'Copied!';
     this.classList.add('copied');
+    if (window.goatcounter) goatcounter.count({ path: 'share-link', title: 'Copy Link', event: true });
     setTimeout(() => {
       this.textContent = 'Copy link';
       this.classList.remove('copied');
@@ -410,6 +411,8 @@ document.getElementById('share-social-btn').addEventListener('click', function (
   navigator.clipboard.writeText(snippet).then(() => {
     this.textContent = 'Copied!';
     this.classList.add('copied');
+    const matchup = `${lastResult.clubA.name} vs ${lastResult.clubB.name}`;
+    if (window.goatcounter) goatcounter.count({ path: `share-social/${matchup}`, title: 'Social Share: ' + matchup, event: true });
     setTimeout(() => {
       this.textContent = 'Share result';
       this.classList.remove('copied');
