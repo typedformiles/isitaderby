@@ -394,18 +394,6 @@ function checkUrlParams() {
 }
 
 // Share buttons
-document.getElementById('share-btn').addEventListener('click', function () {
-  navigator.clipboard.writeText(window.location.href).then(() => {
-    this.textContent = 'Copied!';
-    this.classList.add('copied');
-    if (window.goatcounter) goatcounter.count({ path: 'share-link', title: 'Copy Link', event: true });
-    setTimeout(() => {
-      this.textContent = 'Copy link';
-      this.classList.remove('copied');
-    }, 2000);
-  });
-});
-
 document.getElementById('share-social-btn').addEventListener('click', function () {
   if (!lastResult) return;
   const snippet = buildShareSnippet(lastResult.clubA, lastResult.clubB, lastResult.result);
