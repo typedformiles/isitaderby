@@ -34,7 +34,8 @@
       "same-city",
       "cross-river",
       "dormant"
-    ]
+    ],
+    "since": 1878
   },
   {
     "a": "Chelsea",
@@ -70,7 +71,8 @@
     "rivalryScore": 68,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1910
   },
   {
     "a": "Peterborough Sports",
@@ -136,7 +138,8 @@
     "badges": [
       "same-city",
       "dormant"
-    ]
+    ],
+    "since": 1962
   },
   {
     "a": "Everton",
@@ -173,7 +176,8 @@
     "badges": [
       "same-city",
       "200-club"
-    ]
+    ],
+    "since": 1894
   },
   {
     "a": "Port Vale",
@@ -209,7 +213,8 @@
     "badges": [
       "same-city",
       "dormant"
-    ]
+    ],
+    "since": 1882
   },
   {
     "a": "Gateshead",
@@ -247,7 +252,8 @@
     "meetings": 3,
     "firstMeeting": 1930,
     "lastMeeting": 2023,
-    "rivalryScore": 43
+    "rivalryScore": 43,
+    "since": 2015
   },
   {
     "a": "Barnet",
@@ -282,7 +288,8 @@
     "meetings": 9,
     "firstMeeting": 2020,
     "lastMeeting": 2025,
-    "rivalryScore": 35
+    "rivalryScore": 35,
+    "since": 1946
   },
   {
     "a": "Aston Villa",
@@ -317,7 +324,8 @@
     "rivalryScore": 76,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1887
   },
   {
     "a": "Dartford",
@@ -353,7 +361,8 @@
     "meetings": 16,
     "firstMeeting": 2010,
     "lastMeeting": 2023,
-    "rivalryScore": 31
+    "rivalryScore": 31,
+    "since": 2010
   },
   {
     "a": "Aldershot Town",
@@ -388,7 +397,8 @@
     "meetings": 6,
     "firstMeeting": 2005,
     "lastMeeting": 2013,
-    "rivalryScore": 21
+    "rivalryScore": 21,
+    "since": 2003
   },
   {
     "a": "Dagenham & Redbridge",
@@ -454,7 +464,8 @@
     "meetings": 2,
     "firstMeeting": 2018,
     "lastMeeting": 2023,
-    "rivalryScore": 30
+    "rivalryScore": 30,
+    "since": 2019
   },
   {
     "a": "Sheffield United",
@@ -490,7 +501,8 @@
     "rivalryScore": 86,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1893
   },
   {
     "a": "Bradford City",
@@ -557,7 +569,8 @@
       "same-city",
       "200-club",
       "dormant"
-    ]
+    ],
+    "since": 1895
   },
   {
     "a": "AFC Totton",
@@ -625,7 +638,8 @@
     "meetings": 1,
     "firstMeeting": 2014,
     "lastMeeting": 2014,
-    "rivalryScore": 20
+    "rivalryScore": 20,
+    "since": 2025
   },
   {
     "a": "Oxford City",
@@ -692,7 +706,8 @@
     "meetings": 2,
     "firstMeeting": 2020,
     "lastMeeting": 2023,
-    "rivalryScore": 30
+    "rivalryScore": 30,
+    "since": 2024
   },
   {
     "a": "AFC Totton",
@@ -757,7 +772,8 @@
     "rivalryScore": 51,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1892
   },
   {
     "a": "Brentford",
@@ -793,7 +809,8 @@
     "rivalryScore": 67,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1903
   },
   {
     "a": "Farsley Celtic",
@@ -987,7 +1004,8 @@
     "badges": [
       "same-city",
       "dormant"
-    ]
+    ],
+    "since": 1968
   },
   {
     "a": "Brentford",
@@ -1022,7 +1040,8 @@
     "rivalryScore": 62,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1920
   },
   {
     "a": "AFC Wimbledon",
@@ -1188,7 +1207,8 @@
     "rivalryScore": 30,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 2023
   },
   {
     "a": "Blackpool",
@@ -1254,7 +1274,8 @@
     "meetings": 16,
     "firstMeeting": 2010,
     "lastMeeting": 2025,
-    "rivalryScore": 36
+    "rivalryScore": 36,
+    "since": 2012
   },
   {
     "a": "Enfield Town",
@@ -1322,7 +1343,8 @@
     "rivalryScore": 78,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1921
   },
   {
     "a": "Radcliffe",
@@ -1451,7 +1473,8 @@
     "rivalryScore": 83,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1882
   },
   {
     "a": "Charlton Athletic",
@@ -1518,7 +1541,8 @@
     "rivalryScore": 50,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1929
   },
   {
     "a": "Arsenal",
@@ -1580,7 +1604,8 @@
     "badges": [
       "same-city",
       "200-club"
-    ]
+    ],
+    "since": 1896
   },
   {
     "a": "Walsall",
@@ -1616,7 +1641,8 @@
     "badges": [
       "same-county",
       "dormant"
-    ]
+    ],
+    "since": 1892
   },
   {
     "a": "Birmingham City",
@@ -1652,7 +1678,8 @@
     "rivalryScore": 86,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1886
   },
   {
     "a": "Manchester City",
@@ -1688,7 +1715,8 @@
     "rivalryScore": 89,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1891
   },
   {
     "a": "Arsenal",
@@ -1724,7 +1752,8 @@
     "rivalryScore": 81,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1906
   },
   {
     "a": "Birmingham City",
@@ -1820,7 +1849,8 @@
     "meetings": 13,
     "firstMeeting": 2015,
     "lastMeeting": 2023,
-    "rivalryScore": 31
+    "rivalryScore": 31,
+    "since": 2015
   },
   {
     "a": "Taunton Town",
@@ -1855,7 +1885,8 @@
     "meetings": 8,
     "firstMeeting": 2019,
     "lastMeeting": 2025,
-    "rivalryScore": 35
+    "rivalryScore": 35,
+    "since": 1929
   },
   {
     "a": "Aveley",
@@ -1919,7 +1950,8 @@
     "badges": [
       "same-city",
       "dormant"
-    ]
+    ],
+    "since": 1951
   },
   {
     "a": "Brentford",
@@ -1955,7 +1987,8 @@
     "rivalryScore": 54,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1935
   },
   {
     "a": "Curzon Ashton",
@@ -2023,7 +2056,8 @@
     "badges": [
       "same-county",
       "cross-river"
-    ]
+    ],
+    "since": 1914
   },
   {
     "a": "Liverpool",
@@ -2178,7 +2212,8 @@
     "meetings": 80,
     "firstMeeting": 1907,
     "lastMeeting": 2025,
-    "rivalryScore": 67
+    "rivalryScore": 67,
+    "since": 1914
   },
   {
     "a": "Everton",
@@ -2215,7 +2250,8 @@
       "same-county",
       "cross-river",
       "dormant"
-    ]
+    ],
+    "since": 2001
   },
   {
     "a": "Chippenham Town",
@@ -2280,7 +2316,8 @@
     "meetings": 80,
     "firstMeeting": 1927,
     "lastMeeting": 2024,
-    "rivalryScore": 62
+    "rivalryScore": 62,
+    "since": 1927
   },
   {
     "a": "Darlington",
@@ -2315,7 +2352,8 @@
     "meetings": 152,
     "firstMeeting": 1921,
     "lastMeeting": 2007,
-    "rivalryScore": 61
+    "rivalryScore": 61,
+    "since": 1908
   },
   {
     "a": "Taunton Town",
@@ -2475,7 +2513,8 @@
     "meetings": 8,
     "firstMeeting": 2013,
     "lastMeeting": 2025,
-    "rivalryScore": 35
+    "rivalryScore": 35,
+    "since": 2002
   },
   {
     "a": "Bolton Wanderers",
@@ -2511,7 +2550,8 @@
     "rivalryScore": 59,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1983
   },
   {
     "a": "Brighton & Hove Albion",
@@ -2578,7 +2618,8 @@
     "rivalryScore": 35,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 2025
   },
   {
     "a": "Millwall",
@@ -2616,7 +2657,8 @@
       "cross-river",
       "dormant"
     ],
-    "tiktok": "https://www.tiktok.com/@whuf1/video/7550711491515796758"
+    "tiktok": "https://www.tiktok.com/@whuf1/video/7550711491515796758",
+    "since": 1899
   },
   {
     "a": "Rushall Olympic",
@@ -2710,7 +2752,8 @@
     "meetings": 4,
     "firstMeeting": 2016,
     "lastMeeting": 2019,
-    "rivalryScore": 25
+    "rivalryScore": 25,
+    "since": 2017
   },
   {
     "a": "Banbury United",
@@ -2804,7 +2847,8 @@
     "rivalryScore": 49,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1934
   },
   {
     "a": "Newcastle United",
@@ -2840,7 +2884,8 @@
     "rivalryScore": 87,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1888
   },
   {
     "a": "Fleetwood Town",
@@ -2935,7 +2980,8 @@
     "rivalryScore": 50,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1932
   },
   {
     "a": "AFC Wimbledon",
@@ -2970,7 +3016,8 @@
     "rivalryScore": 25,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 2023
   },
   {
     "a": "Tottenham Hotspur",
@@ -3007,7 +3054,8 @@
     "badges": [
       "same-city",
       "200-club"
-    ]
+    ],
+    "since": 1902
   },
   {
     "a": "Boreham Wood",
@@ -3098,7 +3146,8 @@
     "meetings": 24,
     "firstMeeting": 2011,
     "lastMeeting": 2025,
-    "rivalryScore": 41
+    "rivalryScore": 41,
+    "since": 2011
   },
   {
     "a": "Halifax Town",
@@ -3163,7 +3212,8 @@
     "rivalryScore": 50,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1951
   },
   {
     "a": "Aston Villa",
@@ -3261,7 +3311,8 @@
     "badges": [
       "same-county",
       "ghost-derby"
-    ]
+    ],
+    "since": 2024
   },
   {
     "a": "Aston Villa",
@@ -3296,7 +3347,8 @@
     "rivalryScore": 61,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1883
   },
   {
     "a": "Bromley",
@@ -3533,7 +3585,8 @@
     "rivalryScore": 74,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1906
   },
   {
     "a": "Walsall",
@@ -3569,7 +3622,8 @@
     "badges": [
       "same-county",
       "dormant"
-    ]
+    ],
+    "since": 1889
   },
   {
     "a": "Curzon Ashton",
@@ -3698,7 +3752,8 @@
     "rivalryScore": 37,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 2012
   },
   {
     "a": "Marine",
@@ -3763,7 +3818,8 @@
     "meetings": 14,
     "firstMeeting": 1980,
     "lastMeeting": 2023,
-    "rivalryScore": 37
+    "rivalryScore": 37,
+    "since": 1980
   },
   {
     "a": "Hornchurch",
@@ -4045,7 +4101,8 @@
     "badges": [
       "same-county",
       "dormant"
-    ]
+    ],
+    "since": 1920
   },
   {
     "a": "Cardiff City",
@@ -4196,7 +4253,8 @@
     "rivalryScore": 35,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 2019
   },
   {
     "a": "Enfield Town",
@@ -4349,7 +4407,8 @@
     "meetings": 60,
     "firstMeeting": 1950,
     "lastMeeting": 2026,
-    "rivalryScore": 60
+    "rivalryScore": 60,
+    "since": 1950
   },
   {
     "a": "Watford",
@@ -4497,7 +4556,8 @@
     "rivalryScore": 66,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1919
   },
   {
     "a": "Doncaster Rovers",
@@ -4533,7 +4593,8 @@
     "rivalryScore": 66,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1888
   },
   {
     "a": "Mansfield Town",
@@ -4595,7 +4656,8 @@
     "firstMeeting": 1932,
     "lastMeeting": 2025,
     "rivalryScore": 54,
-    "badges": []
+    "badges": [],
+    "since": 1932
   },
   {
     "a": "Brighton & Hove Albion",
@@ -4657,7 +4719,8 @@
     "meetings": 51,
     "firstMeeting": 1960,
     "lastMeeting": 2022,
-    "rivalryScore": 54
+    "rivalryScore": 54,
+    "since": 1920
   },
   {
     "a": "Horsham",
@@ -4754,7 +4817,8 @@
     "meetings": 64,
     "firstMeeting": 1951,
     "lastMeeting": 2026,
-    "rivalryScore": 60
+    "rivalryScore": 60,
+    "since": 1951
   },
   {
     "a": "Boston United",
@@ -4879,7 +4943,8 @@
     "meetings": 4,
     "firstMeeting": 2011,
     "lastMeeting": 2022,
-    "rivalryScore": 30
+    "rivalryScore": 30,
+    "since": 1929
   },
   {
     "a": "Maidstone United",
@@ -4945,7 +5010,8 @@
     "meetings": 80,
     "firstMeeting": 1927,
     "lastMeeting": 2013,
-    "rivalryScore": 52
+    "rivalryScore": 52,
+    "since": 1927
   },
   {
     "a": "Accrington Stanley",
@@ -4980,7 +5046,8 @@
     "rivalryScore": 30,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 2009
   },
   {
     "a": "Arsenal",
@@ -5345,7 +5412,8 @@
     "badges": [
       "same-city",
       "200-club"
-    ]
+    ],
+    "since": 1907
   },
   {
     "a": "Manchester United",
@@ -5506,7 +5574,8 @@
     "meetings": 156,
     "firstMeeting": 1888,
     "lastMeeting": 2018,
-    "rivalryScore": 77
+    "rivalryScore": 77,
+    "since": 1888
   },
   {
     "a": "Curzon Ashton",
@@ -5685,7 +5754,8 @@
     "badges": [
       "same-county",
       "dormant"
-    ]
+    ],
+    "since": 1910
   },
   {
     "a": "Hemel Hempstead Town",
@@ -5934,7 +6004,8 @@
     "rivalryScore": 31,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 2016
   },
   {
     "a": "Manchester City",
@@ -5970,7 +6041,8 @@
     "badges": [
       "same-county",
       "dormant"
-    ]
+    ],
+    "since": 1899
   },
   {
     "a": "Barnet",
@@ -6098,7 +6170,8 @@
     "rivalryScore": 61,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1892
   },
   {
     "a": "Rochdale",
@@ -6657,7 +6730,8 @@
     "rivalryScore": 44,
     "badges": [
       "dormant"
-    ]
+    ],
+    "since": 1937
   },
   {
     "a": "Hull City",
@@ -7334,7 +7408,8 @@
     "rivalryScore": 80,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1906
   },
   {
     "a": "Enfield Town",
@@ -7488,7 +7563,8 @@
     "meetings": 36,
     "firstMeeting": 2004,
     "lastMeeting": 2026,
-    "rivalryScore": 42
+    "rivalryScore": 42,
+    "since": 1998
   },
   {
     "a": "Dagenham & Redbridge",
@@ -7603,7 +7679,8 @@
     "firstMeeting": 1905,
     "lastMeeting": 2023,
     "rivalryScore": 61,
-    "badges": []
+    "badges": [],
+    "since": 1905
   },
   {
     "a": "AFC Bournemouth",
@@ -7780,7 +7857,8 @@
     "meetings": 59,
     "firstMeeting": "1956",
     "lastMeeting": "2025",
-    "rivalryScore": 59
+    "rivalryScore": 59,
+    "since": 1956
   },
   {
     "a": "Scunthorpe United",
@@ -8193,7 +8271,8 @@
     "rivalryScore": 72,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1900
   },
   {
     "a": "Gateshead",
@@ -8353,7 +8432,8 @@
       "cross-river"
     ],
     "rivalryScore": 40,
-    "meetings": 58
+    "meetings": 58,
+    "since": 1905
   },
   {
     "a": "Arsenal",
@@ -8385,7 +8465,8 @@
       "same-city"
     ],
     "rivalryScore": 35,
-    "meetings": 62
+    "meetings": 62,
+    "since": 1904
   },
   {
     "a": "Boreham Wood",
@@ -8502,7 +8583,8 @@
     "rivalryScore": 60,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1937
   },
   {
     "a": "Cheltenham Town",
@@ -8802,7 +8884,8 @@
     "rivalryScore": 82,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1886
   },
   {
     "a": "Altrincham",
@@ -8867,7 +8950,8 @@
     "rivalryScore": 56,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1890
   },
   {
     "a": "Altrincham",
@@ -9122,7 +9206,8 @@
     "rivalryScore": 74,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1885
   },
   {
     "a": "Taunton Town",
@@ -9558,7 +9643,8 @@
     "badges": [
       "same-county"
     ],
-    "youtubeShort": true
+    "youtubeShort": true,
+    "since": 1908
   },
   {
     "a": "Maidenhead United",
@@ -9898,7 +9984,8 @@
       "cross-river"
     ],
     "rivalryScore": 30,
-    "meetings": 46
+    "meetings": 46,
+    "since": 1900
   },
   {
     "a": "Millwall",
@@ -10064,7 +10151,8 @@
     "firstMeeting": 1892,
     "lastMeeting": 2025,
     "rivalryScore": 73,
-    "badges": []
+    "badges": [],
+    "since": 1893
   },
   {
     "a": "Hampton & Richmond",
@@ -10646,7 +10734,8 @@
     "rivalryScore": 66,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1920
   },
   {
     "a": "Dorking Wanderers",
@@ -10956,7 +11045,8 @@
       "cross-river"
     ],
     "rivalryScore": 65,
-    "meetings": 126
+    "meetings": 126,
+    "since": 1923
   },
   {
     "a": "AFC Wimbledon",
@@ -11477,7 +11567,8 @@
     "meetings": 15,
     "firstMeeting": 1936,
     "lastMeeting": 2024,
-    "rivalryScore": 43
+    "rivalryScore": 43,
+    "since": 1899
   },
   {
     "a": "Chelsea",
@@ -12104,7 +12195,8 @@
     "meetings": 13,
     "firstMeeting": 2007,
     "lastMeeting": 2025,
-    "rivalryScore": 36
+    "rivalryScore": 36,
+    "since": 1921
   },
   {
     "a": "Chippenham Town",
@@ -12766,7 +12858,8 @@
       "same-city"
     ],
     "rivalryScore": 18,
-    "meetings": 16
+    "meetings": 16,
+    "since": 1902
   },
   {
     "a": "Charlton Athletic",
@@ -13107,7 +13200,8 @@
     "firstMeeting": 1945,
     "lastMeeting": 2025,
     "rivalryScore": 66,
-    "badges": []
+    "badges": [],
+    "since": 1891
   },
   {
     "a": "Aldershot Town",
@@ -13568,7 +13662,8 @@
     "meetings": 80,
     "firstMeeting": 1893,
     "lastMeeting": 2024,
-    "rivalryScore": 68
+    "rivalryScore": 68,
+    "since": 1912
   },
   {
     "a": "Gillingham",
@@ -13818,7 +13913,8 @@
     "meetings": 8,
     "firstMeeting": 2012,
     "lastMeeting": 2023,
-    "rivalryScore": 30
+    "rivalryScore": 30,
+    "since": 2012
   },
   {
     "a": "Brackley Town",
@@ -14423,7 +14519,8 @@
     "firstMeeting": 1970,
     "lastMeeting": 2026,
     "rivalryScore": 59,
-    "badges": []
+    "badges": [],
+    "since": 1970
   },
   {
     "a": "Brackley Town",
@@ -14727,7 +14824,8 @@
     "meetings": 139,
     "firstMeeting": 1888,
     "lastMeeting": 2025,
-    "rivalryScore": 86
+    "rivalryScore": 86,
+    "since": 1888
   },
   {
     "a": "Enfield Town",
@@ -14789,7 +14887,8 @@
     "meetings": 30,
     "firstMeeting": 1926,
     "lastMeeting": 2024,
-    "rivalryScore": 49
+    "rivalryScore": 49,
+    "since": 1886
   },
   {
     "a": "Slough Town",
@@ -14984,7 +15083,8 @@
     "firstMeeting": 1915,
     "lastMeeting": 2025,
     "rivalryScore": 78,
-    "badges": []
+    "badges": [],
+    "since": 1915
   },
   {
     "a": "Darlington",
@@ -15098,7 +15198,8 @@
     "meetings": 5,
     "firstMeeting": 2007,
     "lastMeeting": 2025,
-    "rivalryScore": 35
+    "rivalryScore": 35,
+    "since": 2007
   },
   {
     "a": "Scarborough Athletic",
@@ -15947,7 +16048,8 @@
     "meetings": 62,
     "firstMeeting": 1962,
     "lastMeeting": 2024,
-    "rivalryScore": 55
+    "rivalryScore": 55,
+    "since": 1965
   },
   {
     "a": "AFC Telford United",
@@ -16165,7 +16267,8 @@
       "cross-river"
     ],
     "rivalryScore": 32,
-    "meetings": 62
+    "meetings": 62,
+    "since": 1898
   },
   {
     "a": "Arsenal",
@@ -16669,7 +16772,8 @@
     "rivalryScore": 82,
     "badges": [
       "same-city"
-    ]
+    ],
+    "since": 1909
   },
   {
     "a": "Boreham Wood",
@@ -16779,7 +16883,8 @@
     "meetings": 78,
     "firstMeeting": 1933,
     "lastMeeting": 2026,
-    "rivalryScore": 67
+    "rivalryScore": 67,
+    "since": 1933
   },
   {
     "a": "Hornchurch",
@@ -16872,7 +16977,8 @@
     "firstMeeting": 1892,
     "lastMeeting": 2022,
     "rivalryScore": 80,
-    "badges": []
+    "badges": [],
+    "since": 1892
   },
   {
     "a": "Chelmsford City",
@@ -17337,7 +17443,8 @@
       "same-city"
     ],
     "rivalryScore": 48,
-    "meetings": 71
+    "meetings": 71,
+    "since": 1906
   },
   {
     "a": "Bromley",
@@ -18024,7 +18131,8 @@
     "meetings": 30,
     "firstMeeting": 1921,
     "lastMeeting": 2025,
-    "rivalryScore": 55
+    "rivalryScore": 55,
+    "since": 1928
   },
   {
     "a": "Charlton Athletic",
@@ -18473,7 +18581,8 @@
     "firstMeeting": 1936,
     "lastMeeting": 2026,
     "rivalryScore": 67,
-    "badges": []
+    "badges": [],
+    "since": 1946
   },
   {
     "a": "Exeter City",
@@ -18974,7 +19083,8 @@
     "rivalryScore": 95,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1912
   },
   {
     "a": "Exeter City",
@@ -19338,7 +19448,8 @@
       "cross-river"
     ],
     "rivalryScore": 20,
-    "meetings": 36
+    "meetings": 36,
+    "since": 1921
   },
   {
     "a": "Arsenal",
@@ -19371,7 +19482,8 @@
       "cross-river"
     ],
     "rivalryScore": 30,
-    "meetings": 52
+    "meetings": 52,
+    "since": 1934
   },
   {
     "a": "Boreham Wood",
@@ -20442,7 +20554,8 @@
       "same-city"
     ],
     "rivalryScore": 38,
-    "meetings": 68
+    "meetings": 68,
+    "since": 1903
   },
   {
     "a": "Brentford",
@@ -21107,7 +21220,8 @@
     "meetings": 90,
     "firstMeeting": 1910,
     "lastMeeting": 2023,
-    "rivalryScore": 63
+    "rivalryScore": 63,
+    "since": 1924
   },
   {
     "a": "Dartford",
@@ -21171,7 +21285,8 @@
     "meetings": 67,
     "firstMeeting": 1920,
     "lastMeeting": 2025,
-    "rivalryScore": 66
+    "rivalryScore": 66,
+    "since": 1919
   },
   {
     "a": "Bromley",
@@ -22835,7 +22950,8 @@
     "meetings": 50,
     "firstMeeting": 1962,
     "lastMeeting": 2025,
-    "rivalryScore": 59
+    "rivalryScore": 59,
+    "since": 1965
   },
   {
     "a": "Lincoln City",
@@ -23900,7 +24016,8 @@
       "same-city"
     ],
     "rivalryScore": 18,
-    "meetings": 34
+    "meetings": 34,
+    "since": 1920
   },
   {
     "a": "Crystal Palace",
@@ -24453,7 +24570,8 @@
       "same-city"
     ],
     "rivalryScore": 18,
-    "meetings": 32
+    "meetings": 32,
+    "since": 1902
   },
   {
     "a": "Bolton Wanderers",
@@ -26406,7 +26524,8 @@
     "rivalryScore": 85,
     "badges": [
       "same-county"
-    ]
+    ],
+    "since": 1888
   },
   {
     "a": "Blackburn Rovers",
@@ -26804,7 +26923,8 @@
     "firstMeeting": 1902,
     "lastMeeting": 2026,
     "rivalryScore": 80,
-    "badges": []
+    "badges": [],
+    "since": 1902
   },
   {
     "a": "Plymouth Argyle",
@@ -28637,7 +28757,8 @@
     "meetings": 9,
     "firstMeeting": 1992,
     "lastMeeting": 2024,
-    "rivalryScore": 36
+    "rivalryScore": 36,
+    "since": 1992
   },
   {
     "a": "AFC Wimbledon",
@@ -29724,7 +29845,8 @@
     "firstMeeting": 1919,
     "lastMeeting": 2026,
     "rivalryScore": 68,
-    "badges": []
+    "badges": [],
+    "since": 1924
   },
   {
     "a": "Boreham Wood",
@@ -30635,7 +30757,8 @@
     "meetings": 97,
     "firstMeeting": 1901,
     "lastMeeting": 2022,
-    "rivalryScore": 64
+    "rivalryScore": 64,
+    "since": 1901
   },
   {
     "a": "Brentford",
@@ -30941,7 +31064,8 @@
     "meetings": 5,
     "firstMeeting": 1940,
     "lastMeeting": 2012,
-    "rivalryScore": 33
+    "rivalryScore": 33,
+    "since": 1938
   },
   {
     "a": "Chesham United",
@@ -31560,7 +31684,8 @@
     "meetings": 6,
     "firstMeeting": 2006,
     "lastMeeting": 2018,
-    "rivalryScore": 25
+    "rivalryScore": 25,
+    "since": 2016
   },
   {
     "a": "Boreham Wood",
@@ -31934,7 +32059,8 @@
       "cross-river"
     ],
     "rivalryScore": 35,
-    "meetings": 69
+    "meetings": 69,
+    "since": 1906
   },
   {
     "a": "Bromley",
@@ -41411,7 +41537,8 @@
     "firstMeeting": 1898,
     "lastMeeting": 2025,
     "rivalryScore": 85,
-    "badges": []
+    "badges": [],
+    "since": 1898
   },
   {
     "a": "Burnley",
@@ -41731,7 +41858,8 @@
     "meetings": 21,
     "firstMeeting": 2003,
     "lastMeeting": 2025,
-    "rivalryScore": 41
+    "rivalryScore": 41,
+    "since": 2009
   },
   {
     "a": "Dartford",
@@ -45587,7 +45715,8 @@
     ],
     "badges": [],
     "rivalryScore": 35,
-    "meetings": 106
+    "meetings": 106,
+    "since": 1897
   },
   {
     "a": "Chesham United",
@@ -45757,7 +45886,8 @@
     ],
     "badges": [],
     "rivalryScore": 38,
-    "meetings": 108
+    "meetings": 108,
+    "since": 1892
   },
   {
     "a": "Huddersfield Town",
@@ -46000,7 +46130,8 @@
     ],
     "badges": [],
     "rivalryScore": 42,
-    "meetings": 67
+    "meetings": 67,
+    "since": 1924
   },
   {
     "a": "Port Vale",
@@ -46061,7 +46192,8 @@
     "rivalryScore": 100,
     "badges": [
       "200-club"
-    ]
+    ],
+    "since": 1894
   },
   {
     "a": "Boreham Wood",
@@ -46169,7 +46301,8 @@
     ],
     "badges": [],
     "rivalryScore": 62,
-    "meetings": 218
+    "meetings": 218,
+    "since": 1892
   },
   {
     "a": "AFC Wimbledon",
@@ -46736,7 +46869,8 @@
     ],
     "badges": [],
     "rivalryScore": 72,
-    "meetings": 220
+    "meetings": 220,
+    "since": 1893
   },
   {
     "a": "Stevenage",
@@ -47197,7 +47331,8 @@
     ],
     "badges": [],
     "rivalryScore": 50,
-    "meetings": 200
+    "meetings": 200,
+    "since": 1899
   },
   {
     "a": "Horsham",
@@ -47253,7 +47388,8 @@
     ],
     "badges": [],
     "rivalryScore": 35,
-    "meetings": 102
+    "meetings": 102,
+    "since": 1924
   },
   {
     "a": "AFC Wimbledon",
@@ -48365,7 +48501,8 @@
     "firstMeeting": 1906,
     "lastMeeting": 2026,
     "rivalryScore": 79,
-    "badges": []
+    "badges": [],
+    "since": 1923
   },
   {
     "a": "Bedford Town",
@@ -48532,7 +48669,8 @@
     "firstMeeting": 1920,
     "lastMeeting": 2026,
     "rivalryScore": 80,
-    "badges": []
+    "badges": [],
+    "since": 1906
   },
   {
     "a": "Enfield Town",
@@ -49101,7 +49239,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 102
+    "meetings": 102,
+    "since": 1894
   },
   {
     "a": "Curzon Ashton",
@@ -49346,7 +49485,8 @@
     ],
     "badges": [],
     "rivalryScore": 32,
-    "meetings": 125
+    "meetings": 125,
+    "since": 1888
   },
   {
     "a": "Harrogate Town",
@@ -50617,7 +50757,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 32
+    "meetings": 32,
+    "since": 1921
   },
   {
     "a": "Farsley Celtic",
@@ -50727,7 +50868,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 36
+    "meetings": 36,
+    "since": 1933
   },
   {
     "a": "Slough Town",
@@ -50783,7 +50925,8 @@
     ],
     "badges": [],
     "rivalryScore": 50,
-    "meetings": 135
+    "meetings": 135,
+    "since": 1880
   },
   {
     "a": "Bedford Town",
@@ -51163,7 +51306,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 32
+    "meetings": 32,
+    "since": 1921
   },
   {
     "a": "Barnsley",
@@ -52083,7 +52227,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 28
+    "meetings": 28,
+    "since": 1924
   },
   {
     "a": "Coventry City",
@@ -52517,7 +52662,8 @@
     ],
     "badges": [],
     "rivalryScore": 15,
-    "meetings": 28
+    "meetings": 28,
+    "since": 1926
   },
   {
     "a": "Farsley Celtic",
@@ -52627,7 +52773,8 @@
     ],
     "badges": [],
     "rivalryScore": 38,
-    "meetings": 141
+    "meetings": 141,
+    "since": 1892
   },
   {
     "a": "Welling United",
@@ -53574,7 +53721,8 @@
     ],
     "badges": [],
     "rivalryScore": 16,
-    "meetings": 32
+    "meetings": 32,
+    "since": 1923
   },
   {
     "a": "Preston North End",
@@ -55952,7 +56100,8 @@
     ],
     "badges": [],
     "rivalryScore": 25,
-    "meetings": 92
+    "meetings": 92,
+    "since": 1892
   },
   {
     "a": "AFC Telford United",
@@ -56683,7 +56832,8 @@
     ],
     "badges": [],
     "rivalryScore": 42,
-    "meetings": 115
+    "meetings": 115,
+    "since": 1892
   },
   {
     "a": "Kettering Town",
@@ -57009,7 +57159,8 @@
     ],
     "badges": [],
     "rivalryScore": 32,
-    "meetings": 84
+    "meetings": 84,
+    "since": 1920
   },
   {
     "a": "Manchester United",
@@ -57038,7 +57189,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 117
+    "meetings": 117,
+    "since": 1892
   },
   {
     "a": "Salisbury",
@@ -57688,7 +57840,8 @@
     ],
     "badges": [],
     "rivalryScore": 50,
-    "meetings": 125
+    "meetings": 125,
+    "since": 1924
   },
   {
     "a": "Manchester City",
@@ -57717,7 +57870,8 @@
     ],
     "badges": [],
     "rivalryScore": 28,
-    "meetings": 133
+    "meetings": 133,
+    "since": 1899
   },
   {
     "a": "Chesham United",
@@ -58043,7 +58197,8 @@
     ],
     "badges": [],
     "rivalryScore": 35,
-    "meetings": 98
+    "meetings": 98,
+    "since": 1924
   },
   {
     "a": "Needham Market",
@@ -58129,7 +58284,8 @@
     "meetings": 85,
     "firstMeeting": 1893,
     "lastMeeting": 2026,
-    "rivalryScore": 73
+    "rivalryScore": 73,
+    "since": 1893
   },
   {
     "a": "Bolton Wanderers",
@@ -60075,7 +60231,8 @@
     ],
     "badges": [],
     "rivalryScore": 25,
-    "meetings": 120
+    "meetings": 120,
+    "since": 1894
   },
   {
     "a": "AFC Telford United",
@@ -60158,7 +60315,8 @@
     ],
     "badges": [],
     "rivalryScore": 48,
-    "meetings": 201
+    "meetings": 201,
+    "since": 1892
   },
   {
     "a": "Aveley",
@@ -60403,7 +60561,8 @@
     ],
     "badges": [],
     "rivalryScore": 42,
-    "meetings": 166
+    "meetings": 166,
+    "since": 1899
   },
   {
     "a": "Oldham Athletic",
@@ -60540,7 +60699,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 147
+    "meetings": 147,
+    "since": 1888
   },
   {
     "a": "Hampton & Richmond",
@@ -62432,7 +62592,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 52
+    "meetings": 52,
+    "since": 1892
   },
   {
     "a": "Banbury United",
@@ -63379,7 +63540,8 @@
     ],
     "badges": [],
     "rivalryScore": 32,
-    "meetings": 21
+    "meetings": 21,
+    "since": 1923
   },
   {
     "a": "AFC Telford United",
@@ -63543,7 +63705,8 @@
     ],
     "badges": [],
     "rivalryScore": 55,
-    "meetings": 206
+    "meetings": 206,
+    "since": 1894
   },
   {
     "a": "Aveley",
@@ -64301,7 +64464,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 72
+    "meetings": 72,
+    "since": 1924
   },
   {
     "a": "Bristol City",
@@ -64546,7 +64710,8 @@
     ],
     "badges": [],
     "rivalryScore": 52,
-    "meetings": 216
+    "meetings": 216,
+    "since": 1888
   },
   {
     "a": "Banbury United",
@@ -65518,7 +65683,8 @@
     ],
     "badges": [],
     "rivalryScore": 40,
-    "meetings": 102
+    "meetings": 102,
+    "since": 1924
   },
   {
     "a": "Burnley",
@@ -65547,7 +65713,8 @@
     ],
     "badges": [],
     "rivalryScore": 20,
-    "meetings": 66
+    "meetings": 66,
+    "since": 1888
   },
   {
     "a": "Liverpool",
@@ -65576,7 +65743,8 @@
     ],
     "badges": [],
     "rivalryScore": 55,
-    "meetings": 124
+    "meetings": 124,
+    "since": 1895
   },
   {
     "a": "Boston United",
@@ -66442,7 +66610,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 92
+    "meetings": 92,
+    "since": 1892
   },
   {
     "a": "Merthyr Town",
@@ -66552,7 +66721,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 68
+    "meetings": 68,
+    "since": 1888
   },
   {
     "a": "Leamington",
@@ -66716,7 +66886,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 34
+    "meetings": 34,
+    "since": 1929
   },
   {
     "a": "Barnsley",
@@ -66799,7 +66970,8 @@
     ],
     "badges": [],
     "rivalryScore": 25,
-    "meetings": 72
+    "meetings": 72,
+    "since": 1920
   },
   {
     "a": "AFC Totton",
@@ -66909,7 +67081,8 @@
     ],
     "badges": [],
     "rivalryScore": 25,
-    "meetings": 78
+    "meetings": 78,
+    "since": 1903
   },
   {
     "a": "Cardiff City",
@@ -67532,7 +67705,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 24
+    "meetings": 24,
+    "since": 1920
   },
   {
     "a": "Dover Athletic",
@@ -68074,7 +68248,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 28
+    "meetings": 28,
+    "since": 1927
   },
   {
     "a": "Chippenham Town",
@@ -68214,7 +68389,8 @@
     "meetings": 107,
     "firstMeeting": 1924,
     "lastMeeting": 2023,
-    "rivalryScore": 73
+    "rivalryScore": 73,
+    "since": 1924
   },
   {
     "a": "Buxton",
@@ -68297,7 +68473,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 20
+    "meetings": 20,
+    "since": 1929
   },
   {
     "a": "Blackpool",
@@ -68596,7 +68773,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 94
+    "meetings": 94,
+    "since": 1888
   },
   {
     "a": "Blackpool",
@@ -70752,7 +70930,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 30
+    "meetings": 30,
+    "since": 1933
   },
   {
     "a": "Cambridge United",
@@ -71618,7 +71797,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 22
+    "meetings": 22,
+    "since": 1927
   },
   {
     "a": "Banbury United",
@@ -71809,7 +71989,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 24
+    "meetings": 24,
+    "since": 1927
   },
   {
     "a": "Millwall",
@@ -72000,7 +72181,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 24
+    "meetings": 24,
+    "since": 1935
   },
   {
     "a": "Bath City",
@@ -72731,7 +72913,8 @@
     ],
     "badges": [],
     "rivalryScore": 40,
-    "meetings": 176
+    "meetings": 176,
+    "since": 1903
   },
   {
     "a": "AFC Totton",
@@ -72976,7 +73159,8 @@
     ],
     "badges": [],
     "rivalryScore": 55,
-    "meetings": 201
+    "meetings": 201,
+    "since": 1904
   },
   {
     "a": "Bath City",
@@ -73113,7 +73297,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 58
+    "meetings": 58,
+    "since": 1907
   },
   {
     "a": "Harrogate Town",
@@ -73331,7 +73516,8 @@
     ],
     "badges": [],
     "rivalryScore": 42,
-    "meetings": 170
+    "meetings": 170,
+    "since": 1907
   },
   {
     "a": "Gillingham",
@@ -74062,7 +74248,8 @@
     ],
     "badges": [],
     "rivalryScore": 25,
-    "meetings": 80
+    "meetings": 80,
+    "since": 1892
   },
   {
     "a": "Fleetwood Town",
@@ -74766,7 +74953,8 @@
     ],
     "badges": [],
     "rivalryScore": 32,
-    "meetings": 136
+    "meetings": 136,
+    "since": 1913
   },
   {
     "a": "Coventry City",
@@ -75038,7 +75226,8 @@
     ],
     "badges": [],
     "rivalryScore": 32,
-    "meetings": 149
+    "meetings": 149,
+    "since": 1899
   },
   {
     "a": "Enfield Town",
@@ -75256,7 +75445,8 @@
     ],
     "badges": [],
     "rivalryScore": 35,
-    "meetings": 102
+    "meetings": 102,
+    "since": 1904
   },
   {
     "a": "Birmingham City",
@@ -75528,7 +75718,8 @@
     ],
     "badges": [],
     "rivalryScore": 40,
-    "meetings": 198
+    "meetings": 198,
+    "since": 1893
   },
   {
     "a": "AFC Totton",
@@ -75800,7 +75991,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 28
+    "meetings": 28,
+    "since": 1935
   },
   {
     "a": "Altrincham",
@@ -76018,7 +76210,8 @@
     ],
     "badges": [],
     "rivalryScore": 38,
-    "meetings": 146
+    "meetings": 146,
+    "since": 1892
   },
   {
     "a": "Hampton & Richmond",
@@ -76290,7 +76483,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 62
+    "meetings": 62,
+    "since": 1923
   },
   {
     "a": "Scarborough Athletic",
@@ -76400,7 +76594,8 @@
     ],
     "badges": [],
     "rivalryScore": 55,
-    "meetings": 181
+    "meetings": 181,
+    "since": 1895
   },
   {
     "a": "Chelmsford City",
@@ -76564,7 +76759,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 34
+    "meetings": 34,
+    "since": 1907
   },
   {
     "a": "Aston Villa",
@@ -76593,7 +76789,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 42
+    "meetings": 42,
+    "since": 1969
   },
   {
     "a": "Chelsea",
@@ -76622,7 +76819,8 @@
     ],
     "badges": [],
     "rivalryScore": 25,
-    "meetings": 72
+    "meetings": 72,
+    "since": 1905
   },
   {
     "a": "Braintree Town",
@@ -76867,7 +77065,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 26
+    "meetings": 26,
+    "since": 1935
   },
   {
     "a": "Leamington",
@@ -77598,7 +77797,8 @@
     ],
     "badges": [],
     "rivalryScore": 25,
-    "meetings": 108
+    "meetings": 108,
+    "since": 1898
   },
   {
     "a": "Alfreton Town",
@@ -77924,7 +78124,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 98
+    "meetings": 98,
+    "since": 1893
   },
   {
     "a": "Banbury United",
@@ -77980,7 +78181,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 38
+    "meetings": 38,
+    "since": 1907
   },
   {
     "a": "Banbury United",
@@ -78252,7 +78454,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 82
+    "meetings": 82,
+    "since": 1905
   },
   {
     "a": "Farsley Celtic",
@@ -79388,7 +79591,8 @@
     ],
     "badges": [],
     "rivalryScore": 16,
-    "meetings": 32
+    "meetings": 32,
+    "since": 1921
   },
   {
     "a": "Bath City",
@@ -79471,7 +79675,8 @@
     ],
     "badges": [],
     "rivalryScore": 20,
-    "meetings": 68
+    "meetings": 68,
+    "since": 1923
   },
   {
     "a": "Coventry City",
@@ -81363,7 +81568,8 @@
     ],
     "badges": [],
     "rivalryScore": 42,
-    "meetings": 190
+    "meetings": 190,
+    "since": 1898
   },
   {
     "a": "Marine",
@@ -81446,7 +81652,8 @@
     ],
     "badges": [],
     "rivalryScore": 48,
-    "meetings": 192
+    "meetings": 192,
+    "since": 1893
   },
   {
     "a": "Crystal Palace",
@@ -81475,7 +81682,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 28
+    "meetings": 28,
+    "since": 1920
   },
   {
     "a": "Leyton Orient",
@@ -81774,7 +81982,8 @@
     ],
     "badges": [],
     "rivalryScore": 40,
-    "meetings": 186
+    "meetings": 186,
+    "since": 1890
   },
   {
     "a": "Horsham",
@@ -81830,7 +82039,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 172
+    "meetings": 172,
+    "since": 1894
   },
   {
     "a": "Needham Market",
@@ -82831,7 +83041,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 28
+    "meetings": 28,
+    "since": 1929
   },
   {
     "a": "Alfreton Town",
@@ -85506,7 +85717,8 @@
     ],
     "badges": [],
     "rivalryScore": 8,
-    "meetings": 14
+    "meetings": 14,
+    "since": 2015
   },
   {
     "a": "AFC Telford United",
@@ -88289,7 +88501,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 58
+    "meetings": 58,
+    "since": 1892
   },
   {
     "a": "Banbury United",
@@ -88615,7 +88828,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 32
+    "meetings": 32,
+    "since": 1920
   },
   {
     "a": "Chesham United",
@@ -90588,7 +90802,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 68
+    "meetings": 68,
+    "since": 1898
   },
   {
     "a": "Alfreton Town",
@@ -93155,7 +93370,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 20
+    "meetings": 20,
+    "since": 1920
   },
   {
     "a": "Oxford City",
@@ -93886,7 +94102,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 30
+    "meetings": 30,
+    "since": 1922
   },
   {
     "a": "AFC Totton",
@@ -95616,7 +95833,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 18
+    "meetings": 18,
+    "since": 1957
   },
   {
     "a": "Bradford City",
@@ -96860,7 +97078,8 @@
     ],
     "badges": [],
     "rivalryScore": 52,
-    "meetings": 175
+    "meetings": 175,
+    "since": 1909
   },
   {
     "a": "Forest Green Rovers",
@@ -97267,7 +97486,8 @@
     ],
     "badges": [],
     "rivalryScore": 55,
-    "meetings": 207
+    "meetings": 207,
+    "since": 1899
   },
   {
     "a": "Rochdale",
@@ -97431,7 +97651,8 @@
     ],
     "badges": [],
     "rivalryScore": 8,
-    "meetings": 12
+    "meetings": 12,
+    "since": 1937
   },
   {
     "a": "Farsley Celtic",
@@ -97595,7 +97816,8 @@
     ],
     "badges": [],
     "rivalryScore": 75,
-    "meetings": 214
+    "meetings": 214,
+    "since": 1893
   },
   {
     "a": "Chesham United",
@@ -97867,7 +98089,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 18
+    "meetings": 18,
+    "since": 1938
   },
   {
     "a": "Curzon Ashton",
@@ -98009,7 +98232,8 @@
     "meetings": 246,
     "firstMeeting": 1894,
     "lastMeeting": 2026,
-    "rivalryScore": 100
+    "rivalryScore": 100,
+    "since": 1894
   },
   {
     "a": "Chorley",
@@ -98416,7 +98640,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 62
+    "meetings": 62,
+    "since": 1922
   },
   {
     "a": "Hemel Hempstead Town",
@@ -98580,7 +98805,8 @@
     ],
     "badges": [],
     "rivalryScore": 62,
-    "meetings": 171
+    "meetings": 171,
+    "since": 1907
   },
   {
     "a": "Kidderminster Harriers",
@@ -98906,7 +99132,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 68
+    "meetings": 68,
+    "since": 1905
   },
   {
     "a": "Alfreton Town",
@@ -99043,7 +99270,8 @@
     ],
     "badges": [],
     "rivalryScore": 32,
-    "meetings": 120
+    "meetings": 120,
+    "since": 1924
   },
   {
     "a": "Bolton Wanderers",
@@ -99126,7 +99354,8 @@
     ],
     "badges": [],
     "rivalryScore": 72,
-    "meetings": 171
+    "meetings": 171,
+    "since": 1905
   },
   {
     "a": "Colchester United",
@@ -99182,7 +99411,8 @@
     ],
     "badges": [],
     "rivalryScore": 35,
-    "meetings": 96
+    "meetings": 96,
+    "since": 1924
   },
   {
     "a": "Farsley Celtic",
@@ -99346,7 +99576,8 @@
     ],
     "badges": [],
     "rivalryScore": 20,
-    "meetings": 76
+    "meetings": 76,
+    "since": 1890
   },
   {
     "a": "AFC Totton",
@@ -99456,7 +99687,8 @@
     ],
     "badges": [],
     "rivalryScore": 40,
-    "meetings": 130
+    "meetings": 130,
+    "since": 1922
   },
   {
     "a": "Chippenham Town",
@@ -99863,7 +100095,8 @@
     ],
     "badges": [],
     "rivalryScore": 55,
-    "meetings": 108
+    "meetings": 108,
+    "since": 1924
   },
   {
     "a": "AFC Totton",
@@ -100162,7 +100395,8 @@
     ],
     "badges": [],
     "rivalryScore": 25,
-    "meetings": 98
+    "meetings": 98,
+    "since": 1898
   },
   {
     "a": "Braintree Town",
@@ -100299,7 +100533,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 30
+    "meetings": 30,
+    "since": 1930
   },
   {
     "a": "Crawley Town",
@@ -100517,7 +100752,8 @@
     ],
     "badges": [],
     "rivalryScore": 28,
-    "meetings": 176
+    "meetings": 176,
+    "since": 1890
   },
   {
     "a": "Chorley",
@@ -100762,7 +100998,8 @@
     ],
     "badges": [],
     "rivalryScore": 28,
-    "meetings": 78
+    "meetings": 78,
+    "since": 1925
   },
   {
     "a": "Curzon Ashton",
@@ -101064,7 +101301,8 @@
     "firstMeeting": 1907,
     "lastMeeting": 2026,
     "rivalryScore": 79,
-    "badges": []
+    "badges": [],
+    "since": 1927
   },
   {
     "a": "Fulham",
@@ -101093,7 +101331,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 38
+    "meetings": 38,
+    "since": 1922
   },
   {
     "a": "Plymouth Argyle",
@@ -101230,7 +101469,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 44
+    "meetings": 44,
+    "since": 1969
   },
   {
     "a": "Chelmsford City",
@@ -101448,7 +101688,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 50
+    "meetings": 50,
+    "since": 1969
   },
   {
     "a": "Middlesbrough",
@@ -101585,7 +101826,8 @@
     ],
     "badges": [],
     "rivalryScore": 35,
-    "meetings": 148
+    "meetings": 148,
+    "since": 1895
   },
   {
     "a": "Crawley Town",
@@ -103369,7 +103611,8 @@
     ],
     "badges": [],
     "rivalryScore": 8,
-    "meetings": 14
+    "meetings": 14,
+    "since": 1936
   },
   {
     "a": "Fylde",
@@ -103506,7 +103749,8 @@
     ],
     "badges": [],
     "rivalryScore": 50,
-    "meetings": 187
+    "meetings": 187,
+    "since": 1909
   },
   {
     "a": "Oxford City",
@@ -103670,7 +103914,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 36
+    "meetings": 36,
+    "since": 1969
   },
   {
     "a": "Gateshead",
@@ -103726,7 +103971,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 78
+    "meetings": 78,
+    "since": 1903
   },
   {
     "a": "Portsmouth",
@@ -103893,7 +104139,8 @@
     ],
     "badges": [],
     "rivalryScore": 8,
-    "meetings": 16
+    "meetings": 16,
+    "since": 1935
   },
   {
     "a": "Leyton Orient",
@@ -104111,7 +104358,8 @@
     ],
     "badges": [],
     "rivalryScore": 40,
-    "meetings": 168
+    "meetings": 168,
+    "since": 1904
   },
   {
     "a": "Chesham United",
@@ -104464,7 +104712,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 72
+    "meetings": 72,
+    "since": 1912
   },
   {
     "a": "Enfield Town",
@@ -104628,7 +104877,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 90
+    "meetings": 90,
+    "since": 1904
   },
   {
     "a": "Chelsea",
@@ -104657,7 +104907,8 @@
     ],
     "badges": [],
     "rivalryScore": 78,
-    "meetings": 200
+    "meetings": 200,
+    "since": 1907
   },
   {
     "a": "AFC Wimbledon",
@@ -104713,7 +104964,8 @@
     ],
     "badges": [],
     "rivalryScore": 60,
-    "meetings": 227
+    "meetings": 227,
+    "since": 1905
   },
   {
     "a": "Brentford",
@@ -104742,7 +104994,8 @@
     ],
     "badges": [],
     "rivalryScore": 15,
-    "meetings": 40
+    "meetings": 40,
+    "since": 1922
   },
   {
     "a": "Barrow",
@@ -105176,7 +105429,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 68
+    "meetings": 68,
+    "since": 1932
   },
   {
     "a": "Slough Town",
@@ -105313,7 +105567,8 @@
     ],
     "badges": [],
     "rivalryScore": 48,
-    "meetings": 172
+    "meetings": 172,
+    "since": 1907
   },
   {
     "a": "Hereford",
@@ -105504,7 +105759,8 @@
     ],
     "badges": [],
     "rivalryScore": 35,
-    "meetings": 155
+    "meetings": 155,
+    "since": 1923
   },
   {
     "a": "Blackburn Rovers",
@@ -105668,7 +105924,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 38
+    "meetings": 38,
+    "since": 1920
   },
   {
     "a": "Altrincham",
@@ -105724,7 +105981,8 @@
     ],
     "badges": [],
     "rivalryScore": 28,
-    "meetings": 78
+    "meetings": 78,
+    "since": 1905
   },
   {
     "a": "Burnley",
@@ -105753,7 +106011,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 58
+    "meetings": 58,
+    "since": 1924
   },
   {
     "a": "Ebbsfleet United",
@@ -105998,7 +106257,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 124
+    "meetings": 124,
+    "since": 1907
   },
   {
     "a": "Fylde",
@@ -106945,7 +107205,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 52
+    "meetings": 52,
+    "since": 1937
   },
   {
     "a": "Chelmsford City",
@@ -107487,7 +107748,8 @@
     ],
     "badges": [],
     "rivalryScore": 18,
-    "meetings": 46
+    "meetings": 46,
+    "since": 1969
   },
   {
     "a": "Curzon Ashton",
@@ -107732,7 +107994,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 24
+    "meetings": 24,
+    "since": 1922
   },
   {
     "a": "Hereford",
@@ -108058,7 +108321,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 26
+    "meetings": 26,
+    "since": 1957
   },
   {
     "a": "Chester",
@@ -108330,7 +108594,8 @@
     ],
     "badges": [],
     "rivalryScore": 8,
-    "meetings": 20
+    "meetings": 20,
+    "since": 1935
   },
   {
     "a": "Farsley Celtic",
@@ -108791,7 +109056,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 26
+    "meetings": 26,
+    "since": 1926
   },
   {
     "a": "King's Lynn Town",
@@ -109063,7 +109329,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 24
+    "meetings": 24,
+    "since": 1927
   },
   {
     "a": "Exeter City",
@@ -111144,7 +111411,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 22
+    "meetings": 22,
+    "since": 1923
   },
   {
     "a": "Dagenham & Redbridge",
@@ -111254,7 +111522,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 28
+    "meetings": 28,
+    "since": 1925
   },
   {
     "a": "Fylde",
@@ -112660,7 +112929,8 @@
     ],
     "badges": [],
     "rivalryScore": 8,
-    "meetings": 14
+    "meetings": 14,
+    "since": 1932
   },
   {
     "a": "Chorley",
@@ -112878,7 +113148,8 @@
     ],
     "badges": [],
     "rivalryScore": 16,
-    "meetings": 34
+    "meetings": 34,
+    "since": 1926
   },
   {
     "a": "Southport",
@@ -113042,7 +113313,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 22
+    "meetings": 22,
+    "since": 1930
   },
   {
     "a": "Curzon Ashton",
@@ -113530,7 +113802,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 28
+    "meetings": 28,
+    "since": 1923
   },
   {
     "a": "Morecambe",
@@ -113802,7 +114075,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 30
+    "meetings": 30,
+    "since": 1922
   },
   {
     "a": "Curzon Ashton",
@@ -114533,7 +114807,8 @@
     ],
     "badges": [],
     "rivalryScore": 14,
-    "meetings": 30
+    "meetings": 30,
+    "since": 1926
   },
   {
     "a": "Maidstone United",
@@ -116344,7 +116619,8 @@
     ],
     "badges": [],
     "rivalryScore": 28,
-    "meetings": 118
+    "meetings": 118,
+    "since": 1899
   },
   {
     "a": "AFC Totton",
@@ -116508,7 +116784,8 @@
     ],
     "badges": [],
     "rivalryScore": 25,
-    "meetings": 120
+    "meetings": 120,
+    "since": 1893
   },
   {
     "a": "Dartford",
@@ -116753,7 +117030,8 @@
     ],
     "badges": [],
     "rivalryScore": 22,
-    "meetings": 80
+    "meetings": 80,
+    "since": 1924
   },
   {
     "a": "Chorley",
@@ -116836,7 +117114,8 @@
     ],
     "badges": [],
     "rivalryScore": 7,
-    "meetings": 12
+    "meetings": 12,
+    "since": 1935
   },
   {
     "a": "Darlington",
@@ -116919,7 +117198,8 @@
     ],
     "badges": [],
     "rivalryScore": 35,
-    "meetings": 138
+    "meetings": 138,
+    "since": 1905
   },
   {
     "a": "Eastbourne Borough",
@@ -117029,7 +117309,8 @@
     ],
     "badges": [],
     "rivalryScore": 20,
-    "meetings": 80
+    "meetings": 80,
+    "since": 1908
   },
   {
     "a": "Eastbourne Borough",
@@ -117085,7 +117366,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 36
+    "meetings": 36,
+    "since": 1907
   },
   {
     "a": "Slough Town",
@@ -117222,7 +117504,8 @@
     ],
     "badges": [],
     "rivalryScore": 50,
-    "meetings": 198
+    "meetings": 198,
+    "since": 1893
   },
   {
     "a": "Altrincham",
@@ -117386,7 +117669,8 @@
     ],
     "badges": [],
     "rivalryScore": 30,
-    "meetings": 108
+    "meetings": 108,
+    "since": 1908
   },
   {
     "a": "Barnsley",
@@ -117469,7 +117753,8 @@
     ],
     "badges": [],
     "rivalryScore": 8,
-    "meetings": 14
+    "meetings": 14,
+    "since": 1935
   },
   {
     "a": "Dagenham & Redbridge",
@@ -117579,7 +117864,8 @@
     ],
     "badges": [],
     "rivalryScore": 35,
-    "meetings": 130
+    "meetings": 130,
+    "since": 1907
   },
   {
     "a": "Fulham",
@@ -117608,7 +117894,8 @@
     ],
     "badges": [],
     "rivalryScore": 16,
-    "meetings": 48
+    "meetings": 48,
+    "since": 1908
   },
   {
     "a": "Boreham Wood",
@@ -117691,7 +117978,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 22
+    "meetings": 22,
+    "since": 1969
   },
   {
     "a": "Lincoln City",
@@ -118179,7 +118467,8 @@
     ],
     "badges": [],
     "rivalryScore": 16,
-    "meetings": 36
+    "meetings": 36,
+    "since": 1969
   },
   {
     "a": "Gateshead",
@@ -119423,7 +119712,8 @@
     ],
     "badges": [],
     "rivalryScore": 10,
-    "meetings": 18
+    "meetings": 18,
+    "since": 1920
   },
   {
     "a": "Havant & Waterlooville",
@@ -119506,7 +119796,8 @@
     ],
     "badges": [],
     "rivalryScore": 8,
-    "meetings": 14
+    "meetings": 14,
+    "since": 1933
   },
   {
     "a": "Dover Athletic",
@@ -119562,7 +119853,8 @@
     ],
     "badges": [],
     "rivalryScore": 12,
-    "meetings": 24
+    "meetings": 24,
+    "since": 1920
   },
   {
     "a": "South Shields",
@@ -119645,7 +119937,8 @@
     ],
     "badges": [],
     "rivalryScore": 8,
-    "meetings": 18
+    "meetings": 18,
+    "since": 1933
   },
   {
     "a": "Scarborough Athletic",
@@ -121993,6 +122286,7 @@
     "firstMeeting": 2012,
     "lastMeeting": 2025,
     "rivalryScore": 100,
-    "badges": []
+    "badges": [],
+    "since": 2012
   }
 ]
