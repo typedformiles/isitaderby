@@ -7760,17 +7760,27 @@
       "nearbyA": 0,
       "nearbyB": 2
     },
-    "rivalryName": null,
+    "rivalryName": "The Cambridgeshire Derby",
     "strapline": "The Cambridgeshire derby, ~30 miles apart. Peterborough are famous for their \"Posh\" nickname and for scoring goals in absurd quantities \u2014 they hit 134 in 1960/61, a Football League record for a single season.",
     "youtube": "https://www.youtube.com/embed/V1ny5wR0gKU",
-    "keyMoments": [],
+    "keyMoments": [
+      "First ever meeting in 1956 Hunts Premier Cup \u2014 Peterborough won 5-1",
+      "Cambridge won four consecutive league derbies in 1988-90 as both clubs earned promotion from Division Four",
+      "16-year gap (2001-2017) after Cambridge relegation \u2014 reunion preceded by smoke grenade incident at a pub",
+      "Cambridge 2-0 Peterborough in April 2023 \u2014 first league win over Posh in 25 years, denting their auto-promotion push",
+      "Back-to-back record thrashings: Peterborough 5-0 (Nov 2023) and 6-1 (Nov 2024) with Kwame Poku hat-trick"
+    ],
     "tags": [
       "same-county",
       "has-history"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 59,
+    "firstMeeting": "1956",
+    "lastMeeting": "2025",
+    "rivalryScore": 59
   },
   {
     "a": "Scunthorpe United",
