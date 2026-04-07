@@ -850,6 +850,7 @@ header p {
 /* Share */
 .share-link {
   text-align: center;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   display: flex;
   gap: 0.5rem;
