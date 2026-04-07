@@ -484,7 +484,12 @@ function showClubRivals(club) {
       otherName: p.a === club.name ? p.b : p.a,
       pair: p
     }))
-    .sort((a, b) => b.pair.score - a.pair.score || a.pair.distance - b.pair.distance)
+    .map(r => {
+      const rivalry = r.pair.rivalryScore != null ? r.pair.rivalryScore : 0;
+      const combined = Math.round((r.pair.score + rivalry) / 2);
+      return { ...r, combined };
+    })
+    .sort((a, b) => b.combined - a.combined || a.pair.distance - b.pair.distance)
     .slice(0, 10);
 
   document.getElementById('rivals-badge').style.background =
@@ -494,14 +499,14 @@ function showClubRivals(club) {
   document.getElementById('rivals-list').innerHTML = rivals.map((r, i) => {
     const other = clubMap.get(r.otherName);
     if (!other) return '';
-    const scoreClass = r.pair.score >= 75 ? 'fierce' : r.pair.score >= 55 ? 'local' : '';
+    const scoreClass = r.combined >= 75 ? 'fierce' : r.combined >= 55 ? 'local' : '';
     return `<div class="leaderboard-row" data-a="${slug(club.name)}" data-b="${slug(r.otherName)}">
       <span class="lb-rank">${i + 1}</span>
       <span class="lb-badges">
         <span class="lb-badge" style="background:linear-gradient(135deg,${other.col1},${other.col2})"></span>
       </span>
       <span class="lb-names">${r.otherName}</span>
-      <span class="lb-score ${scoreClass}">${r.pair.score}</span>
+      <span class="lb-score ${scoreClass}">${r.combined}</span>
       <span class="lb-distance">${r.pair.distance}mi</span>
     </div>`;
   }).join('');
