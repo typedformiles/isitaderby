@@ -98,7 +98,10 @@
         <p>This means a pair like Liverpool vs Manchester United can score 5/100 on Derby (geography) but 100/100 on Rivalry (history) — close on the fixture list, far on the map.</p>
 
         <h4>The Ultimate Score</h4>
-        <p>The <strong>Ultimate Score</strong> is simply the average of Derby and Rivalry scores. Only pairs with both scores qualify. Everton vs Liverpool sits alone at the top with a perfect 100 — the only pair to max out both geography and history.</p>
+        <p>The <strong>Ultimate Score</strong> combines Derby and Rivalry with a <strong>40/60 weighting</strong> — rivalry counts for more, because history is what turns proximity into a real fixture. The formula is:</p>
+        <p style="font-family:monospace;background:var(--surface-2);padding:0.8rem;border-radius:6px;margin:0.8rem 0;">ultimate = (derby × 0.4 + rivalry × 0.6) × penalty</p>
+        <p>Where <strong>penalty</strong> aggressively degrades pairs with very low rivalry scores. If a pair has fewer than 20 rivalry points, their ultimate score is multiplied by <code>rivalry / 20</code>. Zero rivalry means zero ultimate score — being close isn't enough if you've never actually played each other. This stops non-league neighbours from outranking genuine historical rivals.</p>
+        <p>Only pairs with both scores qualify. Everton vs Liverpool sits alone at the top with a perfect 100 — the only pair to max out both geography and history.</p>
       </div>
     </div>
 

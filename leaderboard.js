@@ -18,7 +18,11 @@ Promise.all([
   if (mode === 'ultimate') {
     rows = pairData
       .filter(p => p.rivalryScore != null)
-      .map(p => ({ ...p, hybrid: Math.round((p.score + p.rivalryScore) / 2) }))
+      .map(p => {
+        const raw = Math.round(p.score * 0.4 + p.rivalryScore * 0.6);
+        const penalty = Math.min(p.rivalryScore / 20, 1);
+        return { ...p, hybrid: Math.round(raw * penalty) };
+      })
       .sort((a, b) => b.hybrid - a.hybrid || a.distance - b.distance);
   } else if (mode === 'closest') {
     rows = pairData

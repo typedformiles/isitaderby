@@ -486,7 +486,9 @@ function showClubRivals(club) {
     }))
     .map(r => {
       const rivalry = r.pair.rivalryScore != null ? r.pair.rivalryScore : 0;
-      const combined = Math.round((r.pair.score + rivalry) / 2);
+      const raw = Math.round(r.pair.score * 0.4 + rivalry * 0.6);
+      const penalty = Math.min(rivalry / 20, 1);
+      const combined = Math.round(raw * penalty);
       return { ...r, combined };
     })
     .sort((a, b) => b.combined - a.combined || (clubMap.get(a.otherName)?.tier || 99) - (clubMap.get(b.otherName)?.tier || 99) || a.pair.distance - b.pair.distance)
