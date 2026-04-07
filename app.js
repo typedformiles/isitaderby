@@ -489,7 +489,7 @@ function showClubRivals(club) {
       const combined = Math.round((r.pair.score + rivalry) / 2);
       return { ...r, combined };
     })
-    .sort((a, b) => b.combined - a.combined || a.pair.distance - b.pair.distance)
+    .sort((a, b) => b.combined - a.combined || (clubMap.get(a.otherName)?.tier || 99) - (clubMap.get(b.otherName)?.tier || 99) || a.pair.distance - b.pair.distance)
     .slice(0, 10);
 
   document.getElementById('rivals-badge').style.background =
