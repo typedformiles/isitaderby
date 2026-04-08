@@ -35927,13 +35927,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Walsall 3-0 Coventry in League Cup 1984 second leg \u2014 4-2 on aggregate, giant-killing of top-flight Coventry",
+      "Coventry 6-1 Walsall in January 2004 \u2014 Coventry's biggest win in the fixture",
+      "Walsall 4-0 Coventry in April 2013 \u2014 Walsall's biggest win in a League One hammering"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 22,
+    "firstMeeting": "1924",
+    "lastMeeting": "2019",
+    "rivalryScore": 42
   },
   {
     "a": "Curzon Ashton",
@@ -44244,9 +44252,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1927-28 \u2014 Coventry fans rioted at Northampton after a dubious goal in the final game of a disastrous season",
+      "2013-14 \u2014 Coventry forced to play home games at Northampton's Sixfields for 13 months due to rent dispute; fans boycotted from nearby Jimmy's Hill",
+      "Northampton 2-1 Coventry in FA Cup November 2015 \u2014 upset at the Ricoh Arena"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 40,
+    "firstMeeting": "1926",
+    "lastMeeting": "2021",
+    "rivalryScore": 51
   },
   {
     "a": "Maidenhead United",
@@ -52355,11 +52371,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First met in April 1968 \u2014 Coventry's debut top-flight season, won 2-0 at Highfield Road",
+      "FA Cup fifth round 1987 \u2014 Coventry won 1-0 at the Victoria Ground, a pivotal step in their famous Cup-winning run",
+      "Stoke 4-0 Coventry in April 2023 \u2014 heaviest defeat in the fixture's history"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 25,
+    "firstMeeting": "1968",
+    "lastMeeting": "2026",
+    "rivalryScore": 46
   },
   {
     "a": "Eastbourne Borough",
@@ -54066,11 +54090,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "FA Cup 1972-73 \u2014 Oxford (Division Three) stunned top-flight Coventry 4-1, putting them on the national map",
+      "FA Cup 1986-87 fifth round \u2014 Oxford won 3-2 in a replay despite Coventry's late fightback; Coventry still won the Cup that year",
+      "Coventry 6-2 Oxford in FA Cup January 2024 \u2014 three goals in 17 minutes in a demolition"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 25,
+    "firstMeeting": "1972",
+    "lastMeeting": "2026",
+    "rivalryScore": 47
   },
   {
     "a": "Burton Albion",
@@ -58658,11 +58690,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Final day 1967-68 \u2014 Coventry's first top-flight survival by one point as Sheffield United were relegated",
+      "FA Cup QF 1997-98 \u2014 two 1-1 draws then Sheffield United won on penalties at Bramall Lane",
+      "Sheffield United 1-2 Coventry in February 2026 \u2014 Wright and Rudoni goals extended Coventry's lead at the top"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 47,
+    "firstMeeting": "1936",
+    "lastMeeting": "2026",
+    "rivalryScore": 58
   },
   {
     "a": "Hemel Hempstead Town",
@@ -59900,11 +59940,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "FA Cup first round 1911 \u2014 Coventry beat The Wednesday 2-1 away before even joining the Football League",
+      "FA Cup QF 1987 \u2014 Coventry won 3-1 at Hillsborough en route to their only FA Cup triumph",
+      "Sheffield Wednesday 0-5 Coventry in October 2025 \u2014 match halted by pitch invasion, sent Coventry top of the Championship"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 80,
+    "firstMeeting": "1911",
+    "lastMeeting": "2026",
+    "rivalryScore": 70
   },
   {
     "a": "MK Dons",
