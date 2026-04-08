@@ -30895,13 +30895,23 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First met in 1936-37 when Villa were humiliatingly relegated to Division Two \u2014 Coventry beat them and finished above them",
+      "1987: Coventry won the FA Cup (their only major trophy) while Villa were relegated \u2014 brief role reversal",
+      "Dion Dublin transfer from Coventry to Villa in 1984 for \u00a35.75m \u2014 scored 7 in his first 4 Villa games",
+      "Villa 3-2 Coventry, May 2001 \u2014 Coventry led 2-0 but collapsed, Merson 86th-min winner sealed relegation ending 34 years in the top flight",
+      "Have not met in any competition since 2001 \u2014 a 25-year gap and counting"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 59,
+    "firstMeeting": "1936",
+    "lastMeeting": "2001",
+    "rivalryScore": 42
   },
   {
     "a": "Mansfield Town",
@@ -32199,14 +32209,24 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "WBA 7-1 Coventry in October 1978 \u2014 Cunningham and Regis both scored twice in the era of the famous Three Degrees",
+      "Cyrille Regis transferred from WBA to Coventry in 1984 \u2014 went on to win the 1987 FA Cup with the Sky Blues",
+      "WBA 5-0 Coventry in December 2006 \u2014 Kamara scored after just 30 seconds",
+      "Coventry 3-2 WBA in November 2025 \u2014 came from 2-0 down against 10-man WBA to extend 8-point lead at top of Championship",
+      "Nearly two decades as Division One neighbours (1967-1986) cemented the fixture"
+    ],
     "tags": [
       "same-county",
       "same-tier"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 80,
+    "firstMeeting": "1967",
+    "lastMeeting": "2026",
+    "rivalryScore": 59
   },
   {
     "a": "Barnet",
@@ -41965,13 +41985,23 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First met in February 1920 in Division Two \u2014 Coventry won 1-0 in their first Football League season",
+      "Coventry 3-1 Wolves, April 1967 \u2014 the Midlands Match of the Century, 51,455 attendance (Coventry record), both promoted",
+      "FA Cup 1984 third round needed three matches to settle \u2014 two 1-1 draws before Coventry won the second replay 3-0",
+      "Wolves 2-3 Coventry, March 2024 FA Cup QF \u2014 two goals in stoppage time for one of the great FA Cup comebacks",
+      "Reports of fighting between fan groups in the 1960s-70s when both were in the top flight together"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 66,
+    "firstMeeting": "1920",
+    "lastMeeting": "2024",
+    "rivalryScore": 66
   },
   {
     "a": "Dorking Wanderers",
@@ -47109,11 +47139,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First league meetings in 1921-22 Division Two \u2014 both clubs in the lower leagues in the early days",
+      "Coventry 1-1 Derby, August 1969 \u2014 first top-flight meeting, Brian Clough's first season as a Division One manager",
+      "Coventry 6-2 Derby, April 2005 \u2014 the final ever match at Highfield Road, Coventry's home since 1899",
+      "Coventry 6-1 Derby, January 2006 \u2014 biggest ever win in the fixture, at the new Ricoh Arena",
+      "Derby 3-5 Coventry, August 2025 \u2014 eight-goal thriller, Coventry's first win at Derby in 11 visits"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 87,
+    "firstMeeting": "1921",
+    "lastMeeting": "2026",
+    "rivalryScore": 68
   },
   {
     "a": "Luton Town",
