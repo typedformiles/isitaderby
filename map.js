@@ -76,8 +76,8 @@ function showMatchupOnMap(clubA, clubB, result) {
   const distLabel = L.marker([midLat, midLng], {
     icon: L.divIcon({
       className: 'map-dist-label',
-      html: `<div style="background:rgba(15,25,12,0.85);color:#f0f0e8;padding:4px 10px;border-radius:0;font-size:12px;font-weight:600;white-space:nowrap;border:1px solid rgba(255,255,255,0.3);transform:translate(-50%,-50%);">${result.distance} mi</div>`,
-      iconSize: [0, 0],
+      html: `<span>${result.distance} mi</span>`,
+      iconSize: null,
       iconAnchor: [0, 0]
     })
   }).addTo(derbyMap);
