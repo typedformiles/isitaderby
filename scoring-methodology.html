@@ -53,7 +53,26 @@
         </table>
 
         <h4>Club density adjustment</h4>
-        <p>The radius is then adjusted for <strong>club density</strong>. A club in London might have 15+ other clubs within 25 miles — so "local" means much closer there (radius shrinks to 40% of base). But a club in Norfolk might have only 1 or 2 neighbours, so they get a <strong>loneliness bonus</strong> — the radius widens up to 1.5× because they simply don't have other options. Norwich vs Ipswich at 40 miles isn't the same as Chelsea vs Brighton at 40 miles, because Norwich and Ipswich genuinely are each other's only meaningful rival. The loneliness bonus only applies when both clubs are isolated.</p>
+        <p>The radius is then adjusted for <strong>club density</strong> — how many other clubs are within 25 miles. Dense areas get a tighter radius; isolated clubs get a wider one.</p>
+
+        <table>
+          <tr><th>Nearby Clubs</th><th>Radius Adjustment</th><th>Effect</th></tr>
+          <tr><td>0–1</td><td>×1.5</td><td>Loneliness bonus — you don't have other options</td></tr>
+          <tr><td>2–3</td><td>×1.3</td><td>Sparse area bonus</td></tr>
+          <tr><td>4–6</td><td>×1.0</td><td>No adjustment</td></tr>
+          <tr><td>7+</td><td>×(6/n), floored</td><td>Tightened — "local" means closer here</td></tr>
+        </table>
+
+        <p>The floor depends on region. London has 30+ clubs within 25 miles of each other — "local" really does mean a few miles there. But the West Midlands and the North West are dense without being London-dense, so they get a softer floor:</p>
+
+        <table>
+          <tr><th>Region</th><th>Floor</th><th>Why</th></tr>
+          <tr><td>West Midlands</td><td>0.75</td><td>Dense but not London — Villa, Blues, Wolves, WBA, Coventry</td></tr>
+          <tr><td>Greater Manchester, Lancashire, Cheshire, West Yorkshire</td><td>0.60</td><td>The East Lancs derby was scoring 34. That's wrong.</td></tr>
+          <tr><td>London &amp; everywhere else</td><td>0.40</td><td>Full tightening</td></tr>
+        </table>
+
+        <p>The <strong>loneliness bonus</strong> only applies when both clubs are isolated. Norwich vs Ipswich at 40 miles isn't the same as Chelsea vs Brighton at 40 miles, because Norwich and Ipswich genuinely are each other's only meaningful rival.</p>
 
         <p>Distance score decays linearly: clubs at the radius score ~33, clubs at 1.5× the radius score 0. We then add bonuses:</p>
 
