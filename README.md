@@ -21,8 +21,8 @@ The score (0-100) is based on:
 |-------|---------|
 | 75-100 | Proper Local Derby |
 | 55-74 | Local Derby |
-| 35-54 | Regional Rivalry |
-| 15-34 | Stretch — Barely a Derby |
+| 35-54 | Distant Neighbours |
+| 15-34 | Clutching |
 | 0-14 | Not a Derby |
 
 ## Features

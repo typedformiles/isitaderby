@@ -158,16 +158,16 @@ function calculateDerbyScore(clubA, clubB) {
 function getVerdict(score) {
   if (score >= 75) return 'Proper Local Derby';
   if (score >= 55) return 'Local Derby';
-  if (score >= 35) return 'Regional Rivalry';
-  if (score >= 15) return 'Stretch — Barely a Derby';
+  if (score >= 35) return 'Distant Neighbours';
+  if (score >= 15) return 'Clutching';
   return 'Not a Derby';
 }
 
 function getVerdictClass(verdict) {
   if (verdict === 'Proper Local Derby') return 'fierce';
   if (verdict === 'Local Derby') return 'local';
-  if (verdict === 'Regional Rivalry') return 'rivalry';
-  if (verdict === 'Stretch — Barely a Derby') return 'stretch';
+  if (verdict === 'Distant Neighbours') return 'rivalry';
+  if (verdict === 'Clutching') return 'stretch';
   return 'not-derby';
 }
 
@@ -195,10 +195,10 @@ function getFlavourText(verdict, clubA, clubB, distance, tierGap) {
         ? `At ${distStr} apart, these two are proper neighbours. This one matters.`
         : `At ${distStr} apart, the geography says derby.`;
       break;
-    case 'Regional Rivalry':
+    case 'Distant Neighbours':
       base = `${distStr} apart — they're in the same neck of the woods, but you'd need to set off early.`;
       break;
-    case 'Stretch — Barely a Derby':
+    case 'Clutching':
       base = `${distStr} is pushing the definition. Your mate is clutching at straws calling this a derby.`;
       break;
     default:
