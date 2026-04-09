@@ -12,15 +12,11 @@ const TIER_LABELS = {
   6: 'National League North / South'
 };
 
-/**
- * Tier-adjusted derby radius in miles.
- * Lower tiers have wider radii because clubs are more spread out.
+/** Base derby radius in miles — flat for all tiers.
+ * Density adjustment handles regional variation (London vs Norfolk),
+ * so tier-based radii are not needed and were removed.
  */
-function getDerbyRadius(tier) {
-  if (tier <= 2) return 25;
-  if (tier <= 4) return 35;
-  return 50;
-}
+const BASE_RADIUS = 30;
 
 /**
  * Haversine distance between two lat/lng points in miles.
@@ -94,11 +90,7 @@ function getDensityFactor(nearbyCount, county) {
 function calculateDerbyScore(clubA, clubB) {
   const distance = haversineDistance(clubA.lat, clubA.lng, clubB.lat, clubB.lng);
 
-  // Average both clubs' radii so cross-tier matchups are fair.
-  const radiusA = getDerbyRadius(clubA.tier);
-  const radiusB = getDerbyRadius(clubB.tier);
-  const baseRadius = (radiusA + radiusB) / 2;
-  const effectiveTier = Math.round((clubA.tier + clubB.tier) / 2);
+  const baseRadius = BASE_RADIUS;
 
   // Density adjustment:
   // - Dense areas (factor < 1): use the denser club (tighter radius wins)

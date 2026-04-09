@@ -27,10 +27,7 @@ print(f'Loaded {len(clubs)} clubs')
 
 # ─── Algorithm (matches derby.js exactly) ────────────────────────────────────
 
-def get_derby_radius(tier):
-    if tier <= 2: return 25
-    if tier <= 4: return 35
-    return 50
+BASE_RADIUS = 30
 
 def haversine_distance(lat1, lng1, lat2, lng2):
     R = 3958.8  # Earth radius in miles
@@ -115,10 +112,7 @@ for i in range(len(clubs)):
 
         distance = haversine_distance(ca['lat'], ca['lng'], cb['lat'], cb['lng'])
 
-        radius_a = get_derby_radius(ca['tier'])
-        radius_b = get_derby_radius(cb['tier'])
-        base_radius = (radius_a + radius_b) / 2
-        effective_tier = round((ca['tier'] + cb['tier']) / 2)
+        base_radius = BASE_RADIUS
 
         density_a = get_density_factor(ca.get('_nearbyCount', 0))
         density_b = get_density_factor(cb.get('_nearbyCount', 0))
