@@ -126,7 +126,7 @@ function calculateDerbyScore(clubA, clubB) {
   const tierBonus = sameTier ? 5 : 0;
 
   const rawScore = distanceScore + cityBonus + countyBonus + tierBonus;
-  const score = Math.min(100, Math.round(rawScore));
+  const score = Math.min(100, Math.ceil(rawScore));
 
   const verdict = getVerdict(score);
   const tierGap = Math.abs(clubA.tier - clubB.tier);
