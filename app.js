@@ -316,11 +316,10 @@ function showResult(clubA, clubB) {
 
   // Breakdown
   const breakdownEl = document.getElementById('breakdown');
-  const effectiveTier = Math.round((clubA.tier + clubB.tier) / 2);
   const densityChanged = pair.densityFactor !== 1;
   const rows = [
     ['Distance between grounds', `${pair.distance} miles`],
-    ['Base tier radius', `${pair.breakdown.baseRadius} miles (Tier ${effectiveTier})`],
+    ['Base derby radius', `${pair.breakdown.baseRadius} miles`],
   ];
   if (densityChanged) {
     const fewerNearby = Math.min(pair.breakdown.nearbyA, pair.breakdown.nearbyB);
