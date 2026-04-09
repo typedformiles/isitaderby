@@ -63,8 +63,11 @@ function precomputeDensity(allClubs) {
  *
  * Dense areas (many nearby clubs) → tighten the radius:
  *   6 nearby = no change (1.0), 12+ nearby = halved (0.4)
- *   West Midlands clubs get a softer floor (0.75) — the region is dense
- *   but not London-dense, so a 40% squeeze is too harsh.
+ *   Regional floors prevent over-tightening outside London:
+ *     West Midlands: 0.75 — dense but not London-dense
+ *     Greater Manchester / Lancashire / Cheshire: 0.60 — denser than WM
+ *       but the East Lancs derby at 34 was genuinely wrong
+ *     London / everywhere else: 0.40
  *
  * Sparse areas (few nearby clubs) → widen the radius:
  *   3 or fewer nearby = 1.3×, 1 or fewer = 1.5×
@@ -75,7 +78,9 @@ function getDensityFactor(nearbyCount, county) {
   if (nearbyCount <= 1) return 1.5;
   if (nearbyCount <= 3) return 1.3;
   if (nearbyCount <= 6) return 1.0;
-  const floor = (county === 'West Midlands') ? 0.75 : 0.4;
+  let floor = 0.4;
+  if (county === 'West Midlands') floor = 0.75;
+  else if (county === 'Greater Manchester' || county === 'Lancashire' || county === 'Cheshire') floor = 0.6;
   return Math.max(floor, 6 / nearbyCount);
 }
 
