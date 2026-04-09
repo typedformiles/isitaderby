@@ -3914,13 +3914,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "League One play-off final 2025 \u2014 Charlton 1-0 Orient at Wembley, Gillesphey free-kick sealed promotion to the Championship",
+      "Charlton won both league meetings in 2024-25 before beating Orient again in the play-off final",
+      "Orient won 1-0 at Brisbane Road on New Year's Eve 2011 in League One"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 20,
+    "firstMeeting": "1962",
+    "lastMeeting": "2025",
+    "rivalryScore": 49
   },
   {
     "a": "AFC Wimbledon",
@@ -5380,14 +5388,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1988 FA Cup 3rd round \u2014 Arsenal won 2-0 but the match was overshadowed by severe hooliganism: 48 arrests, two pubs destroyed",
+      "1995 FA Cup 3rd round replay \u2014 Millwall stunned Arsenal 2-0 at Highbury, a famous giant-killing",
+      "1890s \u2014 as South London neighbours (Arsenal in Plumstead, Millwall on Isle of Dogs), this was Arsenal's original local rivalry"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 28,
+    "firstMeeting": "1893",
+    "lastMeeting": "1995",
+    "rivalryScore": 44
   },
   {
     "a": "Arsenal",
@@ -6908,14 +6924,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Chelsea have never beaten Millwall in the FA Cup \u2014 Millwall won in 1914 and 1937 (3-0 at The Den, 41,503 crowd)",
+      "1995 FA Cup 4th round \u2014 after 0-0 and 1-1 draws, Millwall won 5-4 on penalties; marred by significant post-match violence",
+      "Millwall actually lead the all-time head-to-head (6 wins to Chelsea's 5) despite the gulf in league status"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 17,
+    "firstMeeting": "1914",
+    "lastMeeting": "1995",
+    "rivalryScore": 39
   },
   {
     "a": "St Albans City",
@@ -7982,13 +8006,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First met in Division Two in November 1900 \u2014 Stockport won 1-0 at Green Lane",
+      "1978 League Cup \u2014 Stockport led 2-1 at Old Trafford before McIlroy equalised in injury time and a controversial penalty won it 3-2",
+      "18 of 19 meetings came in Division Two in the early 1900s \u2014 Stockport won 7 of 9 home fixtures"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 19,
+    "firstMeeting": "1900",
+    "lastMeeting": "1978",
+    "rivalryScore": 35
   },
   {
     "a": "Barnet",
@@ -8623,11 +8655,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Cheltenham 5-0 Swindon in FA Cup November 2014 \u2014 comprehensive thrashing",
+      "Swindon 3-3 Cheltenham in March 2025 \u2014 Swindon came back from two goals down in a six-goal thriller",
+      "Cheltenham dominant in the head-to-head with 10 wins from 20 meetings"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 20,
+    "firstMeeting": "2002",
+    "lastMeeting": "2025",
+    "rivalryScore": 38
   },
   {
     "a": "Braintree Town",
@@ -9389,11 +9429,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Barrow 4-0 Fleetwood in August 2011 \u2014 Andy Cook hat-trick in Conference Premier",
+      "Fleetwood 4-1 Barrow in January 2012 \u2014 Jamie Vardy scored twice before his record transfer to Leicester",
+      "Fleetwood 3-2 Barrow in February 2026 \u2014 dramatic comeback from 2-0 down with winner in 90+4"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 12,
+    "firstMeeting": "2010",
+    "lastMeeting": "2026",
+    "rivalryScore": 36
   },
   {
     "a": "Bristol Rovers",
@@ -10053,12 +10101,20 @@
       "nearbyA": 9,
       "nearbyB": 8
     },
-    "rivalryName": null,
+    "rivalryName": "The A38 Derby",
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Burton beat Derby 1-0 on their Championship debut in August 2016 \u2014 managed by Nigel Clough against his former club",
+      "Nigel Clough is the central figure \u2014 managed Burton, left for Derby (2009-13), returned to Burton and led them to the Championship",
+      "Derby 3-2 Burton in January 2024 \u2014 Hourihane stoppage-time winner after Burton clawed back from 2-0 down"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 22,
+    "firstMeeting": "2006",
+    "lastMeeting": "2024",
+    "rivalryScore": 40
   },
   {
     "a": "Altrincham",
@@ -10596,13 +10652,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First competitive meeting in January 2018 \u2014 2-2 draw in the National League, both still in non-league",
+      "League Two play-off semi-final 2023 \u2014 Stockport won on penalties after 2-2 on aggregate, Sarcevic with the decisive pen",
+      "Salford 3-1 Stockport in EFL Trophy October 2025 \u2014 Salford's most emphatic win in the fixture"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 14,
+    "firstMeeting": "2018",
+    "lastMeeting": "2025",
+    "rivalryScore": 37
   },
   {
     "a": "AFC Wimbledon",
@@ -11324,13 +11388,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "FA Cup 1953 \u2014 set Field Mill's all-time record attendance of 24,467 which still stands; Forest won 1-0",
+      "League Cup 1999-2000 \u2014 Forest won 3-1 on aggregate across two legs",
+      "Just 3 competitive meetings ever despite being 14 miles apart in Nottinghamshire"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 3,
+    "firstMeeting": "1953",
+    "lastMeeting": "1999",
+    "rivalryScore": 25
   },
   {
     "a": "Middlesbrough",
@@ -11796,14 +11868,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First met in 1901-02 when Doncaster entered Division Two alongside Barnsley",
+      "25-year gap (1979-2004) after Barnsley's promotion prevented the rivalry from truly developing",
+      "Doncaster 1-0 Barnsley in March 2026 \u2014 ex-Barnsley player Elliot Lee scored the penalty winner"
+    ],
     "tags": [
       "same-county",
       "same-tier"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 78,
+    "firstMeeting": "1901",
+    "lastMeeting": "2026",
+    "rivalryScore": 67
   },
   {
     "a": "Enfield Town",
@@ -12265,13 +12345,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1996 First Division play-off semi-final \u2014 Palace knocked Charlton out 3-1 on aggregate",
+      "May 2005 Premier League relegation day \u2014 Charlton 2-2 Palace, the draw confirmed Palace's relegation",
+      "Palace won 13 of the first 20 meetings and completed the league double six times between 1926 and 2012"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 67,
+    "firstMeeting": "1925",
+    "lastMeeting": "2015",
+    "rivalryScore": 50
   },
   {
     "a": "Millwall",
@@ -12839,14 +12927,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "September 1896 \u2014 earliest recorded meeting produced a remarkable 5-6 thriller, 11 goals",
+      "February 1967 FA Cup replay \u2014 58,189 attendance, largest crowd for a Millwall home match against Spurs",
+      "March 2017 FA Cup QF \u2014 Son Heung-min hat-trick in 6-0 win, overshadowed by racist chanting from Millwall fans"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 120,
+    "firstMeeting": "1896",
+    "lastMeeting": "2017",
+    "rivalryScore": 66
   },
   {
     "a": "Arsenal",
@@ -14697,14 +14793,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Both founding members of the Football League in 1888 \u2014 Preston went unbeaten as The Invincibles that first season",
+      "November 1967 \u2014 8-goal thriller at Deepdale, Blackburn winning 5-3",
+      "Reunited in the Championship post-2015 after years apart, reigniting the Lancashire rivalry"
+    ],
     "tags": [
       "same-county",
       "same-tier"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 89,
+    "firstMeeting": "1888",
+    "lastMeeting": "2026",
+    "rivalryScore": 73
   },
   {
     "a": "AFC Wimbledon",
@@ -17197,9 +17301,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Southampton 7-0 Bournemouth in October 1957 \u2014 Southampton's largest victory in the fixture",
+      "Bournemouth's 2015 Premier League promotion transformed this from a lower-league encounter into a marquee local derby",
+      "Bournemouth won both 2024-25 Premier League meetings 3-1, climbing to fifth in the table"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 36,
+    "firstMeeting": "1953",
+    "lastMeeting": "2025",
+    "rivalryScore": 53
   },
   {
     "a": "Farsley Celtic",
@@ -18851,13 +18963,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First met in the 1894-95 season \u2014 one of the oldest fixtures in English football",
+      "141 meetings with Wolves dominant: 67 wins to Birmingham's 41",
+      "Birmingham 3-2 Wolves in April 2007 \u2014 one of the most memorable recent clashes in the Championship"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 141,
+    "firstMeeting": "1894",
+    "lastMeeting": "2018",
+    "rivalryScore": 70
   },
   {
     "a": "Charlton Athletic",
@@ -20814,13 +20934,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "February 2009 \u2014 Doncaster beat Wednesday 1-0, their first ever league victory over the Owls",
+      "September 2013 \u2014 Doncaster won 1-0 away at Hillsborough in the Championship, another notable upset",
+      "Sheffield Wednesday won both 2021-22 League One fixtures while Doncaster were relegated"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 15,
+    "firstMeeting": "1947",
+    "lastMeeting": "2022",
+    "rivalryScore": 40
   },
   {
     "a": "Enfield Town",
@@ -21370,13 +21498,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1891-92 \u2014 Doncaster beat Sheffield United 2-1 at Bramall Lane to win the Sheffield & Hallamshire Cup final",
+      "2008-09 Championship \u2014 Billy Sharp, on loan from Sheff Utd, scored 15 goals for Doncaster including in the derby",
+      "New Year's Day 2013 \u2014 2-2 draw at the Keepmoat in League One"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 32,
+    "firstMeeting": "1891",
+    "lastMeeting": "2016",
+    "rivalryScore": 44
   },
   {
     "a": "Southport",
@@ -22704,9 +22840,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Both founding members of the Football League in 1888 \u2014 Bolton have more league wins vs Blackburn than vs any other club",
+      "August 1995 \u2014 Bolton's first ever Premier League match, beat reigning champions Blackburn 2-1 with late Stubbs header",
+      "March 2012 \u2014 Bolton's first match after Fabrice Muamba's cardiac arrest, emotionally charged 2-1 win over Blackburn"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 170,
+    "firstMeeting": "1888",
+    "lastMeeting": "2019",
+    "rivalryScore": 79
   },
   {
     "a": "Charlton Athletic",
@@ -24629,13 +24773,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1958 FA Cup Final \u2014 Bolton beat Man Utd 2-0 just three months after Munich, Lofthouse brace with controversial bundled goal",
+      "Man Utd 7-2 Bolton in January 1958 \u2014 one of the last matches of the Busby Babes era, days before the Munich disaster",
+      "Premier League era \u2014 Man Utd dominated with 18 wins from 26 meetings, Bolton managed only 3 PL wins"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 121,
+    "firstMeeting": "1892",
+    "lastMeeting": "2012",
+    "rivalryScore": 66
   },
   {
     "a": "Accrington Stanley",
@@ -24716,11 +24868,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "2006 League One play-off semi-final \u2014 Barnsley overturned 1-0 deficit to win 3-2 on aggregate, went on to win the final",
+      "Huddersfield 2-1 Barnsley in April 2022 \u2014 sealed Barnsley's relegation from the Championship",
+      "Frequent modern clashes as both clubs yo-yo between Championship and League One"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 80,
+    "firstMeeting": "1911",
+    "lastMeeting": "2026",
+    "rivalryScore": 68
   },
   {
     "a": "Halifax Town",
@@ -26313,12 +26473,20 @@
       "nearbyA": 4,
       "nearbyB": 6
     },
-    "rivalryName": null,
+    "rivalryName": "The Tees-Wear Derby",
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1905 \u2014 Alf Common moved from Sunderland to Boro for \u00a31,000, the first four-figure transfer in football history",
+      "Middlesbrough 6-0 Sunderland in 1936 \u2014 a demolition in the same season Sunderland won the league title",
+      "2012 FA Cup replay \u2014 Boro beat Sunderland 2-1 after extra time; Sunderland then went a decade without beating Boro"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 155,
+    "firstMeeting": "1887",
+    "lastMeeting": "2025",
+    "rivalryScore": 88
   },
   {
     "a": "Doncaster Rovers",
@@ -104257,7 +104425,7 @@
     },
     "rivalryName": null,
     "strapline": null,
-    "youtube": "fGmX3aJI_bM",
+    "youtube": "https://www.youtube.com/embed/8LSUuxAkoo8",
     "keyMoments": [],
     "tags": [
       "same-tier"
