@@ -80,7 +80,7 @@ function getDensityFactor(nearbyCount, county) {
   if (nearbyCount <= 6) return 1.0;
   let floor = 0.4;
   if (county === 'West Midlands') floor = 0.75;
-  else if (county === 'Greater Manchester' || county === 'Lancashire' || county === 'Cheshire') floor = 0.6;
+  else if (county === 'Greater Manchester' || county === 'Lancashire' || county === 'Cheshire' || county === 'West Yorkshire') floor = 0.6;
   return Math.max(floor, 6 / nearbyCount);
 }
 
