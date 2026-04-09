@@ -4004,13 +4004,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Original Wimbledon and QPR were top-flight rivals throughout the late 1980s and 1990s",
+      "A proposed merger \"Wimbledon Rangers\" around 2000-01 was ultimately rejected",
+      "Wimbledon beat QPR 2-1 in FA Cup February 1997"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 24,
+    "firstMeeting": "1986",
+    "lastMeeting": "2026",
+    "rivalryScore": 43
   },
   {
     "a": "Altrincham",
@@ -4535,13 +4543,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Christmas Eve 1983 \u2014 Brentford 3-4 Wimbledon, the last Football League match ever played on Christmas Eve",
+      "Both were Third Division rivals in 1983-84"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 12,
+    "firstMeeting": "1983",
+    "lastMeeting": "2024",
+    "rivalryScore": 38
   },
   {
     "a": "Aveley",
@@ -6189,13 +6204,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Barnet lost 1-2 to QPR in a League Cup tie after joining the Football League in 1991",
+      "Meetings extremely rare given the gulf in divisions"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 3,
+    "firstMeeting": "1991",
+    "lastMeeting": "2005",
+    "rivalryScore": 15
   },
   {
     "a": "Blackburn Rovers",
@@ -6618,13 +6640,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Millwall have dominated \u2014 won 4, drawn 3, AFC Wimbledon never won",
+      "The original Wimbledon and Millwall were fellow south London top-flight clubs in the late 1980s",
+      "South London geography adds extra edge"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 7,
+    "firstMeeting": "2009",
+    "lastMeeting": "2019",
+    "rivalryScore": 24
   },
   {
     "a": "Dagenham & Redbridge",
@@ -7344,13 +7374,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Arsenal's record: 27 wins, 13 draws, 14 losses across 54 league meetings",
+      "QPR's famous 2-1 home win over Arsenal in March 2012 during their relegation fight",
+      "Arsenal 6-0 QPR in FA Cup 2001 \u2014 comprehensive demolition"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 64,
+    "firstMeeting": "1930",
+    "lastMeeting": "2013",
+    "rivalryScore": 46
   },
   {
     "a": "Curzon Ashton",
@@ -8112,13 +8150,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Bromley only joined the Football League in 2024 \u2014 very limited history",
+      "Charlton won 1-0 in the 2024-25 EFL Trophy \u2014 first competitive meeting",
+      "New south-east London derby with both clubs based in the SE postcode area"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 3,
+    "firstMeeting": "2016",
+    "lastMeeting": "2024",
+    "rivalryScore": 25
   },
   {
     "a": "Manchester United",
@@ -8180,13 +8226,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Legendary 5-5 League Cup draw in 1991 \u2014 one of Barnet's first ever Football League fixtures",
+      "Brentford dominated: won 5, drew 2, Barnet never won",
+      "Both north/west London clubs who shared lower-division status in the 1990s-2000s"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 7,
+    "firstMeeting": "1991",
+    "lastMeeting": "2008",
+    "rivalryScore": 21
   },
   {
     "a": "Chorley",
@@ -8972,13 +9026,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Bromley only entered the Football League in 2024 \u2014 competitive history barely exists",
+      "Both south-east London clubs with local derby potential going forward"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 1,
+    "firstMeeting": "2024",
+    "lastMeeting": "2024",
+    "rivalryScore": 22
   },
   {
     "a": "Chorley",
@@ -9028,13 +9089,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Arsenal won their League Cup tie comfortably",
+      "Barnet are the closest Football League club geographically to Arsenal's old Highbury ground",
+      "Gulf in divisions means competitive meetings limited to cup draws"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 4,
+    "firstMeeting": "2006",
+    "lastMeeting": "2013",
+    "rivalryScore": 17
   },
   {
     "a": "Farnborough",
@@ -9630,11 +9699,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Remarkably even: 27 wins each and 17 draws across 71 matches \u2014 a perfectly balanced rivalry",
+      "Both founding members of the Third Division South in 1920",
+      "Fixture disappeared when Newport were expelled from the Football League in 1988, resumed when they returned in 2013"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 71,
+    "firstMeeting": "1920",
+    "lastMeeting": "2026",
+    "rivalryScore": 65
   },
   {
     "a": "Bristol Rovers",
@@ -10251,7 +10328,11 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Very evenly matched \u2014 approximately 8 wins each with 11-12 draws in modern records",
+      "QPR won 4-1 in one of the earliest meetings in 1937-38",
+      "A classic London derby with decades of history across multiple divisions"
+    ],
     "tags": [
       "same-city",
       "same-tier"
@@ -10259,7 +10340,11 @@
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 37,
+    "firstMeeting": "1937",
+    "lastMeeting": "2025",
+    "rivalryScore": 53
   },
   {
     "a": "Burton Albion",
@@ -10786,9 +10871,16 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Barnet beat Watford 3-2 in one meeting \u2014 a notable scalp",
+      "The Hertfordshire derby \u2014 until Barnet joined the League, Watford were Hertfordshire's only League club"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 2,
+    "firstMeeting": "2008",
+    "lastMeeting": "2010",
+    "rivalryScore": 17
   },
   {
     "a": "Fulham",
@@ -10812,14 +10904,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "In 1974 Millwall hosted the first ever Sunday football match in England \u2014 against Fulham",
+      "Fulham dominated recent meetings: 6 wins, 3 draws, 2 losses since 2014",
+      "Fulham 4-0 Millwall in August 2019 was the most emphatic recent result"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 40,
+    "firstMeeting": "1907",
+    "lastMeeting": "2022",
+    "rivalryScore": 56
   },
   {
     "a": "Salford City",
@@ -11201,14 +11301,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "AFC Wimbledon historically had the edge, winning 4 of 7 recent meetings",
+      "Leyton Orient 4-2 AFC Wimbledon in March 2026 \u2014 their biggest win in the fixture",
+      "South/east London rivalry sharing League Two and League One"
+    ],
     "tags": [
       "same-city",
       "same-tier"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 16,
+    "firstMeeting": "2015",
+    "lastMeeting": "2026",
+    "rivalryScore": 35
   },
   {
     "a": "Farsley Celtic",
@@ -11351,13 +11459,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Original Wimbledon and Arsenal were regular top-flight opponents in the 1986-2000 era",
+      "Arsenal's league record vs old Wimbledon: W7 D4 L5 in the Premier League \u2014 closer than you'd think",
+      "AFC Wimbledon's only meeting: 0-3 Carabao Cup loss in September 2021"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 29,
+    "firstMeeting": "1986",
+    "lastMeeting": "2021",
+    "rivalryScore": 38
   },
   {
     "a": "Barnet",
@@ -12779,9 +12895,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "January 2025 \u2014 Leeds beat Harrogate 1-0 at Elland Road in FA Cup 3rd round, 69 league places apart",
+      "Harrogate only entered the Football League in 2020",
+      "The clubs are ~17 miles apart in North/West Yorkshire"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 2,
+    "firstMeeting": "2015",
+    "lastMeeting": "2025",
+    "rivalryScore": 30
   },
   {
     "a": "Ebbsfleet United",
@@ -13007,9 +13131,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Both in the Third Division South from the 1920s \u2014 shared many league seasons",
+      "Cardiff dominates the overall record with significantly more wins",
+      "Last league meeting was 1999-2000 in the Second Division"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 40,
+    "firstMeeting": "1920",
+    "lastMeeting": "2024",
+    "rivalryScore": 51
   },
   {
     "a": "Bristol Rovers",
@@ -13296,11 +13428,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Remarkably even: 5 wins each with 3 draws across 13 matches",
+      "Stevenage only entered the Football League in 2010; earlier meetings were in non-league",
+      "~15 miles apart in Hertfordshire/Bedfordshire, direct league rivals in recent seasons"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 13,
+    "firstMeeting": "2006",
+    "lastMeeting": "2026",
+    "rivalryScore": 35
   },
   {
     "a": "Aston Villa",
@@ -13812,13 +13952,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1990 FA Cup semi-final \u2014 epic 3-3 draw at Maine Road, Second Division Oldham nearly pulled off huge upset before Robins won the replay 2-1",
+      "Boxing Day 1991 \u2014 Man Utd won 6-3 away at Oldham in a wild Division One encounter",
+      "Oldham spent 3 seasons in the top flight (1991-94) providing regular meetings"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 44,
+    "firstMeeting": "1910",
+    "lastMeeting": "1994",
+    "rivalryScore": 42
   },
   {
     "a": "Aveley",
@@ -14398,9 +14546,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Port Vale leads the overall record: 9 wins vs 6, with 8 draws",
+      "Frequent opponents in League One and League Two in recent decades",
+      "A Staffordshire-Shropshire border rivalry"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 23,
+    "firstMeeting": "1950",
+    "lastMeeting": "2024",
+    "rivalryScore": 42
   },
   {
     "a": "Bath City",
@@ -14581,13 +14737,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "A traditional Greater Manchester derby stretching back to pre-WW1",
+      "Stockport's record attendance was set vs Oldham on 21 December 1907",
+      "Last 7 meetings evenly split \u2014 3 wins each and 1 draw"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 50,
+    "firstMeeting": "1907",
+    "lastMeeting": "2004",
+    "rivalryScore": 42
   },
   {
     "a": "Manchester United",
@@ -14796,9 +14960,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Both in the Third Division South from the 1920s",
+      "FA Cup 1936-37 \u2014 Newport beat Bristol City 3-0 at home",
+      "Newport out of the Football League entirely 1988-2013, creating a long gap"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 30,
+    "firstMeeting": "1920",
+    "lastMeeting": "2024",
+    "rivalryScore": 49
   },
   {
     "a": "Kidderminster Harriers",
@@ -14878,11 +15050,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Bristol Rovers dominate: 13 wins to Cheltenham's 9 with 7 draws",
+      "60% win rate and outscored Cheltenham 42-28 overall",
+      "Regular opponents since Cheltenham rose to the Football League in 1999"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 29,
+    "firstMeeting": "2004",
+    "lastMeeting": "2025",
+    "rivalryScore": 38
   },
   {
     "a": "Cambridge United",
@@ -15111,13 +15291,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Very evenly matched: AFC Wimbledon 6 wins, Charlton 5, 5 draws",
+      "A south London derby only possible since AFC Wimbledon climbed into the Football League in 2011",
+      "AFC Wimbledon have had the edge in recent meetings"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 16,
+    "firstMeeting": "2010",
+    "lastMeeting": "2025",
+    "rivalryScore": 35
   },
   {
     "a": "AFC Wimbledon",
@@ -15141,13 +15329,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "January 2019 FA Cup 4th round \u2014 AFC Wimbledon 4-2 West Ham, one of the great FA Cup upsets",
+      "League One's bottom club beat Premier League West Ham at Kingsmeadow (4,777 attendance)",
+      "Bookmakers had Wimbledon at 500/1"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 1,
+    "firstMeeting": "2019",
+    "lastMeeting": "2019",
+    "rivalryScore": 28
   },
   {
     "a": "Barnet",
@@ -16192,13 +16388,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Bolton have won all 5 competitive meetings, scoring 13 and conceding just 2",
+      "Bolton 5-1 Salford in August 2022 \u2014 the most emphatic result",
+      "A new Greater Manchester derby born from Salford's rise to the Football League in 2019"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 5,
+    "firstMeeting": "2020",
+    "lastMeeting": "2023",
+    "rivalryScore": 26
   },
   {
     "a": "Charlton Athletic",
@@ -16397,9 +16601,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "MK Dons dominate overall: 11 wins to Northampton's 5 with 4 draws",
+      "Northampton have had the upper hand recently \u2014 4 wins in last 5 league meetings",
+      "Fierce local derby between two towns ~20 miles apart"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 20,
+    "firstMeeting": "2008",
+    "lastMeeting": "2023",
+    "rivalryScore": 33
   },
   {
     "a": "Aldershot Town",
@@ -17181,14 +17393,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Charlton's record: 11 wins, 27 draws, 38 losses \u2014 Spurs heavily dominant",
+      "May 2007 \u2014 Spurs sealed Charlton's relegation from the Premier League",
+      "Both shared many seasons in the First Division/Premier League, especially the 2000s"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 78,
+    "firstMeeting": "1921",
+    "lastMeeting": "2007",
+    "rivalryScore": 46
   },
   {
     "a": "Chelsea",
@@ -17885,13 +18105,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1975 FA Cup \u2014 West Ham beat QPR 2-1 in the 5th round en route to winning the Cup",
+      "Classic West London vs East London derby spanning over a century",
+      "West Ham holds an advantage in the all-time record"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 100,
+    "firstMeeting": "1910",
+    "lastMeeting": "2026",
+    "rivalryScore": 73
   },
   {
     "a": "Crystal Palace",
@@ -17949,13 +18177,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "February 1897 \u2014 Bromley beat Thames Iron Works (West Ham's predecessor) 2-0 in the London Senior Cup",
+      "No competitive meeting in over 125 years",
+      "Bromley only entered the Football League in 2024 \u2014 future cup meetings now possible"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 1,
+    "firstMeeting": "1897",
+    "lastMeeting": "1897",
+    "rivalryScore": 27
   },
   {
     "a": "Aveley",
@@ -18005,9 +18241,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Rotherham dominates the recent record: 11 wins to Chesterfield's 6",
+      "A cross-border Derbyshire/South Yorkshire rivalry, ~12 miles apart",
+      "Both clubs have fluctuated between League One and League Two creating frequent meetings"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 60,
+    "firstMeeting": "1920",
+    "lastMeeting": "2025",
+    "rivalryScore": 61
   },
   {
     "a": "Tamworth",
@@ -25314,13 +25558,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "August 2017 \u2014 Accrington stunned Championship Preston 3-2 in EFL Cup, Billy Kee 90+3' winner",
+      "November 2023 \u2014 Accrington beat Preston 3-2 again in Lancashire Senior Cup",
+      "Reformed Accrington (1968) has very limited history vs PNE; the original club would have had far more"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 4,
+    "firstMeeting": "2017",
+    "lastMeeting": "2023",
+    "rivalryScore": 29
   },
   {
     "a": "Boreham Wood",
@@ -26783,13 +27035,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Salford beat Wigan 2-0 in EFL Trophy September 2025",
+      "Salford only entered the Football League in 2019 \u2014 very short competitive history",
+      "Greater Manchester neighbours"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 5,
+    "firstMeeting": "2020",
+    "lastMeeting": "2025",
+    "rivalryScore": 29
   },
   {
     "a": "Hemel Hempstead Town",
@@ -29537,13 +29797,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "September 1984 \u2014 legendary League Cup match ended 4-4 after extra time",
+      "1994 FA Cup quarter-final \u2014 Oldham knocked Bolton out 1-0 at Burnden Park",
+      "Classic Lancashire derby with deep historical roots stretching back to pre-WW1"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 70,
+    "firstMeeting": "1907",
+    "lastMeeting": "2025",
+    "rivalryScore": 67
   },
   {
     "a": "Brighton & Hove Albion",
@@ -35516,13 +35784,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Man Utd won 19 of 20 meetings, scoring 62 goals and conceding just 5",
+      "April 2012 \u2014 Wigan's sole victory, Maloney's 1-0 winner damaged Man Utd's title challenge",
+      "Three separate 5-0 thrashings \u2014 including Berbatov hat-trick in December 2011"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 20,
+    "firstMeeting": "2005",
+    "lastMeeting": "2024",
+    "rivalryScore": 35
   },
   {
     "a": "Manchester City",
@@ -36215,14 +36491,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Stockport surprisingly dominate the recent record: 5 wins to Bolton's 2 with 6 draws",
+      "Long gap of ~20 years without competitive meetings before reuniting in League One",
+      "Greater Manchester clubs ~10 miles apart"
+    ],
     "tags": [
       "same-county",
       "same-tier"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 13,
+    "firstMeeting": "1900",
+    "lastMeeting": "2026",
+    "rivalryScore": 52
   },
   {
     "a": "AFC Wimbledon",
