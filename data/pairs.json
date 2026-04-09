@@ -10980,13 +10980,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "South London derby gaining significance since Bromley entered the EFL in 2024",
+      "Evenly split \u2014 2 wins each and a draw"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 5,
+    "firstMeeting": "2008",
+    "lastMeeting": "2025",
+    "rivalryScore": 32
   },
   {
     "a": "Brentford",
@@ -11497,13 +11504,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "FA Cup 1994 \u2014 Barnet held Chelsea 0-0 at Stamford Bridge before losing the replay 4-0"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 2,
+    "firstMeeting": "1994",
+    "lastMeeting": "1994",
+    "rivalryScore": 13
   },
   {
     "a": "Barnet",
@@ -11527,13 +11540,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Rarely in the same division \u2014 very limited competitive history"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 3,
+    "firstMeeting": "1993",
+    "lastMeeting": "2002",
+    "rivalryScore": 14
   },
   {
     "a": "Barnet",
@@ -11557,13 +11576,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Barnet beat Spurs U23s 2-1 in the EFL Trophy at The Hive in front of 445 people"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 1,
+    "firstMeeting": "2017",
+    "lastMeeting": "2017",
+    "rivalryScore": 19
   },
   {
     "a": "Arsenal",
@@ -11940,14 +11965,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Charlton stunned Arsenal 4-2 at Highbury in November 2001 during Arsenal's Double-winning season",
+      "Arsenal dominated Premier League era \u2014 won 11 of 15 from 1998 onward"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 80,
+    "firstMeeting": "1929",
+    "lastMeeting": "2007",
+    "rivalryScore": 46
   },
   {
     "a": "Chesterfield",
@@ -12004,14 +12036,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Orient's famous 1972 FA Cup 5th round comeback \u2014 2-0 down, won 3-2 at Brisbane Road",
+      "First met in 1905-06 \u2014 Chelsea won 3-0 then 6-1 against Clapton Orient"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 30,
+    "firstMeeting": "1905",
+    "lastMeeting": "1982",
+    "rivalryScore": 38
   },
   {
     "a": "Bromley",
@@ -14019,13 +14058,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Long gap \u2014 hadn't met competitively between 1982 and 2021",
+      "August 2021 EFL Cup \u2014 QPR won 5-3 on penalties after 1-1 draw"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 50,
+    "firstMeeting": "1925",
+    "lastMeeting": "2021",
+    "rivalryScore": 52
   },
   {
     "a": "Arsenal",
@@ -14807,13 +14853,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Orient dominated with 4 wins to Barnet's 2 and 3 draws",
+      "Orient won 10-9 on aggregate across 9 meetings \u2014 perfectly tight"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 9,
+    "firstMeeting": "2005",
+    "lastMeeting": "2019",
+    "rivalryScore": 24
   },
   {
     "a": "Halifax Town",
@@ -15981,13 +16034,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "AFC Wimbledon won both League Two meetings \u2014 only shared one season"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 2,
+    "firstMeeting": "2015",
+    "lastMeeting": "2016",
+    "rivalryScore": 19
   },
   {
     "a": "Altrincham",
@@ -16358,13 +16417,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Orient gave Premier League Fulham a scare in the 2005-06 FA Cup",
+      "Fulham came from behind to win 3-2 in the 2016 League Cup at Brisbane Road"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 20,
+    "firstMeeting": "1960",
+    "lastMeeting": "2016",
+    "rivalryScore": 34
   },
   {
     "a": "Bolton Wanderers",
@@ -17730,9 +17796,16 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Harrogate dominated early \u2014 won 7 of 12 meetings",
+      "Yorkshire derby since Harrogate entered the Football League in 2020"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 12,
+    "firstMeeting": "2020",
+    "lastMeeting": "2024",
+    "rivalryScore": 28
   },
   {
     "a": "Brighton & Hove Albion",
@@ -17942,11 +18015,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Known as the M4 Derby or West Country Derby \u2014 147 meetings since 1891",
+      "Swindon leads all-time 64-61 with 22 draws \u2014 extremely tight",
+      "Both promoted and relegated together 2007-2011"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 147,
+    "firstMeeting": "1891",
+    "lastMeeting": "2025",
+    "rivalryScore": 83
   },
   {
     "a": "Bristol Rovers",
@@ -19433,13 +19514,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1982 FA Cup Final \u2014 1-1 draw then Spurs won replay 1-0 with Hoddle penalty; QPR's only FA Cup Final",
+      "Spurs dominated the Premier League era meetings"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 70,
+    "firstMeeting": "1907",
+    "lastMeeting": "2015",
+    "rivalryScore": 59
   },
   {
     "a": "Charlton Athletic",
@@ -19463,14 +19551,22 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Charlton beat Chelsea 4-2 at The Valley on Boxing Day 2003 in the Premier League",
+      "Charlton won on penalties in the 2005 League Cup after 1-1 draw",
+      "Chelsea 5-1 Charlton in FA Cup January 2026 \u2014 most recent meeting"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 72,
+    "firstMeeting": "1929",
+    "lastMeeting": "2026",
+    "rivalryScore": 64
   },
   {
     "a": "Chesterfield",
@@ -19493,9 +19589,16 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Both shared League One in 2011-12 \u2014 Wednesday won 3-1, Chesterfield won 1-0",
+      "Wednesday lead the modern h2h 5-2 with 1 draw"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 10,
+    "firstMeeting": "1950",
+    "lastMeeting": "2012",
+    "rivalryScore": 28
   },
   {
     "a": "Crystal Palace",
@@ -19519,13 +19622,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Orient beat Palace 8-0 in Division 3 South in November 1955 \u2014 a record thrashing",
+      "Palace lead all-time 29-18 with 19 draws across 66 meetings"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 66,
+    "firstMeeting": "1921",
+    "lastMeeting": "2002",
+    "rivalryScore": 44
   },
   {
     "a": "Accrington Stanley",
@@ -19924,14 +20034,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Longstanding London rivalry with 100 meetings since 1920",
+      "QPR hold a slight all-time edge at 38 wins vs Palace's 32 with 30 draws"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 100,
+    "firstMeeting": "1920",
+    "lastMeeting": "2024",
+    "rivalryScore": 64
   },
   {
     "a": "Bromley",
@@ -19955,13 +20072,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "EFL Trophy September 2024 \u2014 Chelsea U21s beat Bromley 3-2; no senior meeting"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 1,
+    "firstMeeting": "2024",
+    "lastMeeting": "2024",
+    "rivalryScore": 22
   },
   {
     "a": "Boreham Wood",
@@ -20557,14 +20680,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1965 \u2014 a hand grenade was thrown onto the pitch at Griffin Park during Brentford vs Millwall; keeper Chic Brodie picked it up (it was a dummy)",
+      "Millwall wore a camouflage kit against Brentford in November 2014 for the WWI centenary"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city",
       "cross-river"
-    ]
+    ],
+    "meetings": 40,
+    "firstMeeting": "1920",
+    "lastMeeting": "2021",
+    "rivalryScore": 55
   },
   {
     "a": "Aveley",
@@ -20648,13 +20778,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Minimal competitive history \u2014 gulf in divisions throughout their histories"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 1,
+    "firstMeeting": "2000",
+    "lastMeeting": "2000",
+    "rivalryScore": 12
   },
   {
     "a": "Bolton Wanderers",
@@ -21048,11 +21184,18 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Newport beat Cheltenham in the 1937 Welsh Cup quarter-final",
+      "Modern rivalry resumed in 2013 \u2014 13+ league meetings since, very evenly matched at 6 wins each"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 22,
+    "firstMeeting": "1937",
+    "lastMeeting": "2025",
+    "rivalryScore": 49
   },
   {
     "a": "King's Lynn Town",
@@ -21946,11 +22089,18 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Lincoln hammered Peterborough 5-2 in FA Cup January 2026",
+      "Peterborough lead the all-time record 23-15 with 18 draws"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 56,
+    "firstMeeting": "1960",
+    "lastMeeting": "2026",
+    "rivalryScore": 53
   },
   {
     "a": "Chippenham Town",
@@ -22252,9 +22402,16 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Rarely in the same division \u2014 limited competitive history",
+      "Hull beat Lincoln 3-0 in October 2003; Lincoln won 2-0 in February 2004"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 6,
+    "firstMeeting": "1932",
+    "lastMeeting": "2021",
+    "rivalryScore": 40
   },
   {
     "a": "Swansea City",
@@ -22362,13 +22519,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Never met competitively \u2014 Bromley only entered the Football League in 2024"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 0,
+    "firstMeeting": null,
+    "lastMeeting": null,
+    "rivalryScore": 21
   },
   {
     "a": "Slough Town",
@@ -22451,13 +22614,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Barnet beat Millwall 2-0 in the FL Trophy in 2009-10"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 2,
+    "firstMeeting": "2009",
+    "lastMeeting": "2010",
+    "rivalryScore": 15
   },
   {
     "a": "Brentford",
@@ -22481,13 +22650,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Perfectly balanced at 5 wins each with 4 draws",
+      "Brentford 3-1 Leyton Orient in League Cup September 2024 \u2014 most recent meeting"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 14,
+    "firstMeeting": "1930",
+    "lastMeeting": "2024",
+    "rivalryScore": 43
   },
   {
     "a": "Accrington Stanley",
@@ -23200,13 +23376,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "FA Cup 3rd round January 2018 at Wembley \u2014 Spurs won 3-0 with Kane scoring twice",
+      "AFC Wimbledon's Jimmy Abdou hit the crossbar and held Spurs scoreless for 63 minutes"
+    ],
     "tags": [
       "same-city"
     ],
     "badges": [
       "same-city"
-    ]
+    ],
+    "meetings": 1,
+    "firstMeeting": "2018",
+    "lastMeeting": "2018",
+    "rivalryScore": 20
   },
   {
     "a": "Barnet",
@@ -29098,9 +29281,16 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Accrington smashed Bolton 7-1 in November 2019 after Bolton went down to 10 men",
+      "Bolton lead the h2h 5-4 with 1 draw"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 10,
+    "firstMeeting": "2019",
+    "lastMeeting": "2024",
+    "rivalryScore": 31
   },
   {
     "a": "Boreham Wood",
@@ -33300,13 +33490,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1904 FA Cup Final \u2014 first all-Lancashire final, Man City won 1-0 for their first major trophy",
+      "Bolton's record PL away defeat: 2-6 at Man City in October 2003"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 124,
+    "firstMeeting": "1900",
+    "lastMeeting": "2012",
+    "rivalryScore": 64
   },
   {
     "a": "Brentford",
@@ -34692,9 +34889,16 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Huddersfield hold the stronger record with 9 wins to Oldham's 6",
+      "Dominated by League One meetings in the 2000s"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 21,
+    "firstMeeting": "1910",
+    "lastMeeting": "2010",
+    "rivalryScore": 37
   },
   {
     "a": "Dartford",
@@ -35246,11 +35450,18 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Both Lancashire clubs seesawing between League One and League Two",
+      "Accrington won 1-0 in a tight League Two clash in 2022"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 9,
+    "firstMeeting": "2004",
+    "lastMeeting": "2025",
+    "rivalryScore": 33
   },
   {
     "a": "Brentford",
@@ -35758,9 +35969,16 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Both in the Premier League together 2005-2012 \u2014 intense Lancashire derbies",
+      "Wigan beat Blackburn 3-2 in January 2022 Championship thriller"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 27,
+    "firstMeeting": "2005",
+    "lastMeeting": "2023",
+    "rivalryScore": 35
   },
   {
     "a": "Manchester United",
@@ -36408,11 +36626,18 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "New fixture born from Salford's rise to the Football League",
+      "Tight, low-scoring affairs typical of League Two derbies"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 8,
+    "firstMeeting": "2020",
+    "lastMeeting": "2023",
+    "rivalryScore": 25
   },
   {
     "a": "Chelsea",
@@ -37023,9 +37248,16 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Preston beat Bolton 9-1 in FA Cup December 1887 \u2014 Bolton's record cup away defeat",
+      "Bolton beat Preston 3-0 in the 2001 Division One play-off final to win promotion to the Premiership"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 106,
+    "firstMeeting": "1885",
+    "lastMeeting": "2026",
+    "rivalryScore": 77
   },
   {
     "a": "Chelsea",
@@ -38133,9 +38365,16 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Liverpool dominated \u2014 won 10 of 17 Premier League meetings",
+      "Wigan's famous 2013 FA Cup win was against Man City, not Liverpool"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 17,
+    "firstMeeting": "2005",
+    "lastMeeting": "2019",
+    "rivalryScore": 26
   },
   {
     "a": "Ebbsfleet United",
@@ -38635,13 +38874,20 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Lancashire derby created by Fleetwood's rapid rise from non-league",
+      "Preston won the majority of meetings"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 6,
+    "firstMeeting": "2013",
+    "lastMeeting": "2019",
+    "rivalryScore": 22
   },
   {
     "a": "Brentford",
