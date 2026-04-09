@@ -12440,9 +12440,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Both founding members of the Football League in 1888 \u2014 Derby won both meetings that first season (3-2 and 5-3)",
+      "1894-95 Test Match \u2014 Derby beat Notts County 2-1 to retain First Division status in the precursor to modern play-offs",
+      "Derby 3-0 Notts County in March 1953 \u2014 the first ever match under floodlights at the Baseball Ground"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 60,
+    "firstMeeting": "1888",
+    "lastMeeting": "2023",
+    "rivalryScore": 55
   },
   {
     "a": "Enfield Town",
@@ -17359,9 +17367,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First met in 1964-65 League Cup \u2014 Stoke won the replay 1-0",
+      "Shrewsbury won 5 of 12 league meetings \u2014 better record than you'd expect against a top-flight club",
+      "FA Cup 2019 \u2014 Shrewsbury came from 2-0 down to win 3-2 at the bet365 Stadium, a famous giant-killing"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 16,
+    "firstMeeting": "1964",
+    "lastMeeting": "2019",
+    "rivalryScore": 34
   },
   {
     "a": "Bristol Rovers",
@@ -23094,9 +23110,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Notts County 4-2 Leicester in FA Cup 1953 \u2014 a classic cup giant-killing at Filbert Street",
+      "Notts County 4-0 Leicester in August 1983 \u2014 a memorable away demolition, reversed months later when Leicester won 5-2",
+      "Last competitive meeting in 1993-94 \u2014 Notts County won 4-1; clubs have been in different divisions since"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 20,
+    "firstMeeting": "1925",
+    "lastMeeting": "1994",
+    "rivalryScore": 30
   },
   {
     "a": "Oxford United",
@@ -24978,9 +25002,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Only 3 competitive meetings ever despite being ~25 miles apart \u2014 never shared a league division",
+      "League Cup 2002 \u2014 first ever meeting, Derby won 3-1 at Field Mill",
+      "EFL Trophy 2022 \u2014 Mansfield won 6-5 on penalties after 1-1 draw, their only competitive result against Derby"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 3,
+    "firstMeeting": "2002",
+    "lastMeeting": "2022",
+    "rivalryScore": 18
   },
   {
     "a": "Tamworth",
@@ -26534,11 +26566,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First met in 1978-79 Division Two \u2014 Stoke won 1-0 at the Racecourse in front of 20,211",
+      "FA Cup 2015 \u2014 Wrexham led in the 73rd minute before Arnautovic equalised and Ireland scored twice in stoppage time for 3-1",
+      "Stoke have won 11 of 12 league meetings \u2014 92% win rate, the most one-sided fixture either club has"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 15,
+    "firstMeeting": "1978",
+    "lastMeeting": "2026",
+    "rivalryScore": 41
   },
   {
     "a": "Eastleigh",
@@ -28548,12 +28588,20 @@
       "nearbyA": 7,
       "nearbyB": 7
     },
-    "rivalryName": null,
+    "rivalryName": "East Midlands Derby",
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Forest 12-0 Leicester Fosse in April 1909 \u2014 Leicester's worst ever defeat, several players hungover from a wedding",
+      "Sustained top-flight rivalry through the 1950s-60s with both in Division One for a decade",
+      "Pre-Clough this was THE East Midlands derby \u2014 the two largest cities in the region, extremely closely matched (42-41 in wins)"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 111,
+    "firstMeeting": "1901",
+    "lastMeeting": "2025",
+    "rivalryScore": 80
   },
   {
     "a": "Hornchurch",
@@ -31361,9 +31409,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "1965-66 Division One \u2014 the only season both clubs shared the top flight, Northampton's famous single year",
+      "Leicester 4-0 Northampton in FA Cup 1998 \u2014 Marshall, Parker, Savage, and Cottee all scored",
+      "2008-09 League One \u2014 Leicester won 2-1 at Sixfields during their title-winning season climbing back from the third tier"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 5,
+    "firstMeeting": "1965",
+    "lastMeeting": "2009",
+    "rivalryScore": 20
   },
   {
     "a": "Eastleigh",
@@ -32626,13 +32682,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Have never met in a competitive match despite being ~25 miles apart",
+      "All 4 recorded encounters are pre-season friendlies (2014, 2016, 2020, 2023)",
+      "Burton 3-0 Stoke in a 2016 friendly was the most eyebrow-raising result"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 0,
+    "firstMeeting": null,
+    "lastMeeting": null,
+    "rivalryScore": 5
   },
   {
     "a": "Hampton & Richmond",
@@ -35580,14 +35644,22 @@
       "nearbyA": 8,
       "nearbyB": 7
     },
-    "rivalryName": null,
+    "rivalryName": "East Midlands Derby",
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "First met in February 1894 \u2014 0-0 draw at Filbert Street",
+      "1994 play-off final \u2014 Leicester beat Derby 2-1 at Wembley to win promotion, a lasting source of bitterness for Derby fans",
+      "Both clubs have inflicted 12-0 and 6-0 thrashings on each other \u2014 the 12-0 in 1909 came after Leicester players attended a wedding"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 110,
+    "firstMeeting": "1894",
+    "lastMeeting": "2026",
+    "rivalryScore": 82
   },
   {
     "a": "Dartford",
@@ -36539,9 +36611,17 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "FA Cup 1985 \u2014 Leicester won 6-1 (Lineker hat-trick) but FA ordered replay after wood thrown at Burton keeper; replay behind closed doors, Leicester won 1-0",
+      "Lineker's hat-trick was expunged from the records \u2014 one of football's strangest rulings",
+      "Burton's manager at the time of the 1985 match: a young Neil Warnock"
+    ],
     "tags": [],
-    "badges": []
+    "badges": [],
+    "meetings": 9,
+    "firstMeeting": "1985",
+    "lastMeeting": "2023",
+    "rivalryScore": 25
   },
   {
     "a": "Farnborough",
@@ -42014,13 +42094,21 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Derby 7-1 Chesterfield on Easter Monday 1957 \u2014 during Derby's Third Division North title-winning season",
+      "FA Cup 2015 \u2014 first competitive meeting in 29 years, Derby won 2-0 with Bent and Hughes goals",
+      "Carabao Cup 2024 \u2014 Chesterfield led before Derby came back to win 2-1 at Pride Park"
+    ],
     "tags": [
       "same-county"
     ],
     "badges": [
       "same-county"
-    ]
+    ],
+    "meetings": 15,
+    "firstMeeting": "1955",
+    "lastMeeting": "2024",
+    "rivalryScore": 32
   },
   {
     "a": "Everton",
@@ -46950,11 +47038,19 @@
     "rivalryName": null,
     "strapline": null,
     "youtube": null,
-    "keyMoments": [],
+    "keyMoments": [
+      "Both founding members of the Football League in 1888 \u2014 first league match ended 1-1",
+      "Derby hammered Stoke 4-0 during Clough's 1971-72 championship-winning season",
+      "Stoke 1-0 Derby in 1954-55 virtually sealed Derby's first-ever relegation to the Third Division"
+    ],
     "tags": [
       "same-tier"
     ],
-    "badges": []
+    "badges": [],
+    "meetings": 145,
+    "firstMeeting": "1888",
+    "lastMeeting": "2026",
+    "rivalryScore": 78
   },
   {
     "a": "Aldershot Town",
