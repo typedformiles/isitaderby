@@ -40,6 +40,7 @@ def haversine_distance(lat1, lng1, lat2, lng2):
     return R * c
 
 def get_density_factor(nearby_count, county):
+    if nearby_count == 0: return 1.7  # Genuine isolation — zero neighbours within 25mi
     if nearby_count <= 1: return 1.5
     if nearby_count <= 3: return 1.3
     if nearby_count <= 6: return 1.0

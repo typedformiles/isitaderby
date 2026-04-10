@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Profile Pic Options</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #1a1a1a; color: #eee; padding: 40px; }
+  .row { display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; }
+  .opt { text-align: center; }
+  .opt img { width: 300px; height: 300px; border-radius: 50%; display: block; margin-bottom: 12px; }
+  .small { display: flex; gap: 12px; justify-content: center; margin-top: 8px; }
+  .small img { width: 48px; height: 48px; }
+  h3 { margin: 8px 0 4px; }
+  p { color: #888; margin: 0 0 12px; font-size: 13px; }
+</style>
+</head>
+<body>
+  <h1 style="text-align:center">IsItADerby profile pic options</h1>
+  <p style="text-align:center">Previewed at 300×300 (actual) and 48×48 (how it looks as a tiny avatar)</p>
+  <div class="row">
+    <div class="opt">
+      <img src="option-1-stacked.svg">
+      <h3>Option 1 — Stacked wordmark</h3>
+      <p>IS IT A / DERBY / ?</p>
+      <div class="small"><img src="option-1-stacked.svg"></div>
+    </div>
+    <div class="opt">
+      <img src="option-2-big-q.svg">
+      <h3>Option 2 — Big Question Mark</h3>
+      <p>Half-and-half pitch with dominant ?</p>
+      <div class="small"><img src="option-2-big-q.svg"></div>
+    </div>
+    <div class="opt">
+      <img src="option-3-scoreboard.svg">
+      <h3>Option 3 — Scoreboard</h3>
+      <p>Site's score-bar UI as profile pic</p>
+      <div class="small"><img src="option-3-scoreboard.svg"></div>
+    </div>
+  </div>
+</body>
+</html>
