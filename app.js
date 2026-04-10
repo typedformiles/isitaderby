@@ -17,7 +17,7 @@ const pairKey = (a, b) => [a, b].sort().join('|');
 // Load both datasets in parallel
 Promise.all([
   fetch('data/clubs.json?v=6').then(r => r.json()),
-  fetch('data/pairs.json?v=8').then(r => r.json())
+  fetch('data/pairs.json?v=9').then(r => r.json())
 ]).then(([clubData, pairData]) => {
   clubs = clubData.sort((a, b) => a.name.localeCompare(b.name));
   clubs.forEach(c => clubMap.set(c.name, c));
@@ -244,7 +244,8 @@ function showResult(clubA, clubB) {
         rivalryBar.style.width = pair.rivalryScore + '%';
       });
     });
-    rivalryNumber.textContent = `${pair.rivalryScore} / 100`;
+    const fire = pair.rivalryScore >= 90 ? ' 🔥🔥' : pair.rivalryScore >= 80 ? ' 🔥' : '';
+    rivalryNumber.textContent = `${pair.rivalryScore} / 100${fire}`;
     const metaParts = [];
     if (pair.meetings) metaParts.push(`${pair.meetings} meetings`);
     if (pair.firstMeeting) metaParts.push(`since ${pair.firstMeeting}`);
