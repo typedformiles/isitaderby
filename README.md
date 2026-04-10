@@ -24,9 +24,9 @@ Every matchup gets two independent scores:
 ### Rivalry Score (0–100) — the history
 For pairs with meaningful history:
 - **Meeting frequency** (40%) — total competitive meetings all-time
-- **Recency** (25%) — have they played each other recently?
+- **Notoriety & editorial weight** (25%) — culture, incidents, iconic moments, and whether this fixture is feared
 - **Antiquity** (20%) — how far back does the fixture go?
-- **Notable moments** (15%) — editorial assessment of iconic games, controversies, giant-killings
+- **Recency** (15%) — have they played each other recently? (Deliberately deprioritised — dormant historic rivalries like West Ham vs Millwall still deserve respect)
 
 ### Verdict thresholds
 

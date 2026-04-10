@@ -6,8 +6,8 @@
 const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
 
 Promise.all([
-  fetch('data/clubs.json?v=14').then(r => r.json()),
-  fetch('data/pairs.json?v=14').then(r => r.json())
+  fetch('data/clubs.json?v=15').then(r => r.json()),
+  fetch('data/pairs.json?v=15').then(r => r.json())
 ]).then(([clubData, pairData]) => {
   const clubMap = new Map();
   clubData.forEach(c => clubMap.set(c.name, c));
