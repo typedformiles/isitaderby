@@ -129,7 +129,6 @@ function calculateDerbyScore(clubA, clubB) {
     verdict,
     distance: Math.round(distance * 10) / 10,
     radius,
-    effectiveTier,
     breakdown: {
       distanceScore: Math.round(distanceScore),
       cityBonus,
