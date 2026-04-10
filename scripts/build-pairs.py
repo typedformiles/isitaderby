@@ -39,11 +39,16 @@ def haversine_distance(lat1, lng1, lat2, lng2):
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
     return R * c
 
-def get_density_factor(nearby_count):
+def get_density_factor(nearby_count, county):
     if nearby_count <= 1: return 1.5
     if nearby_count <= 3: return 1.3
     if nearby_count <= 6: return 1.0
-    return max(0.4, 6 / nearby_count)
+    floor = 0.4
+    if county == 'West Midlands':
+        floor = 0.75
+    elif county in ('Greater Manchester', 'Lancashire', 'Cheshire', 'West Yorkshire'):
+        floor = 0.6
+    return max(floor, 6 / nearby_count)
 
 def get_verdict(score):
     if score >= 75: return 'Proper Local Derby'
@@ -114,8 +119,8 @@ for i in range(len(clubs)):
 
         base_radius = BASE_RADIUS
 
-        density_a = get_density_factor(ca.get('_nearbyCount', 0))
-        density_b = get_density_factor(cb.get('_nearbyCount', 0))
+        density_a = get_density_factor(ca.get('_nearbyCount', 0), ca['county'])
+        density_b = get_density_factor(cb.get('_nearbyCount', 0), cb['county'])
         if density_a < 1 or density_b < 1:
             density_factor = min(density_a, density_b)
         else:
@@ -138,13 +143,15 @@ for i in range(len(clubs)):
         tier_bonus = 5 if same_tier else 0
 
         raw_score = distance_score + city_bonus + county_bonus + tier_bonus
-        score = min(100, round(raw_score))
+        score = min(100, math.ceil(raw_score))
 
         key = pair_key(ca['name'], cb['name'])
         strapline = straplines.get(key)
 
-        # Include if score > 0 OR has a strapline
-        if score > 0 or strapline:
+        # Include EVERY pair — even 0-score ones get a page so that any
+        # historical rivalry / famous scoreline (however geographically odd)
+        # can be enriched later. Was previously filtered to score > 0.
+        if True:
             included += 1
             tier_gap = abs(ca['tier'] - cb['tier'])
             rounded_dist = round(distance * 10) / 10
