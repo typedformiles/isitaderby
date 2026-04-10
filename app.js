@@ -17,7 +17,7 @@ const pairKey = (a, b) => [a, b].sort().join('|');
 // Load both datasets in parallel
 Promise.all([
   fetch('data/clubs.json?v=6').then(r => r.json()),
-  fetch('data/pairs.json?v=7').then(r => r.json())
+  fetch('data/pairs.json?v=8').then(r => r.json())
 ]).then(([clubData, pairData]) => {
   clubs = clubData.sort((a, b) => a.name.localeCompare(b.name));
   clubs.forEach(c => clubMap.set(c.name, c));
@@ -472,13 +472,22 @@ function showClubRivals(club) {
       pair: p
     }))
     .map(r => {
-      const rivalry = r.pair.rivalryScore != null ? r.pair.rivalryScore : 0;
-      const raw = Math.round(r.pair.score * 0.4 + rivalry * 0.6);
-      const penalty = Math.min(rivalry / 20, 1);
-      const combined = Math.round(raw * penalty);
+      // If rivalry data exists, weight score 40% + rivalry 60% with a
+      // sparse-rivalry penalty. If there's no rivalry data, fall back to
+      // the raw derby score so geographically-close pairs still rank.
+      const hasRivalry = r.pair.rivalryScore != null;
+      let combined;
+      if (hasRivalry) {
+        const rivalry = r.pair.rivalryScore;
+        const raw = Math.round(r.pair.score * 0.4 + rivalry * 0.6);
+        const penalty = Math.min(rivalry / 20, 1);
+        combined = Math.round(raw * penalty);
+      } else {
+        combined = r.pair.score;
+      }
       return { ...r, combined };
     })
-    .filter(r => r.combined > 0 || r.pair.score >= 15)
+    .filter(r => r.combined >= 15)
     .sort((a, b) => b.combined - a.combined || (clubMap.get(a.otherName)?.tier || 99) - (clubMap.get(b.otherName)?.tier || 99) || a.pair.distance - b.pair.distance)
     .slice(0, 10);
 
