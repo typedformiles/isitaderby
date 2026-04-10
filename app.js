@@ -17,7 +17,7 @@ const pairKey = (a, b) => [a, b].sort().join('|');
 // Load both datasets in parallel
 Promise.all([
   fetch('data/clubs.json?v=6').then(r => r.json()),
-  fetch('data/pairs.json?v=6').then(r => r.json())
+  fetch('data/pairs.json?v=7').then(r => r.json())
 ]).then(([clubData, pairData]) => {
   clubs = clubData.sort((a, b) => a.name.localeCompare(b.name));
   clubs.forEach(c => clubMap.set(c.name, c));
@@ -478,6 +478,7 @@ function showClubRivals(club) {
       const combined = Math.round(raw * penalty);
       return { ...r, combined };
     })
+    .filter(r => r.combined > 0 || r.pair.score >= 15)
     .sort((a, b) => b.combined - a.combined || (clubMap.get(a.otherName)?.tier || 99) - (clubMap.get(b.otherName)?.tier || 99) || a.pair.distance - b.pair.distance)
     .slice(0, 10);
 
