@@ -28,6 +28,8 @@ For pairs with meaningful history:
 - **Antiquity** (20%) — how far back does the fixture go?
 - **Recency** (15%) — have they played each other recently? (Deliberately deprioritised — dormant historic rivalries like West Ham vs Millwall still deserve respect)
 
+A handful of pairs carry an **editorial override** (`rivalryOverride` field on the pair record) where the formula can't fairly represent the intensity. The most obvious example is AFC Wimbledon vs MK Dons — a rivalry about identity, not meetings played. When present, the override replaces the formula score and any future recalc scripts must respect it.
+
 ### Verdict thresholds
 
 | Score | Verdict |
