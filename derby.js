@@ -71,7 +71,7 @@ function precomputeDensity(allClubs) {
  *   or Carlisle/Barrow get a fairer shake — they don't have other options.
  */
 function getDensityFactor(nearbyCount, county) {
-  if (nearbyCount === 0) return 1.7;  // Genuine isolation — zero neighbours within 25mi
+  if (nearbyCount === 0) return 1.8;  // Genuine isolation — zero neighbours within 25mi
   if (nearbyCount <= 1) return 1.5;
   if (nearbyCount <= 3) return 1.3;
   if (nearbyCount <= 6) return 1.0;

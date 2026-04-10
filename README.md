@@ -18,7 +18,7 @@ Every matchup gets two independent scores:
      - London: 0.40
      - Greater Manchester / Lancashire / Cheshire / West Yorkshire: 0.60
      - West Midlands: 0.75
-   - **Loneliness bonus** for isolated clubs: **1.7× when zero nearby** (Norwich, Cambridge, Carlisle, Plymouth, Hereford etc.), 1.5× when ≤1, 1.3× when ≤3 — because what counts as "local" depends on what else is nearby
+   - **Loneliness bonus** for isolated clubs: **1.8× when zero nearby** (Norwich, Cambridge, Carlisle, Plymouth, Hereford etc.), 1.5× when ≤1, 1.3× when ≤3 — because what counts as "local" depends on what else is nearby
 4. **Bonuses** — same city (+15), same county (+10), same tier (+5)
 
 ### Rivalry Score (0–100) — the history
