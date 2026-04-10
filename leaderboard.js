@@ -6,8 +6,8 @@
 const slug = name => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-$/, '');
 
 Promise.all([
-  fetch('data/clubs.json?v=16').then(r => r.json()),
-  fetch('data/pairs.json?v=16').then(r => r.json())
+  fetch('data/clubs.json?v=17').then(r => r.json()),
+  fetch('data/pairs.json?v=17').then(r => r.json())
 ]).then(([clubData, pairData]) => {
   const clubMap = new Map();
   clubData.forEach(c => clubMap.set(c.name, c));
@@ -19,11 +19,21 @@ Promise.all([
     rows = pairData
       .filter(p => p.rivalryScore != null)
       .map(p => {
-        const raw = Math.round(p.score * 0.4 + p.rivalryScore * 0.6);
+        const rawUnrounded = p.score * 0.4 + p.rivalryScore * 0.6;
         const penalty = Math.min(p.rivalryScore / 20, 1);
-        return { ...p, hybrid: Math.round(raw * penalty) };
+        const hybridUnrounded = rawUnrounded * penalty;
+        return { ...p, hybrid: Math.round(hybridUnrounded), hybridUnrounded };
       })
-      .sort((a, b) => b.hybrid - a.hybrid || a.distance - b.distance);
+      // Ties on the rounded hybrid resolve by: unrounded hybrid (so 99.4
+      // sits below 100.0), then by combined derby+rivalry raw sum, then
+      // distance. No alphabetical fallback — that gave Arsenal vs Spurs
+      // an unfair edge over Man City vs Man Utd when both rounded to 100.
+      .sort((a, b) =>
+        b.hybrid - a.hybrid ||
+        b.hybridUnrounded - a.hybridUnrounded ||
+        (b.score + b.rivalryScore) - (a.score + a.rivalryScore) ||
+        a.distance - b.distance
+      );
   } else if (mode === 'closest') {
     rows = pairData
       .filter(p => p.score >= 55)
