@@ -54,7 +54,7 @@ def get_density_factor(nearby_count, county):
 def get_verdict(score):
     if score >= 75: return 'Proper Local Derby'
     if score >= 55: return 'Local Derby'
-    if score >= 35: return 'Distant Neighbours'
+    if score >= 35: return 'Regional Derby'
     if score >= 15: return 'Clutching'
     return 'Not a Derby'
 

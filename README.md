@@ -36,7 +36,7 @@ A handful of pairs carry an **editorial override** (`rivalryOverride` field on t
 |-------|---------|
 | 75–100 | Proper Local Derby |
 | 55–74 | Local Derby |
-| 35–54 | Distant Neighbours |
+| 35–54 | Regional Derby |
 | 15–34 | Clutching |
 | 0–14 | Not a Derby |
 
