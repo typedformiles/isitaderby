@@ -16,8 +16,8 @@ const pairKey = (a, b) => [a, b].sort().join('|');
 
 // Load both datasets in parallel
 Promise.all([
-  fetch('data/clubs.json?v=22').then(r => r.json()),
-  fetch('data/pairs.json?v=22').then(r => r.json())
+  fetch('data/clubs.json?v=23').then(r => r.json()),
+  fetch('data/pairs.json?v=23').then(r => r.json())
 ]).then(([clubData, pairData]) => {
   clubs = clubData.sort((a, b) => a.name.localeCompare(b.name));
   clubs.forEach(c => clubMap.set(c.name, c));
