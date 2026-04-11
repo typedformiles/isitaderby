@@ -16,8 +16,8 @@ const pairKey = (a, b) => [a, b].sort().join('|');
 
 // Load both datasets in parallel
 Promise.all([
-  fetch('data/clubs.json?v=25').then(r => r.json()),
-  fetch('data/pairs.json?v=25').then(r => r.json())
+  fetch('data/clubs.json?v=26').then(r => r.json()),
+  fetch('data/pairs.json?v=26').then(r => r.json())
 ]).then(([clubData, pairData]) => {
   clubs = clubData.sort((a, b) => a.name.localeCompare(b.name));
   clubs.forEach(c => clubMap.set(c.name, c));
@@ -473,9 +473,12 @@ function showClubRivals(club) {
       pair: p
     }))
     .map(r => {
-      // If rivalry data exists, weight score 40% + rivalry 60% with a
-      // sparse-rivalry penalty. If there's no rivalry data, fall back to
-      // the raw derby score so geographically-close pairs still rank.
+      // Rivalry-first ranking. Researched rivalries use the hybrid
+      // (derby 40% + rivalry 60%). Non-researched pairs get a heavily
+      // dampened score capped at 30 so they can only appear if there
+      // aren't enough real rivals — and never leapfrog a verified rival.
+      // Previously non-researched pairs used pure derby score, which let
+      // Solihull Moors outrank Leicester City on Coventry's rivals list.
       const hasRivalry = r.pair.rivalryScore != null;
       let combined;
       if (hasRivalry) {
@@ -484,12 +487,21 @@ function showClubRivals(club) {
         const penalty = Math.min(rivalry / 20, 1);
         combined = Math.round(raw * penalty);
       } else {
-        combined = r.pair.score;
+        // Unresearched: dampen heavily and cap so they can't outrank
+        // researched rivals. 30 is below the lowest plausible hybrid
+        // for a genuine rivalry.
+        combined = Math.min(30, Math.round(r.pair.score * 0.3));
       }
-      return { ...r, combined };
+      return { ...r, combined, hasRivalry };
     })
     .filter(r => r.combined >= 15)
-    .sort((a, b) => b.combined - a.combined || (clubMap.get(a.otherName)?.tier || 99) - (clubMap.get(b.otherName)?.tier || 99) || a.pair.distance - b.pair.distance)
+    // Within a tie, researched rivals always outrank unresearched ones
+    .sort((a, b) =>
+      b.combined - a.combined ||
+      (b.hasRivalry ? 1 : 0) - (a.hasRivalry ? 1 : 0) ||
+      (clubMap.get(a.otherName)?.tier || 99) - (clubMap.get(b.otherName)?.tier || 99) ||
+      a.pair.distance - b.pair.distance
+    )
     .slice(0, 10);
 
   document.getElementById('rivals-badge').style.background =
