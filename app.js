@@ -310,6 +310,9 @@ function showResult(clubA, clubB) {
     } else if (window.tiktokEmbed) {
       window.tiktokEmbed.lib.render();
     }
+  } else if (pair.articleLink) {
+    youtubeEl.innerHTML = `<a href="${pair.articleLink.url}" target="_blank" rel="noopener noreferrer" class="article-link">📰 ${pair.articleLink.title || 'Read more about this rivalry'}</a>`;
+    youtubeEl.style.display = 'block';
   } else {
     youtubeEl.innerHTML = '';
     youtubeEl.style.display = 'none';

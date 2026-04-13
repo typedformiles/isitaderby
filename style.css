@@ -504,6 +504,22 @@ header p {
   margin: 0 auto !important;
 }
 
+.youtube-embed .article-link {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--line);
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid var(--fg);
+  transition: background 0.15s;
+}
+
+.youtube-embed .article-link:hover {
+  background: var(--fg);
+  color: var(--bg);
+}
+
 /* Key moments */
 .key-moments {
   display: none;

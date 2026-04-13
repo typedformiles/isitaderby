@@ -134,6 +134,9 @@ const STRAPLINES = {
   'Chester|Wrexham':
     'The cross-border derby. Wrexham play in Wales, Chester in England, twelve miles apart. The rivalry took on new life after Ryan Reynolds and Rob McElhenney bought Wrexham in 2020, turning a modest Welsh club into a global brand. Chester fans remain distinctly unimpressed.',
 
+  'Coventry City|Sunderland':
+    '170 miles apart but Sunderland fans have never forgiven Coventry. On the final day of 1976/77, Coventry managing director Jimmy Hill got the kick-off delayed due to "traffic congestion." When news came through that Sunderland had lost at Everton, Coventry and Bristol City played out a convenient 2-2 draw — both stayed up, Sunderland went down. An inquiry cleared Hill, but the hatred stuck. Sunderland fans booed him for decades.',
+
   'Barrow|Carlisle United':
     'Cumbria\'s best attempt at a derby — 55 miles apart across some of England\'s emptiest countryside. Getting to either ground requires genuine commitment and a full tank. When Barrow returned to League Two in 2020 after 48 years, Cumbria had two professional clubs again for the first time since the 70s. That\'s still not a derby though.',
 
