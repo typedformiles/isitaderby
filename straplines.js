@@ -134,6 +134,9 @@ const STRAPLINES = {
   'Chester|Wrexham':
     'The cross-border derby. Wrexham play in Wales, Chester in England, twelve miles apart. The rivalry took on new life after Ryan Reynolds and Rob McElhenney bought Wrexham in 2020, turning a modest Welsh club into a global brand. Chester fans remain distinctly unimpressed.',
 
+  'Gillingham|Swindon Town':
+    'One of English football\'s most random rivalries. 100 miles apart in Kent and Wiltshire respectively — no geographical connection whatsoever. The grudge was born in March 1979 at Priestfield: Gillingham\'s Danny Westwood was sent off, a fan struck the referee, and things escalated. The return fixture ended in a tunnel brawl that hospitalised a Swindon coach. Reignited again in the inaugural 1986/87 play-offs. Still described as a "tasty" fixture today — police often separate the fans. Zero geography, all grudge.',
+
   'Coventry City|Sunderland':
     '170 miles apart but Sunderland fans have never forgiven Coventry. On the final day of 1976/77, Coventry managing director Jimmy Hill got the kick-off delayed due to "traffic congestion." When news came through that Sunderland had lost at Everton, Coventry and Bristol City played out a convenient 2-2 draw — both stayed up, Sunderland went down. An inquiry cleared Hill, but the hatred stuck. Sunderland fans booed him for decades.',
 
