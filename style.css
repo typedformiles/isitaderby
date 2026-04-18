@@ -504,6 +504,11 @@ header p {
   margin: 0 auto !important;
 }
 
+.youtube-embed iframe + .article-link,
+.youtube-embed .tiktok-embed + .article-link {
+  margin-top: 1rem;
+}
+
 .youtube-embed .article-link {
   display: inline-block;
   padding: 0.6rem 1.2rem;

@@ -17,7 +17,7 @@ const pairKey = (a, b) => [a, b].sort().join('|');
 // Load both datasets in parallel
 Promise.all([
   fetch('data/clubs.json?v=31').then(r => r.json()),
-  fetch('data/pairs.json?v=35').then(r => r.json())
+  fetch('data/pairs.json?v=36').then(r => r.json())
 ]).then(([clubData, pairData]) => {
   clubs = clubData.sort((a, b) => a.name.localeCompare(b.name));
   clubs.forEach(c => clubMap.set(c.name, c));
@@ -291,28 +291,33 @@ function showResult(clubA, clubB) {
     straplineEl.style.display = 'none';
   }
 
-  // Video embed (YouTube or TikTok)
+  // Video embed (YouTube or TikTok) + optional article link
   const youtubeEl = document.getElementById('youtube-embed');
+  let mediaHtml = '';
   if (pair.youtube) {
     const isShort = pair.youtubeShort || false;
-    youtubeEl.innerHTML = `<iframe class="${isShort ? 'yt-short' : ''}" src="${pair.youtube}" title="Derby highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-    youtubeEl.style.display = 'block';
+    mediaHtml += `<iframe class="${isShort ? 'yt-short' : ''}" src="${pair.youtube}" title="Derby highlights" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
   } else if (pair.tiktok) {
     const videoId = pair.tiktok.split('/').pop();
-    youtubeEl.innerHTML = `<blockquote class="tiktok-embed" cite="${pair.tiktok}" data-video-id="${videoId}" style="max-width:605px;min-width:325px;margin:0 auto;"><section></section></blockquote>`;
+    mediaHtml += `<blockquote class="tiktok-embed" cite="${pair.tiktok}" data-video-id="${videoId}" style="max-width:605px;min-width:325px;margin:0 auto;"><section></section></blockquote>`;
+  }
+  if (pair.articleLink) {
+    mediaHtml += `<a href="${pair.articleLink.url}" target="_blank" rel="noopener noreferrer" class="article-link">📰 ${pair.articleLink.title || 'Read more about this rivalry'}</a>`;
+  }
+  if (mediaHtml) {
+    youtubeEl.innerHTML = mediaHtml;
     youtubeEl.style.display = 'block';
-    // Load/reload TikTok embed script
-    if (!document.querySelector('script[src*="tiktok.com/embed.js"]')) {
-      const s = document.createElement('script');
-      s.src = 'https://www.tiktok.com/embed.js';
-      s.async = true;
-      document.body.appendChild(s);
-    } else if (window.tiktokEmbed) {
-      window.tiktokEmbed.lib.render();
+    // Load/reload TikTok embed script if needed
+    if (pair.tiktok) {
+      if (!document.querySelector('script[src*="tiktok.com/embed.js"]')) {
+        const s = document.createElement('script');
+        s.src = 'https://www.tiktok.com/embed.js';
+        s.async = true;
+        document.body.appendChild(s);
+      } else if (window.tiktokEmbed) {
+        window.tiktokEmbed.lib.render();
+      }
     }
-  } else if (pair.articleLink) {
-    youtubeEl.innerHTML = `<a href="${pair.articleLink.url}" target="_blank" rel="noopener noreferrer" class="article-link">📰 ${pair.articleLink.title || 'Read more about this rivalry'}</a>`;
-    youtubeEl.style.display = 'block';
   } else {
     youtubeEl.innerHTML = '';
     youtubeEl.style.display = 'none';
