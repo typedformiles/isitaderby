@@ -134,6 +134,9 @@ const STRAPLINES = {
   'Chester|Wrexham':
     'The cross-border derby. Wrexham play in Wales, Chester in England, twelve miles apart. The rivalry took on new life after Ryan Reynolds and Rob McElhenney bought Wrexham in 2020, turning a modest Welsh club into a global brand. Chester fans remain distinctly unimpressed.',
 
+  'Huddersfield Town|Peterborough United':
+    '98 miles apart. No geography, pure grudge. It started in the 1992 Division Three play-off semis — Huddersfield dominated both legs but lost 4-3 on aggregate, conceding late both times. Posh went up; Terriers stewed. Fast-forward to 2011: the clubs met again in the League One play-off final at Old Trafford, and Peterborough scored three in seven minutes to win. Then the defining twist — on the final day of 2012/13, Huddersfield drew with Barnsley to save themselves and Peterborough were relegated with 54 points, a record for a relegated side. Two decades of collision points and no real way home.',
+
   'Gillingham|Swindon Town':
     'One of English football\'s most random rivalries. 100 miles apart in Kent and Wiltshire respectively — no geographical connection whatsoever. The grudge was born in March 1979 at Priestfield: Gillingham\'s Danny Westwood was sent off, a fan struck the referee, and things escalated. The return fixture ended in a tunnel brawl that hospitalised a Swindon coach. Reignited again in the inaugural 1986/87 play-offs. Still described as a "tasty" fixture today — police often separate the fans. Zero geography, all grudge.',
 
